@@ -1,7 +1,7 @@
 {
   "name": "portfolio-ux",
   "version": "0.1.0",
-  "homepage": "https://zoeruo.github.io/portfolio_/",
+  "homepage": "https://zoeruo.com/",
   "private": true,
   "dependencies": {
     "@splidejs/react-splide": "^0.7.12",
