@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e100a065.css",
-    "main.js": "/static/js/main.cb6dbbfc.js",
+    "main.js": "/static/js/main.23855550.js",
     "static/js/787.907a2fad.chunk.js": "/static/js/787.907a2fad.chunk.js",
     "static/media/IMSLP_CaseStudy.pdf": "/static/media/IMSLP_CaseStudy.61d68bd708f0da04f11c.pdf",
     "static/media/TW_creating.MP4": "/static/media/TW_creating.8927d9f6cbd1d174458a.MP4",
@@ -18,6 +18,7 @@
     "static/media/DD_p1.png": "/static/media/DD_p1.b22fd8ba28ee1142e704.png",
     "static/media/DD_p0.png": "/static/media/DD_p0.6f6a4b23b4ef2a97e9a8.png",
     "static/media/DD_p2.png": "/static/media/DD_p2.bc9ebdee2789c3aefc03.png",
+    "static/media/CHGH_IA.png": "/static/media/CHGH_IA.c9182322f30e4dde314f.png",
     "static/media/RFO_m0.png": "/static/media/RFO_m0.adafb036b8cf4dd5bb20.png",
     "static/media/RFO_lf1.png": "/static/media/RFO_lf1.10c370d5844bdcc7fdd8.png",
     "static/media/RFO_components.png": "/static/media/RFO_components.e1bd09f17d63a2d155b4.png",
@@ -48,11 +49,11 @@
     "static/media/arrow_right.svg": "/static/media/arrow_right.ef8f21cb40e7ada176de.svg",
     "static/media/logo.svg": "/static/media/logo.61b029cda18a62aa361c6f2315ac03ff.svg",
     "main.e100a065.css.map": "/static/css/main.e100a065.css.map",
-    "main.cb6dbbfc.js.map": "/static/js/main.cb6dbbfc.js.map",
+    "main.23855550.js.map": "/static/js/main.23855550.js.map",
     "787.907a2fad.chunk.js.map": "/static/js/787.907a2fad.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e100a065.css",
-    "static/js/main.cb6dbbfc.js"
+    "static/js/main.23855550.js"
   ]
 }
