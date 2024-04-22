@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e100a065.css",
-    "main.js": "/static/js/main.23855550.js",
+    "main.css": "/static/css/main.5bcf0707.css",
+    "main.js": "/static/js/main.f735c457.js",
     "static/js/787.907a2fad.chunk.js": "/static/js/787.907a2fad.chunk.js",
     "static/media/IMSLP_CaseStudy.pdf": "/static/media/IMSLP_CaseStudy.61d68bd708f0da04f11c.pdf",
     "static/media/TW_creating.MP4": "/static/media/TW_creating.8927d9f6cbd1d174458a.MP4",
@@ -42,18 +42,18 @@
     "static/media/SW_m0.png": "/static/media/SW_m0.545aa239eace26f61ca0.png",
     "static/media/YesevaOne-Regular.ttf": "/static/media/YesevaOne-Regular.77e7411de8c57683e277.ttf",
     "static/media/DD_w1.png": "/static/media/DD_w1.9657cbd04a1afbb44f8e.png",
-    "static/media/Resume.pdf": "/static/media/Resume.99bd797c7587f371d5f0.pdf",
+    "static/media/Resume.pdf": "/static/media/Resume.e8d3431d42c520e52970.pdf",
     "static/media/zoomin.svg": "/static/media/zoomin.fb87d0d500b3792f157d.svg",
     "index.html": "/index.html",
     "static/media/arrow_left.svg": "/static/media/arrow_left.db613b2525469ddc47e5.svg",
     "static/media/arrow_right.svg": "/static/media/arrow_right.ef8f21cb40e7ada176de.svg",
     "static/media/logo.svg": "/static/media/logo.61b029cda18a62aa361c6f2315ac03ff.svg",
-    "main.e100a065.css.map": "/static/css/main.e100a065.css.map",
-    "main.23855550.js.map": "/static/js/main.23855550.js.map",
+    "main.5bcf0707.css.map": "/static/css/main.5bcf0707.css.map",
+    "main.f735c457.js.map": "/static/js/main.f735c457.js.map",
     "787.907a2fad.chunk.js.map": "/static/js/787.907a2fad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e100a065.css",
-    "static/js/main.23855550.js"
+    "static/css/main.5bcf0707.css",
+    "static/js/main.f735c457.js"
   ]
 }
