@@ -25,6 +25,7 @@
 
 import ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AnimatedCursor from "react-animated-cursor"
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import RedFlagsOut from "./pages/RedFlagsOut";

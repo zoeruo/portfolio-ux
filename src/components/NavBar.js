@@ -8,7 +8,9 @@ export const NavBar = () => {
     return (
         <Navbar bg="theme" expand="lg">
             <Container>
-                <Navbar.Brand href="#home"><Link to="/" className="nav-link"><img src={logo} width="36px" /></Link></Navbar.Brand>
+                <Navbar.Brand href="/">
+                    <img src={logo} width="36px" />
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse className="justify-content-center" id="basic-navbar-nav">
                     <Nav className="me-auto ms-auto">

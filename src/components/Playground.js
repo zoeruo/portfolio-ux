@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import starrywavesimg from '../asset/img/SW_m0.png';
 import thewindowimg from '../asset/img/TW_m0.png';
 import swimmingfishesimg from '../asset/img/SF_m0.png';
+import imslpimg from '../asset/img/IMSLP_m0.png';
 import arrowright from '../asset/img/arrow_right.png';
 import arrowleft from '../asset/img/arrow_left.png';
 import '@splidejs/react-splide/css';
@@ -11,7 +12,7 @@ import '@splidejs/react-splide/css';
 export const Playground = () => {
 
     return (
-        <section id ="Playground" className="bg-theme">
+        <section id="Playground" className="bg-theme">
             <Container>
                 <Row className="py-2">
                     <Col md={12}>
@@ -21,8 +22,13 @@ export const Playground = () => {
                 <Row>
                     <Col md={4}>
                         <Link to="https://zoeruo.github.io/Audio-visualization-and-Sound-with-p5.js/" className="nav-link" target="_blank"><img src={starrywavesimg} className="img-fluid mb-3" alt="" /></Link>
-                        <Link to="https://zoeruo.github.io/Audio-visualization-and-Sound-with-p5.js/" className="nav-link" target="_blank"><h5 className="mb-1">Srarry Waves | 2023</h5></Link>
+                        <Link to="https://zoeruo.github.io/Audio-visualization-and-Sound-with-p5.js/" className="nav-link" target="_blank"><h5 className="mb-1">Starry Waves | 2023</h5></Link>
                         <p>An interactive sound canvas created by P5.js</p>
+                    </Col>
+                    <Col md={4}>
+                        <Link to="/ProjectDetail/IMSLPRedesigning" className="nav-link"><img src={imslpimg} className="img-fluid mb-3" alt="" /></Link>
+                        <Link to="/ProjectDetail/IMSLPRedesigning" className="nav-link"><h5 className="mb-1">IMSLP Redesigning | 2023</h5></Link>
+                        <p>Visual Design</p>
                     </Col>
                     <Col md={4}>
                         <Link to="/ProjectDetail/SwimmingFishes" className="nav-link"><img src={swimmingfishesimg} className="img-fluid mb-3" alt="" /></Link>
@@ -34,14 +40,6 @@ export const Playground = () => {
                         <Link to="/ProjectDetail/TheWindow" className="nav-link"><h5 className="mb-1">The Window | 2017</h5></Link>
                         <p>Installaton Art</p>
                     </Col>
-           
-                    {/* <Col md={4}>
-                        <Link to="/ProjectDetail/CHGH" className="nav-link"><img src={chghimg} className="img-fluid mb-3" alt="" /></Link>
-                        <h5 className="mb-1">Cheng Hsin General Hospital | 2020</h5>
-                        <p>Responsive Web Design</p>
-                    </Col> */}
-                    
-
                 </Row>
                 {/* <Row>
                     <Col md={12}>
