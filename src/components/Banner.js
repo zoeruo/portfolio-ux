@@ -66,15 +66,16 @@ export const Banner = () => {
   }
 
   return (
-    <section className="banner bg-theme pt-3" id="home">
+    <section className="banner bg-theme" id="home">
       <Container>
         <Row>
+          
+          <Col xs={12} md={6} className="text-end">
+            <img id="BannerImg" src={imgSrc} className="img-fluid" alt="Banner img" />
+          </Col>
           <Col xs={12} md={6} className="my-auto">
             <h1>Hi, this is Zoe Lo</h1>
             <h1><span className="wrap">{text}</span></h1>
-          </Col>
-          <Col xs={12} md={6}>
-            <img src={imgSrc} className="img-fluid" alt="Banner img" />
           </Col>
         </Row>
       </Container>

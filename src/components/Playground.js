@@ -14,8 +14,8 @@ export const Playground = () => {
     return (
         <section id="Playground" className="bg-theme">
             <Container>
-                <Row className="py-2">
-                    <Col md={12}>
+                <Row className="py-3">
+                    <Col md={12} className="text-center">
                         <h3>PLAYGROUND</h3>
                     </Col>
                 </Row>
@@ -25,11 +25,11 @@ export const Playground = () => {
                         <Link to="https://zoeruo.github.io/Audio-visualization-and-Sound-with-p5.js/" className="nav-link" target="_blank"><h5 className="mb-1">Starry Waves | 2023</h5></Link>
                         <p>An interactive sound canvas created by P5.js</p>
                     </Col>
-                    <Col md={4}>
+                    {/* <Col md={4}>
                         <Link to="/ProjectDetail/IMSLPRedesigning" className="nav-link"><img src={imslpimg} className="img-fluid mb-3" alt="" /></Link>
                         <Link to="/ProjectDetail/IMSLPRedesigning" className="nav-link"><h5 className="mb-1">IMSLP Redesigning | 2023</h5></Link>
                         <p>Visual Design</p>
-                    </Col>
+                    </Col> */}
                     <Col md={4}>
                         <Link to="/ProjectDetail/SwimmingFishes" className="nav-link"><img src={swimmingfishesimg} className="img-fluid mb-3" alt="" /></Link>
                         <Link to="/ProjectDetail/SwimmingFishes" className="nav-link"><h5 className="mb-1">Swimming Fishes | 2019</h5></Link>

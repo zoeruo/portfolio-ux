@@ -29,6 +29,8 @@ import imgimslg from '../asset/img/IMSLP_m0.png';
 import imslpcasestudy from '../asset/IMSLP_CaseStudy.pdf';
 import imgdepartment from '../asset/img/CHGH_D_m0.png';
 import imgflikshop from '../asset/img/Flikshop_m0.png';
+import flikshop_d0 from '../asset/img/Flikshop_d0.png';
+import videofront from "../asset/videos/CHDMS_D.mp4";
 
 export const contents = {
     RedFlagsOut: {
@@ -87,7 +89,7 @@ export const contents = {
         "persona": [ddp0, ddp1, ddp2],
         "lowfidelity": [{ img: ddlf, txt: "" }],
         "wireframe": [{ img: ddw0, txt: "Logging a new dive" }, { img: ddw1, txt: "Read the summary and overview of your tracking data" }, { img: ddw2, txt: "Starting a lesson" }],
-        
+
     },
     CHGH: {
         "url": "CHGH",
@@ -97,8 +99,8 @@ export const contents = {
         "overview": "Cheng Hsin General Hospital is a modern general hospital located in Taipei, and it is famous for cardiology. The goal of this project was to build a responsive website featuring the new international medical services and provide more convenient online services for the general public.&nbsp;&nbsp;<a href='https://www.chgh.org.tw/Index.aspx' target='blank'>Go to CHGH</a>",
         "duration": "Jun 2019 - Oct 2020",
         "role": "<ul><li><span className='text-c-chgh fw-bold'>Integrated the needs of 80+ departments.</span></li>" +
-                "<li><span className='text-c-chgh fw-bold'>Executed from design to web development.</span></li>"+
-                "<li><span className='text-c-chgh fw-bold'>Made it easier to love</span>: streamlined experience based on user feedback.</li></ul>",
+            "<li><span className='text-c-chgh fw-bold'>Executed from design to web development.</span></li>" +
+            "<li><span className='text-c-chgh fw-bold'>Made it easier to love</span>: streamlined experience based on user feedback.</li></ul>",
         "problemstatement": "We knew our patients deserved better. A decade-old website with static content, outsourced updates, and no multilingual support couldn't handle our hospital's dynamic growth, especially the exciting launch of the International Medical Center. The whole new version tackled these challenges head-on, building a flexible, multilingual platform that empowers departments, connects with diverse audiences, and drives patient satisfaction.",
         "development": "Our project involved constructing four websites within a compressed time frame. Leveraging .NET, I spearheaded the front-end development with HTML, CSS, and JavaScript, collaborating closely with a talented back-end team. To maximize efficiency, we implemented an agile approach, <span className='text-c-chgh px-1 fw-bold'>concurrently developing and testing</span>. The dynamic nature of the project required <span className='text-c-chgh px-1 fw-bold'>adaptability</span>. In the final stretch, I <span className='text-c-chgh px-1 fw-bold'>independently finalized and published the websites</span>, <span className='text-c-chgh px-1 fw-bold'>incorporating valuable client feedback</span> to fine-tune functionality and ensure a successful launch.",
         "IA": chghia
@@ -108,13 +110,27 @@ export const contents = {
         "img": imgdepartment,
         "title": "Hospital Department CMS",
         "subtitle": "Responsive Web Template Design",
-        "overview": "<p>This case study explores the process of redesigning the hospital's departmental websites using a content management system. As the sole designer in the IT department, I faced the challenge of balancing departmental customization needs with maintaining a consistent brand identity. This study details the implemented solutions and my reflections on the project, informed by my recent HCI professional training.</p>",
-        "duration": "Dec 2019 - Oct 2020",
-        "problemstatement": "<p>The hospital's existing web presence suffers from a lack of cohesion and clarity due to inconsistent website development practices across departments.<br/>" +
-                            "<ul><li><b>Uncoordinated Development</b>: Departments have taken independent approaches to website development, leading to a mix of outsourced websites, outdated templates, and neglected content management.</li>" +
-                            "<li><b>Inconsistent Branding</b>: This fragmented approach has resulted in a lack of consistent visual identity, hindering the hospital's overall brand recognition.</li>"+
-                            "<li><b>Uneven Public Awareness</b>: Inconsistent departmental representation online creates an uneven experience for the public. Some departments are well-represented, while others are difficult to find or lack essential information.</p>",
-       
+        "overview": "<p>This case study explores the process of redesigning the hospital's departmental websites using a content management system. As the sole designer in the IT department, I faced the challenge of <b>balancing departmental customization needs</b> with <b>maintaining a consistent brand identity</b>. This study details the implemented solutions and my reflections on the project, informed by my recent HCI professional training.</p>",
+        "duration": "11 months ( Dec 2019 - Oct 2020 )",
+        "problemstatement":
+            "<ul><li><b>Uncoordinated Development</b>: Departments have taken independent approaches to website development, leading to a mix of outsourced websites, outdated templates, and neglected content management.</li>" +
+            "<li><b>Inconsistent Branding</b>: This fragmented approach has resulted in a lack of consistent visual identity, hindering the hospital's overall brand recognition.</li>" +
+            "<li><b>Uneven Public Awareness</b>: Inconsistent departmental representation online creates an uneven experience for the public. Some departments are well-represented, while others are difficult to find or lack essential information.</li></ul>",
+        "process": "",
+        "success": "<h4>Front-End Key Design Consideration &  DEMO</h4>" +
+            "<ul><li><b>User-Selectable Menu</b>: Let users choose which features they want on their website, like events, research papers, contact info, and more.</li>" +
+            "<li><b>User-Easy Department Switching</b>: A shortcut button lets you quickly switch between departments.</li>" +
+            "<li><b>Distinct Department Menu</b>: The main hospital website uses a top bar menu. To maintain a consistent brand feel while offering easier navigation, I designed a sidebar menu for this department's website.</li></ul>",
+        "change": "<h4>Early User Involvement</h4>" +
+            "<ul><li><b>Get stakeholder buy-in early</b>: Schedule meetings with key stakeholders, including the medical director, at the beginning of the project. This ensures everyone is aligned with the goals and avoids surprises later.</li>" +
+            "<li><b>Conduct user interviews and usability testing throughout the process</b>: Gather feedback from a variety of users (patients, staff, etc.) early and often. This helps identify usability issues early and ensures the final design meets user needs.</li>" +
+            "</ul>" +
+            "<h4>Improved Communication and Documentation</h4>" +
+            "<ul><li><b>Clearly define user roles and permissions</b>: Document the different user roles (patients, doctors, etc.) and what actions each role can perform on the website. This ensures a smooth user experience for everyone.</li>" +
+            "<li><b>Create a style guide</b>: Develop a style guide that outlines the website's visual identity, including fonts, colors, and layout. This ensures consistency across all departments.</li></ul>" +
+            "<h4>Testing and Iteration</h4>" +
+            "<ul><li><b>Conduct usability testing before development</b>: Before coding begins, test your prototypes with real users to identify any usability problems. This can save time and resources in the long run.</li>" +
+            "</ul>"
     },
     TheWindow: {
         "url": "TheWindow",
@@ -146,7 +162,7 @@ export const contents = {
         "title": "IMSLP Redesigning",
         "subtitle": "Visual Design",
         "overview": "Imagine delving into a treasure trove of classical music scores, a vast library where concertos whisper secrets and sonatas sing their stories. This is IMSLP, a haven for music lovers, scholars, and performers alike. Its shelves, however, are dusty and cluttered, the gems within often hidden beneath layers of outdated design and cumbersome navigation.<br><br>As a pianist, fingers dancing across ivory keys, I've navigated these labyrinthine shelves countless times, unearthing forgotten scores and rediscovering familiar melodies. Yet, the journey is often arduous, the interface clunky, the visual aesthetic uninspiring. It's time to reimagine IMSLP, to transform it into a digital concert hall where every score shines, inviting exploration and sparking joy.<br><br><a href='" + imslpcasestudy + "' target='blank'>Go to the full Case Study</a>",
-        "duration": "April 2023 - May 2023",
+        "duration": "1 month ( April 2023 - May 2023 )",
         /* "colortheme": "The color palette echoes the soul of classical music itself. Shades of ivory and charcoal, the timeless hues of a music sheet, form the foundation, exuding elegance and tradition. A whisper of spring green dances across the score, injecting vibrancy and guiding the eye like a musical phrase in motion. Deep sapphire accents then emerge, drawing attention to key navigational elements like a conductor's baton, ensuring a seamlessly intuitive experience. This harmonious blend of classicism and freshness invites immersion, transforming IMSLP into a vibrant tapestry of sound and sight." */
     },
 
@@ -154,10 +170,32 @@ export const contents = {
         "url": "FlikshopLMS",
         "img": imgflikshop,
         "title": "Flikshop LMS",
-        "subtitle": "A learning management system empowering incarcerated individuals",
-        "overview": "",
-        "duration": "",
-        
+        "subtitle": "Unlocking Potential: A Learning Platform for Incarcerated Individuals",
+        "overview": "<p>Flikshop is a company that helps people stay connected with incarcerated loved ones. Their ultimate mission is to end recidivism and build social trust among incarcerated people. They also offer in-person bootcamps for returning citizens (Flikshop School of Business).</p>" +
+            "<p>We're partnering to create an <b>AI-powered Online Learning Management System</b>, alongside an <b>Admin Panel</b> for educators. Let's explore them in detail!</p>",
+        "duration": "9 months ( Sep 2023 - May 2024 )",
+        "teammembers": "<div className='d-inline pe-4'>Chao-Min Wu</div><div className='d-inline pe-4'>Shu-Ping Chang</div><span className='d-inline pe-4'>Xin Chen</span><span className='d-inline pe-4'>Ziyi Yuan</span><b className='d-inline pe-4 text-c-purple'>Zoe Lo</b>",
+        "role": "<div className='py-2'><h4 className='d-inline me-3'>Meeting Coordinator</h4><div className='d-inline bg-purple px-2 me-3'>Organization</div><div className='d-inline bg-purple px-2 me-3'>Time Management</div></div>" +
+            "<ul><li>Scheduled meetings at mutually agreeable times.</li>" +
+            "<li>Sent invitations and reminders to participants.</li>" +
+            "<li>Ensured meetings run smoothly and on schedule.</li>" +
+            "</ul>" +
+            "<div className='py-2'><h4 className='d-inline me-3'>Client Meeting Lead</h4><div className='d-inline bg-purple px-2 me-3'>Communication</div><div className='d-inline bg-purple px-2 me-3'>Presentation</div><div className='d-inline bg-purple px-2 me-3'>Meeting Facilitation</div></div>" +
+            "<ul><li>Managed communication with Flikshop via Slack and emails.</li>" +
+            "<li>Lead client meetings with Flikshop, ensuring clear and concise presentations of deliverables.</li>" +
+            "<li>Facilitated productive discussions and addressed client questions or concerns.</li>" +
+            "</ul>",
+        // "part": "",
+        "problemstatement": "Current LMS for incarcerated individuals lack personalization, hindering their ability to learn efficiently and achieve their goals.",
+        "goal": "Design an <b>AI-powered feature</b> within the LMS that personalizes the learning experience for incarcerated learners, maximizing their engagement and knowledge retention.",
+        "designfeaturesFS": "",
+        "researchFS": "",
+        "designprocessFS": "",
+        "reflection": `<p>Our Sprint wrapped up with positive momentum! Teamwork was smooth, with clear communication with the client and a collaborative atmosphere. The team effectively utilized the Sprint methodology, and insightful interviews with AI experts and scholars complemented the four completed user testing sessions.</p>
+                        <p>While some challenges emerged, we found effective solutions. One concern was <b>potential user limitations in tech access</b>. Since our target audience may lack laptops for virtual testing, we explored <b>in-person testing</b>, which yielded positive results.
+                        Another initial hurdle involved <b>participants occasionally missing scheduled meetings</b>. To address this, we implemented <b>reminder emails sent a day and an hour before each session</b>. This proactive approach successfully eliminated further no-shows.</p>
+                        <p>The initial meeting with Flikshop CEO, Marcus, was an eye-opener. His fast-paced communication style highlighted the importance of meticulous agenda planning. From that point forward, I prioritized <b>including details like transcript requests and recording permissions to ensure a smooth and productive meeting flow</b>. When I was in the role of a meeting coordinator, I realized the importance of tailoring communication strategies to individual preferences. I learned to adapt my approach to different communication styles and preferred tools to maximize responsiveness and engagement.</p>`
+
     }
 
 }
