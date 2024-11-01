@@ -1,42 +1,30 @@
-import { useState } from "react";
-import { Navbar, Container, Nav } from "react-bootstrap";
+import { Navbar, Container, Nav, Offcanvas } from "react-bootstrap";
 import { BrowserRouter, Route, Link } from "react-router-dom";
 import logo from "../asset/logo.svg";
 import Pdf from '../asset/Resume.pdf';
 
 export const NavBar = () => {
     return (
-        <Navbar bg="theme" expand="lg">
-            <Container>
-                <Navbar.Brand href="/">
-                    <img src={logo} width="36px" />
-                </Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse className="justify-content-center" id="basic-navbar-nav">
-                    <Nav className="me-auto ms-auto">
-                        {/* <Link to="/" className="nav-link">ABOUT</Link> */}
-                        <a href="/#Project" className="nav-link">PROJECT</a>
-                        {/* <Link to="/#Playground" className="nav-link" onClick={(e) => {
-                            e.preventDefault();
-                            window.scrollTo({
-                                top: document.querySelector("#Playground").offsetTop,
-                                behavior: "smooth",
-                            });
-                        }}>PLAYGROUND</Link> */}
-                        <a href="/#Playground" className="nav-link">PLAYGROUND</a>
-                        {/* <Nav.Link href="#">PLAYGROUND</Nav.Link> */}
-
-                    </Nav>
-                    <Nav className="">
-                        {/* <Link to="../asset/Resume.pdf" className="nav-link" target="_blank">RESUME</Link> */}
-                        <a href={Pdf} className="nav-link" target="_blank">RESUME</a>
-                    </Nav>
-                </Navbar.Collapse>
-
-
-            </Container>
-        </Navbar>
+        <>
+            <Navbar bg="theme" key='md' expand='md'>
+                <Container>
+                    <Navbar.Toggle aria-controls="offcanvasNavbar-expand-md" />
+                    <Navbar.Offcanvas className="justify-content-center bg-P-light" id="offcanvasNavbar-expand-md" aria-labelledby="offcanvasNavbarLabel-expand-md" placement="start">
+                        <Offcanvas.Header closeButton>
+                            <Offcanvas.Title id="offcanvasNavbarLabel-expand-md">
+                            </Offcanvas.Title>
+                        </Offcanvas.Header>
+                        <Offcanvas.Body>
+                            <Nav className="me-auto ms-auto nav-main bg-P-light">
+                                <Nav.Link to="/" className="nav-link font-title text-P-darkblue">ABOUT</Nav.Link>
+                                <Nav.Link to="/#Project" className="nav-link font-title text-P-darkblue">WORK</Nav.Link>
+                                <a href="/#Playground" className="nav-link font-title text-P-darkblue">CONTACT</a>
+                            </Nav>
+                        </Offcanvas.Body>
+                    </Navbar.Offcanvas>
+                </Container>
+            </Navbar>
+        </>
     )
 }
-
 export default NavBar;

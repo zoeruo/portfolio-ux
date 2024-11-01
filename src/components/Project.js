@@ -60,53 +60,7 @@ export const Project = () => {
                         <Link to="/ProjectDetail/Deepdive" className="nav-link"><h5 className="mb-1">Deepdive | 2023</h5></Link>
                         <p>A learning and tracking app for freedivers</p>
                     </Col>
-
-
                 </Row>
-                {/* <Row>
-                    <Col md={12}>
-                        <Splide hasTrack={false} options={{
-                            type: 'loop',
-                            perPage: 3,
-                            rewind : true
-                            
-                        }}
-                            aria-label=""
-                        >
-                            
-                            <SplideTrack>
-                                <SplideSlide>
-                                    <div className="div_slider splide__slide__container">
-                                        <img src={chghimg} alt="Cheng Hsin General Hospital project photo" />
-                                        <h4>Cheng Hsin General Hospital</h4>
-                                        <p>Responsive Web Design</p>
-                                    </div>
-                                </SplideSlide>
-                                <SplideSlide>
-                                    <div className="div_slider splide__slide__container">
-                                        <img src={deepdive} alt="Deepdive project photo" />
-                                        <h4>Deepdive | 2023</h4>
-                                        <p>A learning and tracking app for freedivers</p>
-                                    </div>
-                                </SplideSlide>
-                                <SplideSlide>
-                                    <div className="div_slider splide__slide__container">
-                                        <img src={redflagsimg} alt="RedFlagsOut project photo" />
-                                        <h4>Red Flags Out | 2023</h4>
-                                        <p>A dating app focusing on RedFlags</p>
-                                    </div>
-                                </SplideSlide>
-                            </SplideTrack>
-                            <div className="splide__arrows">
-                                <button className="splide__arrow splide__arrow--prev my-arrow"><img src={arrowleft} style={{ width: 40 }} /></button>
-                                <button className="splide__arrow splide__arrow--next my-arrow"><img src={arrowright} /></button>
-                            </div>
-                        </Splide>
-                    </Col>
-                </Row> */}
-
-
-
             </Container>
         </section>
     )

@@ -1,8 +1,22 @@
+$Primary-darkblue: #3A4454;
+$Primary-light:#F1F1E6;
+
 
 $grid-gutter-width: 2rem;
 
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
 
+$custom-colors: (
+    "P-darkblue": $Primary-darkblue,
+    "P-light": $Primary-light
+    );
+$theme-colors: map-merge($theme-colors, $custom-colors);
 
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "~bootstrap/scss/bootstrap.scss";
 
-
+.navbar-toggler, .navbar-toggler:focus{
+    border:none !important;
+    box-shadow:none;
+    color: var(--bs-P-darkblue);
+}

@@ -7,7 +7,7 @@ function Home() {
       <div className="Home">
         <Banner />
         <Project/>
-        <Playground/>
+        {/* <Playground/> */}
       </div>
   
     );
