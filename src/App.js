@@ -1,36 +1,12 @@
-// import logo from './logo.svg';
-// import './App.css';
-// // import NavBAR from './components/Navbar/index';
-// import { NavBar } from './components/NavBar';
-// import { Banner } from './components/Banner';
-// // import { BrowserRouter as Router, Routes, Route }
-// //     from 'react-router-dom';
-// // import About from './pages/About';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-
-
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <NavBar />
-//       <Banner />
-
-//     </div>
-
-//   );
-// }
-
-// export default App;
-
 import ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AnimatedCursor from "react-animated-cursor"
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact"
 import RedFlagsOut from "./pages/RedFlagsOut";
 import ProjectDetail from "./pages/ProjectDetail";
-// import 'bootstrap/dist/css/bootstrap.min.css';
 import '../src/style.css';
 import './App.css';
 import ScrollToTop from "./components/ScrollToTop";
@@ -44,6 +20,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="About" element={<About />} />
+          <Route path="Contact" element={<Contact />} />
           {/* <Route path="RedFlagsOut" element={<RedFlagsOut />} /> */}
           <Route path="ProjectDetail/:title" element={<ProjectDetail />} />
           {/* <Route path="*" element={<NoPage />} /> */}

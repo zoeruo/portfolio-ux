@@ -12,32 +12,27 @@ import '@splidejs/react-splide/css';
 export const Playground = () => {
 
     return (
-        <section id="Playground" className="bg-theme">
+        <section id="Playground" className="bg-white">
             <Container>
                 <Row className="py-3">
-                    <Col md={12} className="text-center">
-                        <h3>PLAYGROUND</h3>
+                    <Col md={12} className="text-start">
+                        <h1>Check out some of my fun Side Projects -</h1>
                     </Col>
                 </Row>
                 <Row>
                     <Col md={4}>
                         <Link to="https://zoeruo.github.io/Audio-visualization-and-Sound-with-p5.js/" className="nav-link" target="_blank"><img src={starrywavesimg} className="img-fluid mb-3" alt="" /></Link>
-                        <Link to="https://zoeruo.github.io/Audio-visualization-and-Sound-with-p5.js/" className="nav-link" target="_blank"><h5 className="mb-1">Starry Waves | 2023</h5></Link>
+                        <Link to="https://zoeruo.github.io/Audio-visualization-and-Sound-with-p5.js/" className="nav-link" target="_blank"><h2 className="mb-1">Starry Waves | 2023</h2></Link>
                         <p>An interactive sound canvas created by P5.js</p>
                     </Col>
-                    {/* <Col md={4}>
-                        <Link to="/ProjectDetail/IMSLPRedesigning" className="nav-link"><img src={imslpimg} className="img-fluid mb-3" alt="" /></Link>
-                        <Link to="/ProjectDetail/IMSLPRedesigning" className="nav-link"><h5 className="mb-1">IMSLP Redesigning | 2023</h5></Link>
-                        <p>Visual Design</p>
-                    </Col> */}
                     <Col md={4}>
                         <Link to="/ProjectDetail/SwimmingFishes" className="nav-link"><img src={swimmingfishesimg} className="img-fluid mb-3" alt="" /></Link>
-                        <Link to="/ProjectDetail/SwimmingFishes" className="nav-link"><h5 className="mb-1">Swimming Fishes | 2019</h5></Link>
+                        <Link to="/ProjectDetail/SwimmingFishes" className="nav-link"><h2 className="mb-1">Swimming Fishes | 2019</h2></Link>
                         <p>Maya 3D Animation</p>
                     </Col>
                     <Col md={4}>
                         <Link to="/ProjectDetail/TheWindow" className="nav-link"><img src={thewindowimg} className="img-fluid mb-3" alt="" /></Link>
-                        <Link to="/ProjectDetail/TheWindow" className="nav-link"><h5 className="mb-1">The Window | 2017</h5></Link>
+                        <Link to="/ProjectDetail/TheWindow" className="nav-link"><h2 className="mb-1">The Window | 2017</h2></Link>
                         <p>Installaton Art</p>
                     </Col>
                 </Row>

@@ -65,14 +65,14 @@ export const Banner = () => {
     <section className="banner bg-theme" id="home">
       <Container>
         <div className="banner-img-container d-none d-md-block">
-          <img id="BannerImg" src={imgSrc} className="img-fluid" alt="Banner img" />
+          <img id="BannerImg" src={bdesign} className="img-fluid" alt="Banner img" />
         </div>
         <Row>
           <Col xs={12} md={5} className="banner-img-wrapper order-2 order-md-1">
-            <img src={imgSrc} className="img-fluid d-block d-md-none" />
+            <img src={bdesign} className="img-fluid d-block d-md-none" />
           </Col>
           <Col xs={12} md={7} className="my-md-auto mb-4 order-1 order-md-2 mb-4">
-            <div className="font-display mb-3">Hi, I'm Zoe Lo<br />I Craft Digital Delight</div>
+            <div className="font-display1 mb-3">Hi, I'm Zoe Lo<br />I Craft Digital Delight</div>
             <div className="font-display-sub">I turn user frustrations into intuitive interfaces,<br />
               one pixel and line of code at a time.</div>
           </Col>

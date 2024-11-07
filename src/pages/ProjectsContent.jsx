@@ -27,8 +27,8 @@ import twci from '../asset/img/TW_c0.jpg';
 import imgsf from '../asset/img/SF_m0.png';
 import imgimslg from '../asset/img/IMSLP_m0.png';
 import imslpcasestudy from '../asset/IMSLP_CaseStudy.pdf';
-import imgdepartment from '../asset/img/CHGH_D_m0.png';
-import imgflikshop from '../asset/img/Flikshop_m0.png';
+import imgdepartment from '../asset/img/DCMS_m.jpg';
+import imgflikshop from '../asset/img/Flikshop_m.jpg';
 import flikshop_d0 from '../asset/img/Flikshop_d0.png';
 import videofront from "../asset/videos/CHDMS_D.mp4";
 
@@ -108,28 +108,31 @@ export const contents = {
     DepartmentCMS: {
         "url": "DepartmentCMS",
         "img": imgdepartment,
-        "title": "Hospital Department CMS",
+        "title": "CMS for Hospital's Organizational Divisions",
         "subtitle": "Responsive Web Template Design",
-        "overview": "<p>This case study explores the process of redesigning the hospital's departmental websites using a content management system. As the sole designer in the IT department, I faced the challenge of <b>balancing departmental customization needs</b> with <b>maintaining a consistent brand identity</b>. This study details the implemented solutions and my reflections on the project, informed by my recent HCI professional training.</p>",
-        "duration": "11 months ( Dec 2019 - Oct 2020 )",
+        "overview": "<p>This case study explores the process of redesigning the hospital's departmental websites by developing a content management system. As the sole designer in the IT department, I faced the challenge of <strong>balancing departmental customization needs</strong> with <strong>maintaining a consistent brand identity</strong>. This study details the implemented solutions and my reflections on the project, informed by my recent HCI professional training.</p>",
+        "duration": "<p>11 months ( Dec 2019 - Oct 2020 )</p>",
+        "role": "<ul><li><strong>Integrated the needs of 80+ divisions.</strong></li>" +
+            "<li><strong>Executed from design to web development.</strong></li>" +
+            "<li>Made it easier to love: streamlined experience based on user feedback.</li></ul>",
         "problemstatement":
-            "<ul><li><b>Uncoordinated Development</b>: Departments have taken independent approaches to website development, leading to a mix of outsourced websites, outdated templates, and neglected content management.</li>" +
-            "<li><b>Inconsistent Branding</b>: This fragmented approach has resulted in a lack of consistent visual identity, hindering the hospital's overall brand recognition.</li>" +
-            "<li><b>Uneven Public Awareness</b>: Inconsistent departmental representation online creates an uneven experience for the public. Some departments are well-represented, while others are difficult to find or lack essential information.</li></ul>",
+            "<ul><li><strong>Uncoordinated Development</strong>: Departments have taken independent approaches to website development, leading to a mix of outsourced websites, outdated templates, and neglected content management.</li>" +
+            "<li><strong>Inconsistent Branding</strong>: This fragmented approach has resulted in a lack of consistent visual identity, hindering the hospital's overall brand recognition.</li>" +
+            "<li><strong>Uneven Public Awareness</strong>: Inconsistent departmental representation online creates an uneven experience for the public. Some departments are well-represented, while others are difficult to find or lack essential information.</li></ul>",
         "process": "",
-        "success": "<h4>Front-End Key Design Consideration &  DEMO</h4>" +
-            "<ul><li><b>User-Selectable Menu</b>: Let users choose which features they want on their website, like events, research papers, contact info, and more.</li>" +
-            "<li><b>User-Easy Department Switching</b>: A shortcut button lets you quickly switch between departments.</li>" +
-            "<li><b>Distinct Department Menu</b>: The main hospital website uses a top bar menu. To maintain a consistent brand feel while offering easier navigation, I designed a sidebar menu for this department's website.</li></ul>",
-        "change": "<h4>Early User Involvement</h4>" +
-            "<ul><li><b>Get stakeholder buy-in early</b>: Schedule meetings with key stakeholders, including the medical director, at the beginning of the project. This ensures everyone is aligned with the goals and avoids surprises later.</li>" +
-            "<li><b>Conduct user interviews and usability testing throughout the process</b>: Gather feedback from a variety of users (patients, staff, etc.) early and often. This helps identify usability issues early and ensures the final design meets user needs.</li>" +
+        "success": "<h2>Front-End Key Design Consideration &  DEMO</h2>" +
+            "<ul><li><strong>User-Selectable Menu</strong>: Let users choose which features they want on their website, like events, research papers, contact info, and more.</li>" +
+            "<li><strong>User-Easy Department Switching</strong>: A shortcut button lets you quickly switch between departments.</li>" +
+            "<li><strong>Distinct Department Menu</strong>: The main hospital website uses a top bar menu. To maintain a consistent brand feel while offering easier navigation, I designed a sidebar menu for this department's website.</li></ul>",
+        "change": "<h2>Early User Involvement</h2>" +
+            "<ul><li><strong>Get stakeholder buy-in early</strong>: Schedule meetings with key stakeholders, including the medical director, at the beginning of the project. This ensures everyone is aligned with the goals and avoids surprises later.</li>" +
+            "<li><strong>Conduct user interviews and usability testing throughout the process</strong>: Gather feedback from a variety of users (patients, staff, etc.) early and often. This helps identify usability issues early and ensures the final design meets user needs.</li>" +
             "</ul>" +
-            "<h4>Improved Communication and Documentation</h4>" +
-            "<ul><li><b>Clearly define user roles and permissions</b>: Document the different user roles (patients, doctors, etc.) and what actions each role can perform on the website. This ensures a smooth user experience for everyone.</li>" +
-            "<li><b>Create a style guide</b>: Develop a style guide that outlines the website's visual identity, including fonts, colors, and layout. This ensures consistency across all departments.</li></ul>" +
-            "<h4>Testing and Iteration</h4>" +
-            "<ul><li><b>Conduct usability testing before development</b>: Before coding begins, test your prototypes with real users to identify any usability problems. This can save time and resources in the long run.</li>" +
+            "<h2>Improved Communication and Documentation</h2>" +
+            "<ul><li><strong>Clearly define user roles and permissions</strong>: Document the different user roles (patients, doctors, etc.) and what actions each role can perform on the website. This ensures a smooth user experience for everyone.</li>" +
+            "<li><strong>Create a style guide</strong>: Develop a style guide that outlines the website's visual identity, including fonts, colors, and layout. This ensures consistency across all departments.</li></ul>" +
+            "<h2>Testing and Iteration</h2>" +
+            "<ul><li><strong>Conduct usability testing before development</strong>: Before coding begins, test your prototypes with real users to identify any usability problems. This can save time and resources in the long run.</li>" +
             "</ul>"
     },
     TheWindow: {
@@ -169,32 +172,32 @@ export const contents = {
     FlikshopLMS: {
         "url": "FlikshopLMS",
         "img": imgflikshop,
-        "title": "Flikshop LMS",
+        "title": "Flikshop Learning Management System",
         "subtitle": "Unlocking Potential: A Learning Platform for Incarcerated Individuals",
         "overview": "<p>Flikshop is a company that helps people stay connected with incarcerated loved ones. Their ultimate mission is to end recidivism and build social trust among incarcerated people. They also offer in-person bootcamps for returning citizens (Flikshop School of Business).</p>" +
-            "<p>We're partnering to create an <b>AI-powered Online Learning Management System</b>, alongside an <b>Admin Panel</b> for educators. Let's explore them in detail!</p>",
-        "duration": "9 months ( Sep 2023 - May 2024 )",
-        "teammembers": "<div className='d-inline pe-4'>Chao-Min Wu</div><div className='d-inline pe-4'>Shu-Ping Chang</div><span className='d-inline pe-4'>Xin Chen</span><span className='d-inline pe-4'>Ziyi Yuan</span><b className='d-inline pe-4 text-c-purple'>Zoe Lo</b>",
-        "role": "<div className='py-2'><h4 className='d-inline me-3'>Meeting Coordinator</h4><div className='d-inline bg-purple px-2 me-3'>Organization</div><div className='d-inline bg-purple px-2 me-3'>Time Management</div></div>" +
+            "<p>We're partnering to create an <strong>AI-powered Online Learning Management System</strong>, alongside an <strong>Admin Panel</strong> for educators. Let's explore them in detail!</p>",
+        "duration": "<p>9 months ( Sep 2023 - May 2024 )</p>",
+        "teammembers": "<div className='pb-2'><div className='d-inline pe-4'>Chao-Min Wu</div><div className='d-inline pe-4'>Shu-Ping Chang</div><span className='d-inline pe-4'>Xin Chen</span><span className='d-inline pe-4'>Ziyi Yuan</span><strong className='d-inline pe-4 text-c-purple'>Zoe Lo</strong></div>",
+        "role": "<div className='py-2'><h2 className='d-inline me-3'>Meeting Coordinator</h2><div className='d-inline bg-purple px-2 py-1 me-3'>Organization</div><div className='d-inline bg-purple px-2 py-1 me-3'>Time Management</div></div>" +
             "<ul><li>Scheduled meetings at mutually agreeable times.</li>" +
             "<li>Sent invitations and reminders to participants.</li>" +
             "<li>Ensured meetings run smoothly and on schedule.</li>" +
             "</ul>" +
-            "<div className='py-2'><h4 className='d-inline me-3'>Client Meeting Lead</h4><div className='d-inline bg-purple px-2 me-3'>Communication</div><div className='d-inline bg-purple px-2 me-3'>Presentation</div><div className='d-inline bg-purple px-2 me-3'>Meeting Facilitation</div></div>" +
+            "<div className='py-2'><h2 className='d-inline me-3'>Client Meeting Lead</h2><div className='d-inline bg-purple px-2 py-1 me-3'>Communication</div><div className='d-inline bg-purple px-2 py-1 me-3'>Presentation</div><div className='d-inline bg-purple px-2 py-1 me-3'>Meeting Facilitation</div></div>" +
             "<ul><li>Managed communication with Flikshop via Slack and emails.</li>" +
             "<li>Lead client meetings with Flikshop, ensuring clear and concise presentations of deliverables.</li>" +
             "<li>Facilitated productive discussions and addressed client questions or concerns.</li>" +
             "</ul>",
         // "part": "",
         "problemstatement": "Current LMS for incarcerated individuals lack personalization, hindering their ability to learn efficiently and achieve their goals.",
-        "goal": "Design an <b>AI-powered feature</b> within the LMS that personalizes the learning experience for incarcerated learners, maximizing their engagement and knowledge retention.",
+        "goal": "Design an <strong>AI-powered feature</strong> within the LMS that personalizes the learning experience for incarcerated learners, maximizing their engagement and knowledge retention.",
         "designfeaturesFS": "",
         "researchFS": "",
         "designprocessFS": "",
         "reflection": `<p>Our Sprint wrapped up with positive momentum! Teamwork was smooth, with clear communication with the client and a collaborative atmosphere. The team effectively utilized the Sprint methodology, and insightful interviews with AI experts and scholars complemented the four completed user testing sessions.</p>
-                        <p>While some challenges emerged, we found effective solutions. One concern was <b>potential user limitations in tech access</b>. Since our target audience may lack laptops for virtual testing, we explored <b>in-person testing</b>, which yielded positive results.
-                        Another initial hurdle involved <b>participants occasionally missing scheduled meetings</b>. To address this, we implemented <b>reminder emails sent a day and an hour before each session</b>. This proactive approach successfully eliminated further no-shows.</p>
-                        <p>The initial meeting with Flikshop CEO, Marcus, was an eye-opener. His fast-paced communication style highlighted the importance of meticulous agenda planning. From that point forward, I prioritized <b>including details like transcript requests and recording permissions to ensure a smooth and productive meeting flow</b>. When I was in the role of a meeting coordinator, I realized the importance of tailoring communication strategies to individual preferences. I learned to adapt my approach to different communication styles and preferred tools to maximize responsiveness and engagement.</p>`
+                        <p>While some challenges emerged, we found effective solutions. One concern was <strong>potential user limitations in tech access</strong>. Since our target audience may lack laptops for virtual testing, we explored <strong>in-person testing</strong>, which yielded positive results.
+                        Another initial hurdle involved <strong>participants occasionally missing scheduled meetings</strong>. To address this, we implemented <strong>reminder emails sent a day and an hour before each session</strong>. This proactive approach successfully eliminated further no-shows.</p>
+                        <p>The initial meeting with Flikshop CEO, Marcus, was an eye-opener. His fast-paced communication style highlighted the importance of meticulous agenda planning. From that point forward, I prioritized <strong>including details like transcript requests and recording permissions to ensure a smooth and productive meeting flow</strong>. When I was in the role of a meeting coordinator, I realized the importance of tailoring communication strategies to individual preferences. I learned to adapt my approach to different communication styles and preferred tools to maximize responsiveness and engagement.</p>`
 
     }
 

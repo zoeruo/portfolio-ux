@@ -18,12 +18,11 @@ const TimelineCard = ({ activity, details, notlast, img }) => {
         return (
             <TimelineItem>
                 <TimelineSeparator>
-                    <TimelineDot variant="outlined" >
-                        {/* <img src={Star} /> */}
+                    <TimelineDot variant="outlined">
                     </TimelineDot>
                 </TimelineSeparator>
-                <TimelineContent>
-                    <h4>{activity}</h4>
+                <TimelineContent className="pb-4">
+                    <div className="text-P-blue"><strong>{activity}</strong></div>
                     <React.Fragment>{parse(details)}</React.Fragment>
                     <div className="">
                         <img src={img} className="img-fluid" />
@@ -36,17 +35,17 @@ const TimelineCard = ({ activity, details, notlast, img }) => {
             <TimelineItem>
                 <TimelineSeparator>
                     <TimelineDot variant="outlined" >
-                        {/* <img src={Star} /> */}
                     </TimelineDot>
                     <TimelineConnector />
                 </TimelineSeparator>
-                <TimelineContent>
-                    <h4>{activity}</h4>
+                <TimelineContent className="pb-4">
+                    <div className="text-P-blue"><strong>{activity}</strong></div>
                     <React.Fragment>{parse(details)}</React.Fragment>
-
-                    <div className="">
-                        <img src={img} className="img-fluid" />
-                    </div>
+                    {img && (
+                        <div className="">
+                            <img src={img} className="img-fluid" />
+                        </div>
+                    )}
                 </TimelineContent>
             </TimelineItem>
         );

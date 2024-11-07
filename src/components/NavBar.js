@@ -16,9 +16,9 @@ export const NavBar = () => {
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                             <Nav className="me-auto ms-auto nav-main bg-P-light">
-                                <Nav.Link to="/" className="nav-link font-title text-P-darkblue">ABOUT</Nav.Link>
-                                <Nav.Link to="/#Project" className="nav-link font-title text-P-darkblue">WORK</Nav.Link>
-                                <a href="/#Playground" className="nav-link font-title text-P-darkblue">CONTACT</a>
+                                <Nav.Link href="/About" className="nav-link font-title text-P-darkblue">ABOUT</Nav.Link>
+                                <Nav.Link href="/" className="nav-link font-title text-P-darkblue">WORK</Nav.Link>
+                                <Nav.Link href="/Contact" className="nav-link font-title text-P-darkblue">CONTACT</Nav.Link>
                             </Nav>
                         </Offcanvas.Body>
                     </Navbar.Offcanvas>

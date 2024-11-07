@@ -60,35 +60,41 @@ function ProjectDetail(props) {
     return (
         <div className="bg-theme">
             <div className="bg-white">
-                <Container>
-                    <Row className="py-3 py-md-0">
+                <img src={content.img} className="img-fluid" alt="Banner img" />
+                {/* <Container>
+                    <Row className="py-3 py-md-5">
                         <Col xs={12} md={5} className="my-auto">
-                            <h1 className="display">{content.title}</h1>
-                            <h2 className="shortdesc">{content.subtitle}</h2>
+                            <h1 className="font-display2">{content.title}</h1>
+                            <h2 className="font-display-sub">{content.subtitle}</h2>
                         </Col>
                         <Col xs={12} md={7} className="py-3">
                             <img src={content.img} className="img-fluid" alt="Banner img" />
                         </Col>
                     </Row>
-                </Container>
+                </Container> */}
             </div>
             {/* <AnimatedCursor /> */}
             {/* BASIC INFO */}
             <div className="bg-theme">
                 <Container className="custom-container">
+                    <Row className="py-c pb-0">
+                        <Col xs={12} className="text-center">
+                            <h1 className="font-display2">{content.title}</h1>
+                        </Col>
+                    </Row>
                     <Row className="py-c">
                         <Col xs={12} className="py-3">
-                            <h3>Overview</h3>
+                            <h1>Overview</h1>
                             <React.Fragment>{parse(content.overview)}</React.Fragment>
                         </Col>
                         <Col xs={12} className="py-3">
-                            <h3>Duration</h3>
+                            <h1>Duration</h1>
                             <React.Fragment>{parse(content.duration)}</React.Fragment>
                         </Col>
                         {content.hasOwnProperty('teammembers') &&
                             <>
                                 <Col xs={12} className="py-3">
-                                    <h3>Team Members</h3>
+                                    <h1>Team Members</h1>
                                     <React.Fragment>{parse(content.teammembers)}</React.Fragment>
                                 </Col>
                             </>
@@ -96,7 +102,7 @@ function ProjectDetail(props) {
                         {content.hasOwnProperty('role') &&
                             <>
                                 <Col xs={12} className="py-3">
-                                    <h3>Key Achievements in My Roles</h3>
+                                    <h1>Key Achievements in My Roles</h1>
                                     <React.Fragment>{parse(content.role)}</React.Fragment>
                                 </Col>
                             </>
@@ -104,7 +110,7 @@ function ProjectDetail(props) {
                     </Row>
                 </Container>
             </div>
-            {/* PROBLEM */}
+            {/* Challenge */}
             <div className="bg-white">
                 <Container className="custom-container">
                     {content.hasOwnProperty('part') &&
@@ -119,13 +125,13 @@ function ProjectDetail(props) {
                     {content.hasOwnProperty('problemstatement') &&
                         <><Row className="py-c">
                             <Col xs={12} className="py-3">
-                                <h3>What was the PROBLEM?</h3>
+                                <h1>Challenge</h1>
                                 <React.Fragment>{parse(content.problemstatement)}</React.Fragment>
                             </Col>
                             {content.hasOwnProperty('goal') &&
                                 <>
                                     <Col xs={12} className="py-3">
-                                        <h3>What about the GOAL?</h3>
+                                        <h1>What about the GOAL?</h1>
                                         <React.Fragment>{parse(content.goal)}</React.Fragment>
                                     </Col>
                                 </>
@@ -144,8 +150,8 @@ function ProjectDetail(props) {
                         <>
                             <Row className="py-c">
                                 <Col xs={12} className="py-3">
-                                    <h3>Design Features Highlight</h3>
-                                    <h4>01 : Simplify the process with example content and customizable templates</h4>
+                                    <h1>Design Features Highlight</h1>
+                                    <h2>01 : Simplify the process with example content and customizable templates</h2>
                                     <img src={flikshop_d0} className='img-fluid pb-2' alt='' />
                                     <img src={flikshop_d1} className='img-fluid pb-2' alt='' />
                                     <div className="bg-white py-1 px-2 d-flex">
@@ -154,7 +160,7 @@ function ProjectDetail(props) {
                                     </div>
                                 </Col>
                                 <Col xs={12} className="py-3">
-                                    <h4>02 : Minimizing Interface and Forms for Focused Completion.</h4>
+                                    <h2>02 : Minimizing Interface and Forms for Focused Completion.</h2>
                                     <img src={flikshop_d2} className='img-fluid pb-2' alt='' />
                                     <img src={flikshop_d3} className='img-fluid pb-2' alt='' />
                                     <div className="bg-white py-1 px-2 d-flex">
@@ -163,7 +169,7 @@ function ProjectDetail(props) {
                                     </div>
                                 </Col>
                                 <Col xs={12} className="py-3">
-                                    <h4>03: AI-Powered Assistance from free-flowing writing to focused skill suggestions. </h4>
+                                    <h2>03: AI-Powered Assistance from free-flowing writing to focused skill suggestions. </h2>
                                     <img src={flikshop_d4} className='img-fluid pb-2' alt='' />
                                     <img src={flikshop_d5} className='img-fluid pb-2' alt='' />
                                     <div className="bg-white py-1 px-2 d-flex">
@@ -185,20 +191,20 @@ function ProjectDetail(props) {
                         <>
                             <Row className="py-c">
                                 <Col xs={12} className="py-3">
-                                    <h3>Resrach + Discovery ( What drove me to the DESIGN DECISIONS?)</h3>
-                                    <p>To inform this project, we employed a comprehensive research approach, including <b>field research</b>, <b>desktop research</b>, <b>user interviews</b>, and <b>consultations with AI experts</b>.</p>
-                                    <h4>Target Population</h4>
+                                    <h1>Resrach + Discovery ( What drove me to the DESIGN DECISIONS?)</h1>
+                                    <p>To inform this project, we employed a comprehensive research approach, including <strong>field research</strong>, <strong>desktop research</strong>, <strong>user interviews</strong>, and <strong>consultations with AI experts</strong>.</p>
+                                    <h2>Target Population</h2>
                                     <p>Incarcerated individuals using tablets as a learning tool in facilities.</p>
                                 </Col>
                                 <Col xs={12} className="py-3">
-                                    <h4>Field Research: Meeting returning citizens in person</h4>
+                                    <h2>Field Research: Meeting returning citizens in person</h2>
                                     <div className="div-FS-research">
-                                        <h4>Goal</h4>
+                                        <h2>Goal</h2>
                                         <ul>
                                             <li>Access Flikshop School of Business's program to inform LMS development for incarcerated reintegration.</li>
                                         </ul>
 
-                                        <h4>Insights</h4>
+                                        <h2>Insights</h2>
                                         <ul>
                                             <li>LMS deployment: Pre-installation on tablets provided by Flikshop in collaboration with manufacturers and facilities. Challenges include government approval and facility environment constraints.</li>
                                             <li>Scholars (Returning Citizens): Motivated by learning tech skills.</li>
@@ -212,15 +218,15 @@ function ProjectDetail(props) {
                                     </div>
                                 </Col>
                                 <Col xs={12} className="py-3">
-                                    <h4>User Interview</h4>
+                                    <h2>User Interview</h2>
                                     <p>To gain a deeper understanding of the challenges  incarcerated people face, we conducted interviews with 4 formerly incarcerated people.  Since none of us had firsthand experience, these interviews were crucial in identifying important considerations for our design.</p>
                                     <div className="div-FS-research">
-                                        <h4>Goal</h4>
+                                        <h2>Goal</h2>
                                         <ul className="">
                                             <li>Explore learning experiences, resources, and career preparation experiences in correctional facilities.</li>
                                         </ul>
                                         <img src={FSr_1} className="img-fluid pb-4"></img>
-                                        <h4>Insights</h4>
+                                        <h2>Insights</h2>
                                         <ul>
                                             <li>Federal prisons offer a range of in-person learning opportunities, but experiences can differ.</li>
                                             <li>Data collection within correctional facilities raises privacy and censorship issues.</li>
@@ -234,15 +240,15 @@ function ProjectDetail(props) {
                                     </div>
                                 </Col>
                                 <Col xs={12} className="py-3">
-                                    <h4>AI Expert Interview</h4>
+                                    <h2>AI Expert Interview</h2>
                                     <p>To optimize our AI integration within the LMS system, we conducted AI Expert interviews to understand the potential benefits and drawbacks of AI in the LMS system.</p>
                                     <div className="div-FS-research">
-                                        <h4>Goal</h4>
+                                        <h2>Goal</h2>
                                         <ul className="">
                                             <li>Identify opportunities for AI-powered LMS to address the challenges faced by learners in correctional facilities, despite the inherent difficulties of implementing such technology in this environment.</li>
                                         </ul>
                                         <img src={FSr_3} className="img-fluid pb-4"></img>
-                                        <h4>Insights</h4>
+                                        <h2>Insights</h2>
                                         <ul>
                                             <li>High user engagement is essential for a successful LMS within correctional facilities.</li>
                                             <li>The LMS should be accessible to all users, including those with visual impairments, by offering multiple languages, clear and concise language options, and other accessibility features.</li>
@@ -268,8 +274,8 @@ function ProjectDetail(props) {
                         <>
                             <Row className="py-c">
                                 <Col xs={12} className="py-3">
-                                    <h3>Design Process</h3>
-                                    <p>We used a <b>design sprint</b> to tackle this challenge!</p>
+                                    <h1>Design Process</h1>
+                                    <p>We used a <strong>design sprint</strong> to tackle this challenge!</p>
                                 </Col>
                                 <Col xs={12} className="py-3">
                                     <div className="div-FS-designprocess">
@@ -324,20 +330,20 @@ function ProjectDetail(props) {
                                             </Col>
                                             <Col xs={12} md={9}>
                                                 <p>Conducted 4 in-person, moderated testing with previously incarcerated people from federal prisons. Each lasted for around 1 hour. </p>
-                                                <h4>What were we trying to know?</h4>
+                                                <h2>What were we trying to know?</h2>
                                                 <ul>
                                                     <li>Assessed the usability of the interface and how easy it is for incarcerated learners to enter information.</li>
                                                     <li>Evaluated the overall user experience and how smoothly users can complete tasks within the system.</li>
                                                     <li>Gathered insights into the user behaviors of incarcerated learners as they interact with the platform</li>
                                                 </ul>
-                                                <h4>Results</h4>
+                                                <h2>Results</h2>
                                                 <p>User testing revealed promising results. Testers found the experience design and app flows to be clean and intuitive, making it suitable for use within correctional facilities. Additionally, users praised the AI features and interaction, highlighting their usefulness in resume creation and interview practice.</p>
-                                                <h4>What valuable insights did we uncover?</h4>
+                                                <h2>What valuable insights did we uncover?</h2>
                                                 <ul>
-                                                    <li><b>Offer in-app tutorials</b>: Provide clear and concise instructions on using the app and creating effective resumes.</li>
-                                                    <li><b>Capture life experiences</b>: Allow users to integrate valuable life and situational experiences into their resumes.</li>
-                                                    <li><b>Flexible education section</b>: Make the "Education" section optional to accommodate users with non-traditional academic backgrounds.</li>
-                                                    <li><b>Diverse prompts</b>: Offer a wider variety of prompts to guide users in crafting their resumes and exploring potential career paths.</li>
+                                                    <li><strong>Offer in-app tutorials</strong>: Provide clear and concise instructions on using the app and creating effective resumes.</li>
+                                                    <li><strong>Capture life experiences</strong>: Allow users to integrate valuable life and situational experiences into their resumes.</li>
+                                                    <li><strong>Flexible education section</strong>: Make the "Education" section optional to accommodate users with non-traditional academic backgrounds.</li>
+                                                    <li><strong>Diverse prompts</strong>: Offer a wider variety of prompts to guide users in crafting their resumes and exploring potential career paths.</li>
                                                 </ul>
                                                 <div className="bg-white py-1 px-2 d-flex mb-4">
                                                     <div class="me-2 my-auto"><img src={lightbulb} className='pb-2 lightbulb' alt='' /></div>
@@ -361,7 +367,7 @@ function ProjectDetail(props) {
                         <>
                             <Row className="py-c">
                                 <Col xs={12} className="py-3">
-                                    <h3>What about the PROCESS?</h3>
+                                    <h1>Proccess</h1>
                                     <MyTimeline />
                                 </Col>
                             </Row>
@@ -375,7 +381,7 @@ function ProjectDetail(props) {
                     {content.hasOwnProperty('success') &&
                         <><Row className="py-c">
                             <Col xs={12} className="pt-4">
-                                <h3>What was the SUCCESS?</h3>
+                                <h1>Success</h1>
                             </Col>
                             <Col xs={12} className="pt-2">
                                 <React.Fragment>{parse(content.success)}</React.Fragment>
@@ -385,10 +391,10 @@ function ProjectDetail(props) {
 
                             </Col>
                             <Col xs={12} className="pt-4">
-                                <h4>Back-End Key Design Consideration &  DEMO</h4>
-                                <ul><li><b>Show all important info at once</b>: Use tables with rows to make editing information clear.</li>
-                                    <li><b>Keep it simple</b>: Remove distractions and use clear icons with text.</li>
-                                    <li><b>Give users flexibility</b>: Provide a text editor for detailed editing.</li></ul>
+                                <h2>Back-End Key Design Consideration &  DEMO</h2>
+                                <ul><li><strong>Show all important info at once</strong>: Use tables with rows to make editing information clear.</li>
+                                    <li><strong>Keep it simple</strong>: Remove distractions and use clear icons with text.</li>
+                                    <li><strong>Give users flexibility</strong>: Provide a text editor for detailed editing.</li></ul>
                                 <video className='w-100' autoPlay loop muted>
                                     <source src={videoback} type='video/mp4' allowFullScreen />
                                 </video>
@@ -405,7 +411,7 @@ function ProjectDetail(props) {
                         <>
                             <Row className="py-c">
                                 <Col xs={12} className="pt-4">
-                                    <h3>What would I have done DIFFERENTLY?</h3>
+                                    <h1>What would I have done DIFFERENTLY?</h1>
                                 </Col><Col xs={12} className="pt-2">
                                     <React.Fragment>{parse(content.change)}</React.Fragment>
                                 </Col>
@@ -420,7 +426,7 @@ function ProjectDetail(props) {
                 {content.hasOwnProperty('colortheme') &&
                     <><Row className="py-c">
                         <Col xs={12} className="pt-4">
-                            <h3>Color Theme</h3>
+                            <h1>Color Theme</h1>
                         </Col>
                         <Col xs={12} className="pt-2">
                             <React.Fragment>{parse(content.colortheme)}</React.Fragment>
@@ -430,7 +436,7 @@ function ProjectDetail(props) {
                 {content.hasOwnProperty('creatingprocess') &&
                     <><Row className="py-c">
                         <Col xs={12} className="pt-4">
-                            <h3>Creating Process</h3>
+                            <h1>Creating Process</h1>
                         </Col><Col xs={12} className="pt-2">
                             <React.Fragment>{parse(content.creatingprocess.txt)}</React.Fragment>
                             {content.creatingprocess.img.map(item => (
@@ -446,7 +452,7 @@ function ProjectDetail(props) {
                 {content.hasOwnProperty('youtube') &&
                     <><Row className="py-c">
                         <Col xs={12} className="pt-4">
-                            <h3>Documentation Video</h3>
+                            <h1>Documentation Video</h1>
                         </Col><Col xs={12} className="pt-2">
                             <Youtube videoID={content.youtube} />
                         </Col>
@@ -457,7 +463,7 @@ function ProjectDetail(props) {
                 {content.hasOwnProperty('requirements') &&
                     <><Row className="py-c">
                         <Col xs={12} className="pt-4">
-                            <h3>Requirements</h3>
+                            <h1>Requirements</h1>
                         </Col><Col xs={12} className="pt-2">
                             <React.Fragment>{parse(content.requirements)}</React.Fragment>
                         </Col>
@@ -466,7 +472,7 @@ function ProjectDetail(props) {
                 {content.hasOwnProperty('persona') &&
                     <><Row className="py-c">
                         <Col xs={12} className="pt-4">
-                            <h3>Personas</h3>
+                            <h1>Personas</h1>
                         </Col>
                         <Col xs={12} className="pt-2">
                             {content.persona.map(item => (
@@ -480,7 +486,7 @@ function ProjectDetail(props) {
                 {content.hasOwnProperty('storyboards') &&
                     <><Row className="py-c">
                         <Col xs={12} className="pt-4">
-                            <h3>Storyboards</h3>
+                            <h1>Storyboards</h1>
                         </Col>
                         <Col xs={12} className="pt-2">
                             <img src={content.storyboards} className="img-fluid mb-2 zoom" alt="" onClick={handleShow} />
@@ -490,7 +496,7 @@ function ProjectDetail(props) {
                 {content.hasOwnProperty('IA') &&
                     <><Row className="py-c">
                         <Col xs={12} className="pt-4">
-                            <h3>Information Architecture</h3>
+                            <h1>Information Architecture</h1>
                         </Col>
                         <Col xs={12} className="pt-2">
                             <div className="text-center">
@@ -502,7 +508,7 @@ function ProjectDetail(props) {
                 {content.hasOwnProperty('lowfidelity') &&
                     <><Row className="py-c">
                         <Col xs={12} className="pt-4">
-                            <h3>Low-Fidelity Prototypes</h3>
+                            <h1>Low-Fidelity Prototypes</h1>
                         </Col>
                         <Col xs={12} className="pt-2 text-center">
                             {content.lowfidelity.map((item, index) => (
@@ -528,7 +534,7 @@ function ProjectDetail(props) {
                 {content.hasOwnProperty('wireframe') &&
                     <><Row className="py-c">
                         <Col xs={12} className="pt-4">
-                            <h3>Wireframes</h3>
+                            <h1>Wireframes</h1>
                         </Col>
                         <Col xs={12} className="pt-2">
                             {content.wireframe.map(item => (
@@ -543,7 +549,7 @@ function ProjectDetail(props) {
                 {content.hasOwnProperty('components') &&
                     <><Row className="py-c">
                         <Col xs={12} className="pt-4">
-                            <h3>Components</h3>
+                            <h1>Components</h1>
                         </Col>
                         <Col xs={12} className="pt-4">
                             <p>{content.components.txt}</p>
@@ -556,7 +562,7 @@ function ProjectDetail(props) {
                 {content.hasOwnProperty('highfidelity') &&
                     <><Row className="py-c">
                         <Col xs={12} className="pt-4">
-                            <h3>High-Fidelity Prototypes</h3>
+                            <h1>High-Fidelity Prototypes</h1>
                         </Col>
                         <Col xs={12} className="pt-2">
                             <Carousel className="mx-auto" id="C_highfidelity" data-bs-theme="dark" slide={false} indicators={false} interval={5000}>
@@ -580,7 +586,7 @@ function ProjectDetail(props) {
                 {content.hasOwnProperty('development') &&
                     <><Row className="py-c">
                         <Col xs={12} className="pt-4">
-                            <h3>Development</h3>
+                            <h1>Development</h1>
                         </Col>
                         <Col xs={12} className="pt-2">
                             <p><React.Fragment>{parse(content.development)}</React.Fragment></p>
@@ -590,7 +596,7 @@ function ProjectDetail(props) {
                 {content.hasOwnProperty('achievement') &&
                     <><Row className="py-c">
                         <Col xs={12} className="pt-4">
-                            <h3>Achievements</h3>
+                            <h1>Achievements</h1>
                         </Col><Col xs={12} className="pt-2">
                             <React.Fragment>{parse(content.achievement)}</React.Fragment>
                         </Col>
@@ -619,7 +625,7 @@ function ProjectDetail(props) {
                     {content.hasOwnProperty('reflection') &&
                         <><Row className="py-c">
                             <Col xs={12} className="pt-4">
-                                <h3>Challenges + Reflection</h3>
+                                <h1>Challenges + Reflection</h1>
                             </Col>
                             <Col xs={12} className="pt-2">
                                 <p><React.Fragment>{parse(content.reflection)}</React.Fragment></p>
@@ -637,16 +643,8 @@ function ProjectDetail(props) {
                 <Modal.Body className="text-center"><img src={imgSrc} className="img-fluid" alt="" onClick={handleShow} /></Modal.Body>
             </Modal>
         </div>
-
-
-
-
-
     );
-
     const carousel = new Carousel('#C_highfidelity')
-
-
 }
 
 
