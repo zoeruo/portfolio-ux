@@ -82,7 +82,12 @@ h2 {
 }
 
 #Contact {
-  height: calc(100vh - 164.8px);
+  height: calc(100vh - 188.8px);
+}
+
+#footer{
+  padding-top:28px;
+  padding-bottom:28px;
 }
 
 
@@ -101,11 +106,12 @@ h2 {
 .nav-main .nav-link {
   padding: 5px 0 !important;
   border-bottom: solid 2px var(--bs-P-light);
-
 }
 
-.nav-main .nav-link:hover {
-  border-bottom: solid 2px var(--bs-P-darkblue);
+@media (min-width: 768px) {
+  .nav-main .nav-link:hover {
+    border-bottom: solid 2px var(--bs-P-darkblue);
+  }
 }
 
 .banner-img-container {

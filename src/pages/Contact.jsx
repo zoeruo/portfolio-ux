@@ -1,3 +1,4 @@
+import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 
 function Contact() {
@@ -21,7 +22,7 @@ function Contact() {
                         </Col>
                         <Col md={4} className="text-center">
                             <h1>LinkedIn</h1>
-                            <a href="https://www.linkedin.com/in/chiajoulo/" className="text-P-blue">Go to LinkedIn profile</a>
+                            <a href="https://www.linkedin.com/in/chiajoulo/" className="text-P-blue" target="_blank">Go to LinkedIn profile</a>
                         </Col>
                         <Col md={1}></Col>
                     </Row>

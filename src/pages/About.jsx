@@ -1,5 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Myimg from '../asset/img/AboutMe.JPG';
+import bpiano from '../asset/img/pianoing.png';
 import { Playground } from '../components/Playground';
 
 function About() {
@@ -7,8 +8,8 @@ function About() {
     <>
       <section className="bg-theme">
         <Container>
-          <Row>
-            <Col xs={12} md={4}>
+          <Row className="mb-5">
+            <Col xs={12} md={4} className="mb-4 mb-md-0">
               <img id="Myimg" src={Myimg} className="img-fluid" alt="img AboutMe" />
             </Col>
             <Col xs={12} md={8} className="my-auto">
@@ -24,11 +25,19 @@ function About() {
             </Col>
           </Row>
           <Row>
-
+            <Col xs={12} md={8} className="my-auto">
+              <h1 className="mb-4">Outside of Work, you can find me:</h1>
+              <p>Playing the piano in a hotel lobby 🎹<br />
+                Exploring new places with my camera 🎥<br />
+                Trying out and cooking new dishes 🍲</p>
+            </Col>
+            <Col xs={12} md={4} className="">
+              <img id="BannerImg" src={bpiano} className="img-fluid" alt="Banner img" />
+            </Col>
           </Row>
         </Container>
       </section>
-      <Playground/>
+      <Playground />
     </>
 
   );

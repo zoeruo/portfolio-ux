@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, HashRouter, Routes, Route } from "react-router-dom";
 import AnimatedCursor from "react-animated-cursor"
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
@@ -16,7 +16,8 @@ import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
-    <BrowserRouter>
+    // <BrowserRouter>
+    <>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -25,11 +26,12 @@ function App() {
           {/* <Route path="RedFlagsOut" element={<RedFlagsOut />} /> */}
           <Route path="ProjectDetail/:title" element={<ProjectDetail />} />
           {/* <Route path="*" element={<NoPage />} /> */}
-          <Route path="asset/Resume.pdf"/>
+          <Route path="asset/Resume.pdf" />
         </Route>
       </Routes>
       <ScrollToTop />
-    </BrowserRouter>
+    </>
+    // </BrowserRouter>
   );
 }
 
