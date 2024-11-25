@@ -155,7 +155,7 @@ function ProjectDetail(props) {
                                     <img src={flikshop_d0} className='img-fluid pb-2' alt='' />
                                     <img src={flikshop_d1} className='img-fluid pb-2' alt='' />
                                     <div className="bg-white py-1 px-2 d-flex">
-                                        <div class="me-2 my-auto"><img src={lightbulb} className='pb-2 lightbulb' alt='' /></div>
+                                        <div className="me-2 my-auto"><img src={lightbulb} className='pb-2 lightbulb' alt='' /></div>
                                         <div>Boost engagement and reduce user anxiety by guiding them through the initial steps effortlessly.</div>
                                     </div>
                                 </Col>
@@ -164,7 +164,7 @@ function ProjectDetail(props) {
                                     <img src={flikshop_d2} className='img-fluid pb-2' alt='' />
                                     <img src={flikshop_d3} className='img-fluid pb-2' alt='' />
                                     <div className="bg-white py-1 px-2 d-flex">
-                                        <div class="me-2 my-auto"><img src={lightbulb} className='pb-2 lightbulb' alt='' /></div>
+                                        <div className="me-2 my-auto"><img src={lightbulb} className='pb-2 lightbulb' alt='' /></div>
                                         <div>Reduce user stress.</div>
                                     </div>
                                 </Col>
@@ -173,7 +173,7 @@ function ProjectDetail(props) {
                                     <img src={flikshop_d4} className='img-fluid pb-2' alt='' />
                                     <img src={flikshop_d5} className='img-fluid pb-2' alt='' />
                                     <div className="bg-white py-1 px-2 d-flex">
-                                        <div class="me-2 my-auto"><img src={lightbulb} className='pb-2 lightbulb' alt='' /></div>
+                                        <div className="me-2 my-auto"><img src={lightbulb} className='pb-2 lightbulb' alt='' /></div>
                                         <div>Empower users with a personalized resume builder, providing them with support and guidance throughout the process.</div>
                                     </div>
                                 </Col>
@@ -210,7 +210,7 @@ function ProjectDetail(props) {
                                             <li>Scholars (Returning Citizens): Motivated by learning tech skills.</li>
                                         </ul>
                                         <div className="bg-theme py-1 px-2 d-flex mb-4">
-                                            <div class="me-2 my-auto"><img src={lightbulb} className='pb-2 lightbulb' alt='' /></div>
+                                            <div className="me-2 my-auto"><img src={lightbulb} className='pb-2 lightbulb' alt='' /></div>
                                             <div>See ChatGPT as a ‘personal tutor’</div>
                                         </div>
 
@@ -233,7 +233,7 @@ function ProjectDetail(props) {
                                             <li>Frustration with digital tools in prisons can hinder learning effectiveness.</li>
                                         </ul>
                                         <div className="bg-theme py-1 px-2 d-flex mb-4">
-                                            <div class="me-2 my-auto"><img src={lightbulb} className='pb-2 lightbulb' alt='' /></div>
+                                            <div className="me-2 my-auto"><img src={lightbulb} className='pb-2 lightbulb' alt='' /></div>
                                             <div>How can we mitigate the frustration or anxiety?</div>
                                         </div>
                                         <img src={FSr_2} className="img-fluid"></img>
@@ -255,12 +255,11 @@ function ProjectDetail(props) {
                                             <li>The LMS can be a tool to demonstrate and celebrate personal growth and learning, potentially fostering a sense of accomplishment and rebuilding trust.</li>
                                         </ul>
                                         <div className="bg-theme py-1 px-2 d-flex mb-4">
-                                            <div class="me-2 my-auto"><img src={lightbulb} className='pb-2 lightbulb' alt='' /></div>
+                                            <div className="me-2 my-auto"><img src={lightbulb} className='pb-2 lightbulb' alt='' /></div>
                                             <div>How can we ensure the LMS is accessible to all learners?</div>
                                         </div>
                                     </div>
                                 </Col>
-
                             </Row>
                         </>
                     }
@@ -282,17 +281,17 @@ function ProjectDetail(props) {
                                         {/* <SwitchingPanel/> */}
                                         <Row>
                                             <Col xs={12} md={3}>
-                                                <div class="bg-white px-2 py-1 rounded">Mapping</div>
-                                                <div class="px-2 py-1">Sketch</div>
-                                                <div class="px-2 py-1">Decide</div>
-                                                <div class="px-2 py-1">Prototype</div>
-                                                <div class="px-2 py-1">Testing</div>
+                                                <div className="bg-white px-2 py-1 rounded">Mapping</div>
+                                                <div className="px-2 py-1">Sketch</div>
+                                                <div className="px-2 py-1">Decide</div>
+                                                <div className="px-2 py-1">Prototype</div>
+                                                <div className="px-2 py-1">Testing</div>
                                             </Col>
                                             <Col xs={12} md={9}>
                                                 <img src={FSdp_0} className="img-fluid pb-4"></img>
                                                 <p>By mapping out how students typically use the LMS and meeting with Flikshop, we identified their main focus: to prepare students for job opportunities when they are released. Next, we brainstormed, organized, and voted on the ‘How Might We’ notes. We identified a key question:</p>
                                                 <div className="bg-white py-1 px-2 d-flex mb-4">
-                                                    <div class="me-2 my-auto"><img src={lightbulb} className='pb-2 lightbulb' alt='' /></div>
+                                                    <div className="me-2 my-auto"><img src={lightbulb} className='pb-2 lightbulb' alt='' /></div>
                                                     <div>‘How might we use AI to tell a correctional journey (Form of a Resume/ Cover Letter/ Parole Pack/ Skills) and prepare them for job opportunities?’</div>
                                                 </div>
                                             </Col>
@@ -303,11 +302,11 @@ function ProjectDetail(props) {
                                     <div className='div-FS-designprocess'>
                                         <Row>
                                             <Col xs={12} md={3}>
-                                                <div class="px-2 py-1">Mapping</div>
-                                                <div class="bg-white px-2 py-1 rounded">Sketch</div>
-                                                <div class="bg-white px-2 py-1 rounded">Decide</div>
-                                                <div class="px-2 py-1">Prototype</div>
-                                                <div class="px-2 py-1">Testing</div>
+                                                <div className="px-2 py-1">Mapping</div>
+                                                <div className="bg-white px-2 py-1 rounded">Sketch</div>
+                                                <div className="bg-white px-2 py-1 rounded">Decide</div>
+                                                <div className="px-2 py-1">Prototype</div>
+                                                <div className="px-2 py-1">Testing</div>
                                             </Col>
                                             <Col xs={12} md={9}>
                                                 <img src={FSdp_1} className="img-fluid pb-4" />
@@ -322,11 +321,11 @@ function ProjectDetail(props) {
                                     <div className='div-FS-designprocess'>
                                         <Row>
                                             <Col xs={12} md={3}>
-                                                <div class="px-2 py-1">Mapping</div>
-                                                <div class="px-2 py-1">Sketch</div>
-                                                <div class="px-2 py-1 ">Decide</div>
-                                                <div class="px-2 py-1">Prototype</div>
-                                                <div class="bg-white px-2 py-1 rounded">Testing</div>
+                                                <div className="px-2 py-1">Mapping</div>
+                                                <div className="px-2 py-1">Sketch</div>
+                                                <div className="px-2 py-1 ">Decide</div>
+                                                <div className="px-2 py-1">Prototype</div>
+                                                <div className="bg-white px-2 py-1 rounded">Testing</div>
                                             </Col>
                                             <Col xs={12} md={9}>
                                                 <p>Conducted 4 in-person, moderated testing with previously incarcerated people from federal prisons. Each lasted for around 1 hour. </p>
@@ -346,7 +345,7 @@ function ProjectDetail(props) {
                                                     <li><strong>Diverse prompts</strong>: Offer a wider variety of prompts to guide users in crafting their resumes and exploring potential career paths.</li>
                                                 </ul>
                                                 <div className="bg-white py-1 px-2 d-flex mb-4">
-                                                    <div class="me-2 my-auto"><img src={lightbulb} className='pb-2 lightbulb' alt='' /></div>
+                                                    <div className="me-2 my-auto"><img src={lightbulb} className='pb-2 lightbulb' alt='' /></div>
                                                     <div>Incarcerated individuals have diverse experiences, and many may lack formal education or traditional work backgrounds.</div>
                                                 </div>
                                             </Col>
@@ -628,7 +627,7 @@ function ProjectDetail(props) {
                                 <h1>Challenges + Reflection</h1>
                             </Col>
                             <Col xs={12} className="pt-2">
-                                <p><React.Fragment>{parse(content.reflection)}</React.Fragment></p>
+                                <React.Fragment>{parse(content.reflection)}</React.Fragment>
                             </Col>
                         </Row></>
                     }

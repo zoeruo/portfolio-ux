@@ -178,12 +178,12 @@ export const contents = {
             "<p>We're partnering to create an <strong>AI-powered Online Learning Management System</strong>, alongside an <strong>Admin Panel</strong> for educators. Let's explore them in detail!</p>",
         "duration": "<p>9 months ( Sep 2023 - May 2024 )</p>",
         "teammembers": "<div className='pb-2'><div className='d-inline pe-4'>Chao-Min Wu</div><div className='d-inline pe-4'>Shu-Ping Chang</div><span className='d-inline pe-4'>Xin Chen</span><span className='d-inline pe-4'>Ziyi Yuan</span><strong className='d-inline pe-4 text-c-purple'>Zoe Lo</strong></div>",
-        "role": "<div className='py-2'><h2 className='d-inline me-3'>Meeting Coordinator</h2><div className='d-inline bg-purple px-2 py-1 me-3'>Organization</div><div className='d-inline bg-purple px-2 py-1 me-3'>Time Management</div></div>" +
+        "role": "<div className='py-2 d-md-flex'><h2 className='me-3 my-auto mb-2'>Meeting Coordinator</h2><div class='d-flex'><div className='bg-purple px-2 py-1 me-3'>Organization</div><div className='bg-purple px-2 py-1 me-3'>Time Management</div></div></div>" +
             "<ul><li>Scheduled meetings at mutually agreeable times.</li>" +
             "<li>Sent invitations and reminders to participants.</li>" +
             "<li>Ensured meetings run smoothly and on schedule.</li>" +
             "</ul>" +
-            "<div className='py-2'><h2 className='d-inline me-3'>Client Meeting Lead</h2><div className='d-inline bg-purple px-2 py-1 me-3'>Communication</div><div className='d-inline bg-purple px-2 py-1 me-3'>Presentation</div><div className='d-inline bg-purple px-2 py-1 me-3'>Meeting Facilitation</div></div>" +
+            "<div className='py-2 d-md-flex'><h2 className='me-3 my-auto mb-2'>Client Meeting Lead</h2><div className='bg-purple px-2 py-1 me-3 d-inline-block'>Communication</div><div className='bg-purple px-2 py-1 me-3 d-inline-block mb-2'>Presentation</div><div className='bg-purple px-2 py-1 me-3 d-inline-block'>Meeting Facilitation</div></div>" +
             "<ul><li>Managed communication with Flikshop via Slack and emails.</li>" +
             "<li>Lead client meetings with Flikshop, ensuring clear and concise presentations of deliverables.</li>" +
             "<li>Facilitated productive discussions and addressed client questions or concerns.</li>" +

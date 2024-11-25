@@ -13,12 +13,12 @@ function Contact() {
                     </Row>
                     <Row className="py-5">
                         <Col md={1}></Col>
-                        <Col md={4} className="text-center">
+                        <Col md={4} className="text-center mb-4">
                             <h1>Email</h1>
                             <a href="mailto:zoeruo.lo@gmail.com" className="text-P-blue" target="_blank">zoeruo.lo@gmail.com</a>
                         </Col>
                         <Col md={2} className="text-center my-auto">
-                            <div className="font-display2">or</div>
+                            <div className="font-display2 mb-4">or</div>
                         </Col>
                         <Col md={4} className="text-center">
                             <h1>LinkedIn</h1>

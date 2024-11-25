@@ -47,6 +47,12 @@ h2 {
   letter-spacing: 0.5px;
 }
 
+@media (max-width: 768px) {
+  .font-display2 {
+    font-size: 30px;
+  }
+}
+
 .font-display-sub {
   font-family: 'Lato';
   font-size: 22px;
@@ -81,13 +87,20 @@ h2 {
   padding-bottom: 200px;
 }
 
+@media (max-width: 768px) {
+  #Project {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
 #Contact {
   height: calc(100vh - 188.8px);
 }
 
-#footer{
-  padding-top:28px;
-  padding-bottom:28px;
+#footer {
+  padding-top: 28px;
+  padding-bottom: 28px;
 }
 
 
@@ -231,6 +244,7 @@ section {
 
 .py-c {
   padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -353,6 +367,12 @@ section {
   border: solid #DDAFFF 1px;
   border-radius: 20px;
   padding: 40px;
+}
+
+@media (max-width: 768px) {
+  .div-FS-designprocess {
+    padding: 20px;
+  }
 }
 
 .video {
