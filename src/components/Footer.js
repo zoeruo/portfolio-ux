@@ -13,6 +13,12 @@ function Footer(props) {
                             className="nav-link font-title text-P-darkblue" target="_blank"
                         >RESUME</a>
                         <Link
+                            to="/"
+                            className="nav-link font-title text-P-darkblue"
+                        >
+                            WORK
+                        </Link>
+                        <Link
                             to="/Contact"
                             className="nav-link font-title text-P-darkblue"
                         >CONTACT</Link>

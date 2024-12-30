@@ -1,6 +1,9 @@
 $Primary-darkblue: #3A4454;
 $Primary-light:#F1F1E6;
 $Primary-blue: #0096FB;
+$Primary-blue-darker: #1B78C3;
+$Primary-purple:#370C5A;
+$Primary-light-purple:#5B5BA4;
 
 
 $grid-gutter-width: 2rem;
@@ -8,17 +11,37 @@ $grid-gutter-width: 2rem;
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 
-$custom-colors: (
-    "P-darkblue": $Primary-darkblue,
+$custom-colors: ("P-darkblue": $Primary-darkblue,
     "P-light": $Primary-light,
-    "P-blue": $Primary-blue
-    );
+    "P-blue": $Primary-blue,
+    "P-purple":$Primary-purple,
+    "P-light-purple": $Primary-light-purple);
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
 @import "~bootstrap/scss/bootstrap.scss";
 
-.navbar-toggler, .navbar-toggler:focus{
-    border:none !important;
-    box-shadow:none;
+.btn-P-blue {
+    @include button-variant($Primary-blue, // background
+        $Primary-blue, // border
+        $Primary-light, //color
+        $Primary-blue-darker, // hover background 
+        $Primary-blue-darker, //hover border
+        $Primary-light, // hover color 
+        $Primary-blue-darker, // active background 
+        $Primary-blue-darker, // active border 
+        $Primary-light, //active color
+        $Primary-blue-darker, // disabled bg
+        $Primary-blue-darker, // disabled border
+        $Primary-light // disabled color
+    );
+    border-radius: 50px;
+    padding: 5px 20px;
+    font-weight: bold;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus {
+    border: none !important;
+    box-shadow: none;
     color: var(--bs-P-darkblue);
 }

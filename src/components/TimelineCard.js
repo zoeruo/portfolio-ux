@@ -21,8 +21,8 @@ const TimelineCard = ({ activity, details, notlast, img }) => {
                     <TimelineDot variant="outlined">
                     </TimelineDot>
                 </TimelineSeparator>
-                <TimelineContent className="pb-4">
-                    <div className="text-P-blue"><strong>{activity}</strong></div>
+                <TimelineContent className="pt-0 pb-4">
+                    <div className="text-c-chgh"><strong>{activity}</strong></div>
                     <React.Fragment>{parse(details)}</React.Fragment>
                     <div className="">
                         <img src={img} className="img-fluid" />
@@ -38,8 +38,8 @@ const TimelineCard = ({ activity, details, notlast, img }) => {
                     </TimelineDot>
                     <TimelineConnector />
                 </TimelineSeparator>
-                <TimelineContent className="pb-4">
-                    <div className="text-P-blue"><strong>{activity}</strong></div>
+                <TimelineContent className="pt-0 pb-4">
+                    <div className="text-c-chgh"><strong>{activity}</strong></div>
                     <React.Fragment>{parse(details)}</React.Fragment>
                     {img && (
                         <div className="">
