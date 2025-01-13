@@ -27,7 +27,7 @@ import twci from '../asset/img/TW_c0.jpg';
 import imgsf from '../asset/img/SF_m0.png';
 import imgimslg from '../asset/img/IMSLP_m0.png';
 import imslpcasestudy from '../asset/IMSLP_CaseStudy.pdf';
-import imgdepartment from '../asset/img/DCMS_m.jpg';
+import imgdepartment from '../asset/img/CHGH_thumbnail.jpg';
 import imgflikshop from '../asset/img/Flikshop_m.jpg';
 import imgcancerqa from '../asset/img/CancerQA_thumbnaildetailpage.png';
 import flikshop_d0 from '../asset/img/Flikshop_d3.png';
@@ -166,19 +166,38 @@ export const contents = {
     DepartmentCMS: {
         "url": "DepartmentCMS",
         "img": imgdepartment,
-        "title": "CMS for Hospital's Organizational Divisions",
+        "title": "Custom Healthcare CMS Platform",
         "subtitle": "Responsive Web Template Design",
-        "overview": "<p>This case study explores the process of redesigning the hospital's departmental websites by developing a content management system. As the sole designer in the IT department, I faced the challenge of <strong>balancing departmental customization needs</strong> with <strong>maintaining a consistent brand identity</strong>. This study details the implemented solutions and my reflections on the project, informed by my recent HCI professional training.</p>",
+        "overview": "<p>This case study examines the transformation of Cheng Hsin General Hospital's digital presence through the development of an content management system. As the sole UX designer in the IT department, I led the creation of a three-tiered platform: a public-facing website, an internal management system, and a multilingual international portal. The project addressed the complex challenge of balancing individual departmental customization needs while maintaining a consistent brand identity across all platforms. Through user research, iterative design, and cross-departmental collaboration, we successfully implemented a solution that empowered staff to manage their content while ensuring a cohesive user experience. This study details the systematic approach, technical solutions, and key learnings from managing a large-scale healthcare digital transformation project, informed by my HCI professional training.</p>",
         "duration": "<p>11 months ( Dec 2019 - Oct 2020 )</p>",
         "role": `UX Designer, Font-end Developer
-            <ul><li><strong>Integrated the needs of 80+ divisions.</strong></li>
-            <li><strong>Executed from design to web development.</strong></li>
-            <li>Made it easier to love: streamlined experience based on user feedback.</li></ul>`,
+            <ul><li>Integrated the needs of 80+ divisions.</li>
+            <li>Executed from design to web development.</li>
+            </ul>`,
         "problemstatement":
-            `<ul><li><strong>Uncoordinated Development</strong>: Departments have taken independent approaches to website development, leading to a mix of outsourced websites, outdated templates, and neglected content management.</li>
-            <li><strong>Inconsistent Branding</strong>: This fragmented approach has resulted in a lack of consistent visual identity, hindering the hospital's overall brand recognition.</li>
-            <li><strong>Uneven Public Awareness</strong>: Inconsistent departmental representation online creates an uneven experience for the public. Some departments are well-represented, while others are difficult to find or lack essential information.</li></ul>
-            <div class="text-center">so ......</div>
+            `<p>The hospital faced three interconnected challenges that were impeding its ability to serve patients effectively and maintain its reputation as a leading healthcare institution:</p>
+            <h2>1. Fragmented Digital Infrastructure</h2>
+            <p>The decentralized approach to web development had resulted in a patchwork of solutions, with individual departments creating their own websites through various means. This led to:
+            <ul><li>Multiple outsourced websites operating independently</li>
+            <li>Inconsistent update cycles and maintenance schedules</li>
+            <li>Neglected content across various platforms</li>
+            <li>No standardized content management process</li></ul>
+            </p>
+            <h2>2. Brand and Experience Inconsistency</h2>
+            <p>The fragmented infrastructure directly impacted the hospital's brand presence and user experience:
+            <ul><li>Lack of unified visual identity across different department websites</li>
+            <li>Inconsistent quality of information presentation</li>
+            <li>Variable user experiences depending on which department's site was accessed</li>
+            <li>Diminished overall brand recognition and trust</li></ul>
+            </p>
+            <h2>3. Limited Digital Growth Capabilities</h2>
+            <p>The existing decade-old infrastructure was unable to support the hospital's evolution:
+            <ul><li>Static content that required outsourced updates</li>
+            <li>No multilingual support for international patients</li>
+            <li>Inability to showcase new services effectively</li>
+            <li>Limited flexibility to adapt to the hospital's growing needs, particularly with the launch of the International Medical Center</li></ul>
+            </p>
+            <div class="text-center my-4">so ......</div>
             <div class="text-center font-display2 text-c-chgh">How might we transition from a fragmented web presence to a cohesive digital ecosystem that effectively represents the entire hospital?</div>
             `,
         "process": " ",
@@ -253,7 +272,7 @@ export const contents = {
         //     "</ul>",
         "problemstatement": "Current LMS for incarcerated individuals lack personalization, hindering their ability to learn efficiently and achieve their goals.",
         "goal": `<p>Design an <strong>AI-powered feature</strong> within the LMS that personalizes the learning experience for incarcerated learners, maximizing their engagement and knowledge retention.</p>
-        <div class="text-center">then ......</div>
+        <div class="text-center my-4">then ......</div>
         <div class="font-display2 text-center text-P-purple">How might we leverage AI to provide personalized learning pathways that maximize engagement and knowledge retention for incarcerated learners?</div>`,
         "addon": "",
         "designfeatures": designFeaturesFS,
@@ -276,7 +295,7 @@ export const contents = {
         "role": "UX Designer, Font-end Developer",
         "problemstatement": "Healthcare providers in oncology departments often face challenges in efficient communication and information sharing between medical records staff, physicians, and nursing staff. The traditional  paper-based systems can be time-consuming, prone to errors, and inefficient. This can lead to delays in patient care, miscommunication, and suboptimal treatment outcomes.",
         "goal": `<p>The primary goal of this project was to develop a centralized platform that would streamline communication and information exchange between medical records staff, physicians, and nursing staff, specifically related to cancer patient care. The system aimed to improve efficiency, reduce errors, and ultimately enhance patient outcomes.</p>
-        <div class="text-center">so ......</div>
+        <div class="text-center my-4">so ......</div>
         <div class="font-display2 text-center text-P-blue">How might we create a seamless flow of knowledge that anticipates the needs of oncology care providers?</div>`,
         "addon": `<p>To ensure a quick and efficient launch of the platform, I decided to implement Bootstrap as our front-end framework and designed following the styles. This decision proved crucial for several reasons:</p>
                  <h2>01 : Responsive Design with Bootstrap Grid System</h2>

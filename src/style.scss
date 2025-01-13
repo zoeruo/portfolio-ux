@@ -5,34 +5,48 @@ $Primary-blue-darker: #1B78C3;
 $Primary-purple:#370C5A;
 $Primary-light-purple:#5B5BA4;
 
+$p-deepnavy: #2C3E50;
+$p-mutedblue:#4A6E8D;
+$p-goldenyellow: #F9C74F;
+$p-softcream: #F9FBCB;
+$p-delicatepink: #F9AFAF;
+$p-white: #FDFDFD;
+$p-black: #1F1F1F;
 
 $grid-gutter-width: 2rem;
 
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 
-$custom-colors: ("P-darkblue": $Primary-darkblue,
+$custom-colors: ("P-darkblue": $p-deepnavy,
     "P-light": $Primary-light,
     "P-blue": $Primary-blue,
     "P-purple":$Primary-purple,
-    "P-light-purple": $Primary-light-purple);
+    "P-light-purple": $Primary-light-purple,
+    "p-deepnavy": $p-deepnavy,
+    "p-mutedblue": $p-mutedblue,
+    "p-goldenyellow": $p-goldenyellow,
+    "p-softcream": $p-softcream,
+    "p-delicatepink": $p-delicatepink,
+    "p-white": $p-white,
+    "p-black": $p-black);
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
 @import "~bootstrap/scss/bootstrap.scss";
 
-.btn-P-blue {
-    @include button-variant($Primary-blue, // background
-        $Primary-blue, // border
-        $Primary-light, //color
-        $Primary-blue-darker, // hover background 
-        $Primary-blue-darker, //hover border
-        $Primary-light, // hover color 
-        $Primary-blue-darker, // active background 
-        $Primary-blue-darker, // active border 
-        $Primary-light, //active color
-        $Primary-blue-darker, // disabled bg
-        $Primary-blue-darker, // disabled border
-        $Primary-light // disabled color
+.btn-p-deepnavy {
+    @include button-variant($p-mutedblue, // background
+        $p-mutedblue, // border
+        $p-white, //color
+        $p-deepnavy, // hover background 
+        $p-deepnavy, //hover border
+        $p-white, // hover color 
+        $p-deepnavy, // active background 
+        $p-deepnavy, // active border 
+        $p-white, //active color
+        $p-deepnavy, // disabled bg
+        $p-deepnavy, // disabled border
+        $p-white // disabled color
     );
     border-radius: 50px;
     padding: 5px 20px;

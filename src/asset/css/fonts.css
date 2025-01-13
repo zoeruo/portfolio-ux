@@ -1,14 +1,18 @@
 @font-face {
-    font-family: 'Kalnia';
-    src: url(../fonts/Kalnia-Medium.ttf);
-    font-style: medium;
-    font-weight: 500;
+    font-family: 'Andika';
+    src: url(../fonts/Andika-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Andika';
+    src: url(../fonts/Andika-Bold.ttf);
+    font-weight: 700;
 }
 
 @font-face {
     font-family: 'Lato';
     src: url(../fonts/Lato-Black.ttf);
-    font-style: black;
     font-weight: 900;
 }
 
@@ -41,4 +45,18 @@
     src: url(../fonts/Lato-Light.ttf);
     font-weight: 300;
 }
+
+@font-face {
+    font-family: 'Lora';
+    src: url(../fonts/Lora-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url(../fonts/Lora-Medium.ttf);
+    font-weight: 500;
+}
+
+
 

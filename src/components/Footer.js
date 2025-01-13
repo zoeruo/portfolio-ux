@@ -5,9 +5,9 @@ import Pdf from "../asset/Resume.pdf";
 
 function Footer(props) {
     return (
-        <div id="footer" className="bg-theme">
+        <div id="footer" className="bg-white">
             <Container>
-                <Row>
+                {/* <Row>
                     <Col xs={12} className="nav-main d-flex justify-content-center">
                         <a href={Pdf}
                             className="nav-link font-title text-P-darkblue" target="_blank"
@@ -23,10 +23,10 @@ function Footer(props) {
                             className="nav-link font-title text-P-darkblue"
                         >CONTACT</Link>
                     </Col>
-                </Row>
+                </Row> */}
                 <Row>
                     <Col xs={12} className="my-auto text-center pt-3">
-                        © 2024. All Rights Reserved to Zoe Lo
+                        © 2025. All Rights Reserved to Zoe Lo
                     </Col>
                 </Row>
             </Container>

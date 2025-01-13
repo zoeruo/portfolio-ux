@@ -12,28 +12,28 @@ import '@splidejs/react-splide/css';
 export const Playground = () => {
 
     return (
-        <section id="Playground" className="bg-white">
+        <section id="Playground" className="bg-p-deepnavy">
             <Container>
                 <Row className="py-3">
-                    <Col md={12} className="text-start">
+                    <Col md={12} className="text-p-white text-start">
                         <h1>Check out some of my fun Side Projects -</h1>
                     </Col>
                 </Row>
                 <Row>
                     <Col md={4}>
                         <Link to="https://zoeruo.github.io/Audio-visualization-and-Sound-with-p5.js/" className="nav-link" target="_blank"><img src={starrywavesimg} className="img-fluid mb-3" alt="" /></Link>
-                        <Link to="https://zoeruo.github.io/Audio-visualization-and-Sound-with-p5.js/" className="nav-link" target="_blank"><h2 className="mb-1">Starry Waves | 2023</h2></Link>
-                        <p>An interactive sound canvas created by P5.js</p>
+                        <Link to="https://zoeruo.github.io/Audio-visualization-and-Sound-with-p5.js/" className="nav-link " target="_blank"><h2 className="mb-1 text-p-white">Starry Waves | 2023</h2></Link>
+                        <p className="text-p-white">An interactive sound canvas created by P5.js</p>
                     </Col>
                     <Col md={4}>
                         <Link to="/ProjectDetail/SwimmingFishes" className="nav-link"><img src={swimmingfishesimg} className="img-fluid mb-3" alt="" /></Link>
-                        <Link to="/ProjectDetail/SwimmingFishes" className="nav-link"><h2 className="mb-1">Swimming Fishes | 2019</h2></Link>
-                        <p>Maya 3D Animation</p>
+                        <Link to="/ProjectDetail/SwimmingFishes" className="nav-link"><h2 className="mb-1 text-p-white">Swimming Fishes | 2019</h2></Link>
+                        <p className="text-p-white">Maya 3D Animation</p>
                     </Col>
                     <Col md={4}>
                         <Link to="/ProjectDetail/TheWindow" className="nav-link"><img src={thewindowimg} className="img-fluid mb-3" alt="" /></Link>
-                        <Link to="/ProjectDetail/TheWindow" className="nav-link"><h2 className="mb-1">The Window | 2017</h2></Link>
-                        <p>Installaton Art</p>
+                        <Link to="/ProjectDetail/TheWindow" className="nav-link"><h2 className="mb-1 text-p-white">The Window | 2017</h2></Link>
+                        <p className="text-p-white">Installaton Art</p>
                     </Col>
                 </Row>
                 {/* <Row>

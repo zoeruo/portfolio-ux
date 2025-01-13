@@ -1,63 +1,104 @@
 import { Navbar, Container, Nav, Offcanvas } from "react-bootstrap";
 import { BrowserRouter, Route, Link } from "react-router-dom";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import logo from "../asset/logo.svg";
 import Pdf from '../asset/Resume.pdf';
 
 export const NavBar = () => {
-    // Add state to control Offcanvas
     const [show, setShow] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+    const [isDesktop, setIsDesktop] = useState(false);
 
-    // Handlers for Offcanvas
+    useEffect(() => {
+        // Check if screen is desktop width
+        const mediaQuery = window.matchMedia('(min-width: 768px)');
+        setIsDesktop(mediaQuery.matches);
+
+        // Handle screen resize
+        const handleResize = (e) => {
+            setIsDesktop(e.matches);
+        };
+
+        // Handle scroll for shadow effect
+        const handleScroll = () => {
+            if (window.scrollY > 0) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        mediaQuery.addListener(handleResize);
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            mediaQuery.removeListener(handleResize);
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
     return (
         <>
-            <Navbar bg="theme" key='md' expand='md'>
+            <Navbar
+                key='md'
+                expand='md'
+                fixed={isDesktop ? "top" : undefined}
+                className={`bg-p-white py-4 ${scrolled && isDesktop ? 'shadow-sm' : ''}`}
+                style={{ zIndex: 1030 }}
+            >
                 <Navbar.Toggle
                     aria-controls="offcanvasNavbar-expand-md"
-                    onClick={handleShow}  // Add onClick handler
+                    onClick={handleShow}
                 />
                 <Navbar.Offcanvas
-                    className="justify-content-center bg-P-light"
+                    className="justify-content-center bg-p-white"
                     id="offcanvasNavbar-expand-md"
                     aria-labelledby="offcanvasNavbarLabel-expand-md"
                     placement="start"
-                    show={show}  // Control show state
-                    onHide={handleClose}  // Handle close event
+                    show={show}
+                    onHide={handleClose}
                 >
                     <Offcanvas.Header closeButton>
                         <Offcanvas.Title id="offcanvasNavbarLabel-expand-md">
                         </Offcanvas.Title>
                     </Offcanvas.Header>
                     <Offcanvas.Body>
-                        <Nav className="me-auto ms-auto nav-main bg-P-light" id="main-nav">
+                        <Nav className="d-none d-md-block me-auto" id="main-nav">
+                            <a href={Pdf}
+                                className="nav-link px-3 font-title text-p-deepnavy" 
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >RESUME</a>
+                        </Nav>
+                        <Nav>
                             <Link
                                 to="/About"
-                                className="nav-link font-title text-P-darkblue"
-                                onClick={handleClose}  // Close on link click
+                                className="nav-link px-3 font-title text-p-deepnavy"
+                                onClick={handleClose}
                             >
                                 ABOUT
                             </Link>
                             <Link
                                 to="/"
-                                className="nav-link font-title text-P-darkblue"
-                                onClick={handleClose}  // Close on link click
+                                className="nav-link px-3 font-title text-p-deepnavy"
+                                onClick={handleClose}
                             >
                                 WORK
                             </Link>
-                            <Link
-                                to="/Contact"
-                                className="nav-link font-title text-P-darkblue"
-                                onClick={handleClose}  // Close on link click
-                            >
-                                CONTACT
-                            </Link>
+                            <a href={Pdf}
+                                className="nav-link px-3 font-title text-p-deepnavy d-block d-md-none" 
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >RESUME</a>
                         </Nav>
                     </Offcanvas.Body>
                 </Navbar.Offcanvas>
             </Navbar>
+            {/* Add padding only for desktop */}
+            {isDesktop && <div style={{ paddingTop: "86px" }}></div>}
         </>
     )
 }
