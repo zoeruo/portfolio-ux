@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.28382acc.css",
-    "main.js": "/static/js/main.d43ce38e.js",
+    "main.js": "/static/js/main.39dceb81.js",
     "static/js/787.907a2fad.chunk.js": "/static/js/787.907a2fad.chunk.js",
     "static/media/CHDMS_D.mp4": "/static/media/CHDMS_D.c985de5780d9d75ad1da.mp4",
     "static/media/IMSLP_CaseStudy.pdf": "/static/media/IMSLP_CaseStudy.61d68bd708f0da04f11c.pdf",
@@ -13,12 +13,13 @@
     "static/media/coding.png": "/static/media/coding.a681ad24be9f01451af5.png",
     "static/media/designing.png": "/static/media/designing.81a8671844a24110b0f5.png",
     "static/media/CHGH_thumbnail.jpg": "/static/media/CHGH_thumbnail.05f39c9371709ba5c9b5.jpg",
+    "static/media/TW_m0.png": "/static/media/TW_m0.8139ef6afc72b8c8229e.png",
     "static/media/Resume.pdf": "/static/media/Resume.6c16c25da66a6a8e7231.pdf",
-    "static/media/TW_m0.png": "/static/media/TW_m0.751ee270fbf35175c82a.png",
     "static/media/DD_storyboard.png": "/static/media/DD_storyboard.3d76799c918f15e4aff3.png",
     "static/media/RedFlagsOut_main.png": "/static/media/RedFlagsOut_main.79440fa03a5c33859818.png",
     "static/media/Flikshop_m.jpg": "/static/media/Flikshop_m.79c6a8830d58d0d4e137.jpg",
     "static/media/Flikshop_d4.png": "/static/media/Flikshop_d4.77a7c197822032f3fc09.png",
+    "static/media/SF_m0.png": "/static/media/SF_m0.d3db9e92fc12b77dc1e2.png",
     "static/media/DD_lf.png": "/static/media/DD_lf.2d00f32e700be95e7412.png",
     "static/media/TW_c0.jpg": "/static/media/TW_c0.43fd988e644a76a4887b.jpg",
     "static/media/DD_m0.png": "/static/media/DD_m0.6991004eb1d5cab95a38.png",
@@ -46,7 +47,6 @@
     "static/media/Flikshop_d7.png": "/static/media/Flikshop_d7.7968178d38180b7366a8.png",
     "static/media/CancerQA_designfeature1.png": "/static/media/CancerQA_designfeature1.294a3627749e0993e514.png",
     "static/media/Flikshop_d8.png": "/static/media/Flikshop_d8.e3d038281c5998683eca.png",
-    "static/media/SF_m0.png": "/static/media/SF_m0.aaa9486b8c5ac7353e43.png",
     "static/media/RFO_IA.png": "/static/media/RFO_IA.6cd5afbb1fe684e93908.png",
     "static/media/mobile_banner.jpg": "/static/media/mobile_banner.9323de1abc52627153b6.jpg",
     "static/media/RFO_hf1.png": "/static/media/RFO_hf1.bed962262d98a7620637.png",
@@ -55,6 +55,7 @@
     "static/media/Flikshop_d5.png": "/static/media/Flikshop_d5.fc9d7bfc435c46461329.png",
     "static/media/Flikshop_d6.png": "/static/media/Flikshop_d6.59275e007d1c626f7f80.png",
     "static/media/DD_IA.png": "/static/media/DD_IA.45594db04c97717023d5.png",
+    "static/media/SW_m0.png": "/static/media/SW_m0.2845c9440a7512b2a98e.png",
     "static/media/CancerQA_thumbnail.jpg": "/static/media/CancerQA_thumbnail.43bcf258115eedf55444.jpg",
     "static/media/FS_dp1.png": "/static/media/FS_dp1.b63c82e7fa32bc7bb651.png",
     "static/media/FS_r2.png": "/static/media/FS_r2.524fece4a4a45b3334eb.png",
@@ -67,7 +68,6 @@
     "static/media/DD_w2.png": "/static/media/DD_w2.79f0e1d8c550d8f4e74d.png",
     "static/media/Lora-SemiBold.ttf": "/static/media/Lora-SemiBold.bc7f741788186526098e.ttf",
     "static/media/Lora-Medium.ttf": "/static/media/Lora-Medium.7cf7e60abc1dce6d19ee.ttf",
-    "static/media/SW_m0.png": "/static/media/SW_m0.545aa239eace26f61ca0.png",
     "static/media/FS_r3.png": "/static/media/FS_r3.57cac8e159f3824f6961.png",
     "static/media/FS_dp2.png": "/static/media/FS_dp2.baa8a5bf2de5d3ab7a11.png",
     "static/media/CancerQA_designfeature4.png": "/static/media/CancerQA_designfeature4.e3365ab8b24dd6efb86f.png",
@@ -86,11 +86,11 @@
     "static/media/arrow_right.svg": "/static/media/arrow_right.ef8f21cb40e7ada176de.svg",
     "static/media/logo.svg": "/static/media/logo.61b029cda18a62aa361c6f2315ac03ff.svg",
     "main.28382acc.css.map": "/static/css/main.28382acc.css.map",
-    "main.d43ce38e.js.map": "/static/js/main.d43ce38e.js.map",
+    "main.39dceb81.js.map": "/static/js/main.39dceb81.js.map",
     "787.907a2fad.chunk.js.map": "/static/js/787.907a2fad.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.28382acc.css",
-    "static/js/main.d43ce38e.js"
+    "static/js/main.39dceb81.js"
   ]
 }
