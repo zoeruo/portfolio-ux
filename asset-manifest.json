@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.58545b02.css",
-    "main.js": "/static/js/main.52c648ce.js",
+    "main.css": "/static/css/main.a77e71c5.css",
+    "main.js": "/static/js/main.5dfa7c47.js",
     "static/js/787.907a2fad.chunk.js": "/static/js/787.907a2fad.chunk.js",
     "static/media/CHDMS_D.mp4": "/static/media/CHDMS_D.c985de5780d9d75ad1da.mp4",
     "static/media/IMSLP_CaseStudy.pdf": "/static/media/IMSLP_CaseStudy.61d68bd708f0da04f11c.pdf",
@@ -52,6 +52,7 @@
     "static/media/RFO_hf1.png": "/static/media/RFO_hf1.bed962262d98a7620637.png",
     "static/media/mobile_chghthumbnail.jpg": "/static/media/mobile_chghthumbnail.06165fada68d4f6638ec.jpg",
     "static/media/CancerQA_designfeature2.png": "/static/media/CancerQA_designfeature2.0bc9114d2aad83aab610.png",
+    "static/media/eye1.png": "/static/media/eye1.82538182175601f44094.png",
     "static/media/Flikshop_d5.png": "/static/media/Flikshop_d5.fc9d7bfc435c46461329.png",
     "static/media/Flikshop_d6.png": "/static/media/Flikshop_d6.59275e007d1c626f7f80.png",
     "static/media/DD_IA.png": "/static/media/DD_IA.45594db04c97717023d5.png",
@@ -60,6 +61,7 @@
     "static/media/FS_dp1.png": "/static/media/FS_dp1.b63c82e7fa32bc7bb651.png",
     "static/media/FS_r2.png": "/static/media/FS_r2.524fece4a4a45b3334eb.png",
     "static/media/DD_w0.png": "/static/media/DD_w0.20fac9ffff0ae9224c0b.png",
+    "static/media/eye3.png": "/static/media/eye3.f3ed3f0f597317134ba2.png",
     "static/media/mobile_flikshopthumbnail.jpg": "/static/media/mobile_flikshopthumbnail.83fdc1264dfc303f175e.jpg",
     "static/media/mobile_cancerthumbnail.jpg": "/static/media/mobile_cancerthumbnail.c091862b996fe7de8ce2.jpg",
     "static/media/Flikshop_d3.png": "/static/media/Flikshop_d3.fa8f25ef13673a155846.png",
@@ -68,6 +70,7 @@
     "static/media/DD_w2.png": "/static/media/DD_w2.79f0e1d8c550d8f4e74d.png",
     "static/media/Lora-SemiBold.ttf": "/static/media/Lora-SemiBold.bc7f741788186526098e.ttf",
     "static/media/Lora-Medium.ttf": "/static/media/Lora-Medium.7cf7e60abc1dce6d19ee.ttf",
+    "static/media/eye2.png": "/static/media/eye2.ee358d8749d9c2cae385.png",
     "static/media/FS_r3.png": "/static/media/FS_r3.57cac8e159f3824f6961.png",
     "static/media/FS_dp2.png": "/static/media/FS_dp2.baa8a5bf2de5d3ab7a11.png",
     "static/media/CancerQA_designfeature4.png": "/static/media/CancerQA_designfeature4.e3365ab8b24dd6efb86f.png",
@@ -78,6 +81,7 @@
     "static/media/Lato-Bold.ttf": "/static/media/Lato-Bold.636be8de934918e38ed9.ttf",
     "static/media/Lato-Black.ttf": "/static/media/Lato-Black.57dee8aface5572f9101.ttf",
     "static/media/FS_r1.png": "/static/media/FS_r1.83d62297d5f806f9265a.png",
+    "static/media/eye4.png": "/static/media/eye4.b74d8594541fd560710c.png",
     "static/media/FS_dp0.png": "/static/media/FS_dp0.656837def542c4f9d326.png",
     "static/media/title_work.svg": "/static/media/title_work.02d9145bb136f15899d1bc5807920a2b.svg",
     "static/media/zoomin.svg": "/static/media/zoomin.fb87d0d500b3792f157d.svg",
@@ -85,12 +89,12 @@
     "static/media/arrow_left.svg": "/static/media/arrow_left.db613b2525469ddc47e5.svg",
     "static/media/arrow_right.svg": "/static/media/arrow_right.ef8f21cb40e7ada176de.svg",
     "static/media/logo.svg": "/static/media/logo.61b029cda18a62aa361c6f2315ac03ff.svg",
-    "main.58545b02.css.map": "/static/css/main.58545b02.css.map",
-    "main.52c648ce.js.map": "/static/js/main.52c648ce.js.map",
+    "main.a77e71c5.css.map": "/static/css/main.a77e71c5.css.map",
+    "main.5dfa7c47.js.map": "/static/js/main.5dfa7c47.js.map",
     "787.907a2fad.chunk.js.map": "/static/js/787.907a2fad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.58545b02.css",
-    "static/js/main.52c648ce.js"
+    "static/css/main.a77e71c5.css",
+    "static/js/main.5dfa7c47.js"
   ]
 }
