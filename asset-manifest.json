@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a77e71c5.css",
-    "main.js": "/static/js/main.5dfa7c47.js",
+    "main.css": "/static/css/main.aacb5e23.css",
+    "main.js": "/static/js/main.2658e2a0.js",
     "static/js/787.907a2fad.chunk.js": "/static/js/787.907a2fad.chunk.js",
     "static/media/CHDMS_D.mp4": "/static/media/CHDMS_D.c985de5780d9d75ad1da.mp4",
     "static/media/IMSLP_CaseStudy.pdf": "/static/media/IMSLP_CaseStudy.61d68bd708f0da04f11c.pdf",
@@ -13,6 +13,7 @@
     "static/media/coding.png": "/static/media/coding.a681ad24be9f01451af5.png",
     "static/media/designing.png": "/static/media/designing.81a8671844a24110b0f5.png",
     "static/media/CHGH_thumbnail.jpg": "/static/media/CHGH_thumbnail.05f39c9371709ba5c9b5.jpg",
+    "static/media/chgh_sketch.png": "/static/media/chgh_sketch.4045b1e5c7f026b4418b.png",
     "static/media/TW_m0.png": "/static/media/TW_m0.8139ef6afc72b8c8229e.png",
     "static/media/Resume.pdf": "/static/media/Resume.6c16c25da66a6a8e7231.pdf",
     "static/media/DD_storyboard.png": "/static/media/DD_storyboard.3d76799c918f15e4aff3.png",
@@ -33,6 +34,7 @@
     "static/media/Lato-Medium.ttf": "/static/media/Lato-Medium.c4d1c52e785297a7d666.ttf",
     "static/media/CHGH_IA.png": "/static/media/CHGH_IA.c9182322f30e4dde314f.png",
     "static/media/RFO_m0.png": "/static/media/RFO_m0.adafb036b8cf4dd5bb20.png",
+    "static/media/chgh_iteration.png": "/static/media/chgh_iteration.f3e78f1ccff52e9507aa.png",
     "static/media/FS_r0.png": "/static/media/FS_r0.10137a41324dd29bfbc6.png",
     "static/media/RFO_lf1.png": "/static/media/RFO_lf1.10c370d5844bdcc7fdd8.png",
     "static/media/RFO_components.png": "/static/media/RFO_components.e1bd09f17d63a2d155b4.png",
@@ -89,12 +91,12 @@
     "static/media/arrow_left.svg": "/static/media/arrow_left.db613b2525469ddc47e5.svg",
     "static/media/arrow_right.svg": "/static/media/arrow_right.ef8f21cb40e7ada176de.svg",
     "static/media/logo.svg": "/static/media/logo.61b029cda18a62aa361c6f2315ac03ff.svg",
-    "main.a77e71c5.css.map": "/static/css/main.a77e71c5.css.map",
-    "main.5dfa7c47.js.map": "/static/js/main.5dfa7c47.js.map",
+    "main.aacb5e23.css.map": "/static/css/main.aacb5e23.css.map",
+    "main.2658e2a0.js.map": "/static/js/main.2658e2a0.js.map",
     "787.907a2fad.chunk.js.map": "/static/js/787.907a2fad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a77e71c5.css",
-    "static/js/main.5dfa7c47.js"
+    "static/css/main.aacb5e23.css",
+    "static/js/main.2658e2a0.js"
   ]
 }
