@@ -9,13 +9,13 @@ function About() {
       <section className="bg-p-white py-4">
         <Container fluid>
           <Row className="mb-5">
-            <Col xs={12} md={4} className="mb-4 mb-md-0 my-auto">
+            <Col xs={12} md={4} className="my-auto">
               <img id="Myimg" src={Myimg} className="img-fluid" alt="img AboutMe" />
             </Col>
             <Col xs={12} md={8} className="">
               <Row>
                 <Col md={12}>
-                  <h1 className="mb-3">My Journey into UX:</h1></Col>
+                  <h1 className="mb-3 mt-4 mt-md-0">My Journey into UX:</h1></Col>
               </Row>
               <Row className="mb-3">
                 <Col xs={12} md={9}>

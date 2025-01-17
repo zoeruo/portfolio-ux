@@ -37,7 +37,7 @@ const DesignFeatures = ({ features }) => {
     return (
         <Row className="py-c">
             <Col xs={12} className="py-3">
-                <h1>Design Features Highlights</h1>
+                <h1>DESIGN FEATURES HIGHLIGHTS</h1>
                 {features.map((feature, index) => (
                     <DesignFeature
                         key={index}

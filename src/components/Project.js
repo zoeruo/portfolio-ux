@@ -21,7 +21,7 @@ export const Project = () => {
     return (
         <section id="Project" className="bg-white p-0">
             <Container fluid className="px-0 px-md-3">
-                <Row className="pt-md-5">
+                <Row className="pt-md-5 gx-0 gx-md-3">
                     <Col md={12}>
                         <h1 className="d-none d-md-block font-display-title text">WORK</h1>
                         <img src={titlework} className="img-fluid d-block d-md-none" alt="" />

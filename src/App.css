@@ -2,7 +2,8 @@
 
 /* font */
 body,
-p {
+p,
+.font-body {
   color: #1F1F1F;
   font-family: 'Andika';
   font-size: 16px;
@@ -20,13 +21,19 @@ strong {
 h1 {
   font-family: 'Lato';
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 h2 {
   font-family: 'Lato';
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: 'Lato';
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .font-display1 {
@@ -76,12 +83,12 @@ h2 {
 
 /* Timeline */
 .MuiTimelineDot-root {
-  border-color: var(--bs-P-light-purple) !important;
+  border-color: var(--bs-p-mutedblue) !important;
   margin: 16px 0;
 }
 
 .MuiTimelineConnector-root {
-  background-color: var(--bs-P-light-purple) !important;
+  background-color: var(--bs-p-mutedblue) !important;
 }
 
 /* Timeline */
@@ -248,14 +255,14 @@ section {
 }
 
 .py-c {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 @media (min-width: 768px) {
   .py-c {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 }
 
@@ -446,7 +453,16 @@ section {
   justify-content: center;
   opacity: 0;
   transition: opacity 0.3s ease;
+
 }
+
+@media (min-width: 768px){
+  .password-overlay{
+    border-bottom-left-radius:var(--bs-border-radius-xl) !important;
+    border-top-left-radius: var(--bs-border-radius-xl) !important;
+  }
+}
+
 
 .image-container:hover .password-overlay {
   opacity: 1;

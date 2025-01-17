@@ -75,7 +75,7 @@ const ProtectedCaseStudy = ({
 
                 {/* Password overlay */}
                 <div
-                    className="password-overlay rounded-4"
+                    className="password-overlay"
                     onClick={handleOverlayClick}
                 >
                     <div className="bg-white p-4 rounded text-center">

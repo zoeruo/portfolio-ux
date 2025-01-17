@@ -168,39 +168,39 @@ export const contents = {
         "img": imgdepartment,
         "title": "Custom Healthcare CMS Platform",
         "subtitle": "Responsive Web Template Design",
-        "overview": "<p>This case study examines the transformation of Cheng Hsin General Hospital's digital presence through the development of an content management system. As the sole UX designer in the IT department, I led the creation of a three-tiered platform: a public-facing website, an internal management system, and a multilingual international portal. The project addressed the complex challenge of balancing individual departmental customization needs while maintaining a consistent brand identity across all platforms. Through user research, iterative design, and cross-departmental collaboration, we successfully implemented a solution that empowered staff to manage their content while ensuring a cohesive user experience. This study details the systematic approach, technical solutions, and key learnings from managing a large-scale healthcare digital transformation project, informed by my HCI professional training.</p>",
+        "overview": "<p>This case study examines the transformation of Cheng Hsin General Hospital's digital presence through the development of an content management system. As the sole UX designer in the IT department, I led the creation of a three-tiered platform: a public-facing website, an internal management system, and a multilingual international portal. The project addressed the complex challenge of balancing individual departmental customization needs while maintaining a consistent brand identity across all platforms. Through user research, iterative design, and cross-departmental collaboration, I successfully implemented a solution that empowered staff to manage their content while ensuring a cohesive user experience. This study details the systematic approach, technical solutions, and key learnings from managing a large-scale healthcare digital transformation project, informed by my HCI professional training.</p>",
         "duration": "<p>11 months ( Dec 2019 - Oct 2020 )</p>",
-        "role": `UX Designer, Font-end Developer
-            <ul><li>Integrated the needs of 80+ divisions.</li>
-            <li>Executed from design to web development.</li>
+        "role": `<div className="pb-2">UX Designer, Font-end Developer</div>
+            <ul><li>Integrated the needs of 80+ divisions</li>
+            <li>Executed from design to web development</li>
             </ul>`,
         "problemstatement":
-            `<p>The hospital faced three interconnected challenges that were impeding its ability to serve patients effectively and maintain its reputation as a leading healthcare institution:</p>
-            <h2>1. Fragmented Digital Infrastructure</h2>
-            <p>The decentralized approach to web development had resulted in a patchwork of solutions, with individual departments creating their own websites through various means. This led to:
-            <ul><li>Multiple outsourced websites operating independently</li>
-            <li>Inconsistent update cycles and maintenance schedules</li>
-            <li>Neglected content across various platforms</li>
-            <li>No standardized content management process</li></ul>
-            </p>
+            `<p><strong>After a decade of using its original website infrastructure, the hospital needed a comprehensive website renewal</strong> to address three interconnected challenges that were impeding its ability to serve patients effectively and maintain its reputation as a leading healthcare institution:</p>
+            <h2>1. Outdated and Fragmented Digital Infrastructure</h2>
+            <div className="mb-1">The hospital's decade-old website had evolved into a patchwork of solutions, with individual departments creating their own web presence through various means. This fragmentation led to:</div>
+            <ul><li>Multiple outsourced websites operating independently of the main hospital website</li>
+            <li>Inconsistent update cycles and maintenance schedules across different site versions</li>
+            <li>Content that had remained static since the original website launch</li>
+            <li>No standardized content management process for the aging infrastructure</li></ul>
             <h2>2. Brand and Experience Inconsistency</h2>
-            <p>The fragmented infrastructure directly impacted the hospital's brand presence and user experience:
+            <div className="mb-1">The 10-year-old website architecture and subsequent fragmentation directly impacted the hospital's brand presence and user experience:</div>
             <ul><li>Lack of unified visual identity across different department websites</li>
             <li>Inconsistent quality of information presentation</li>
             <li>Variable user experiences depending on which department's site was accessed</li>
             <li>Diminished overall brand recognition and trust</li></ul>
-            </p>
             <h2>3. Limited Digital Growth Capabilities</h2>
-            <p>The existing decade-old infrastructure was unable to support the hospital's evolution:
+            <div className="mb-1">The existing decade-old infrastructure was unable to support the hospital's evolution:</div>
             <ul><li>Static content that required outsourced updates</li>
             <li>No multilingual support for international patients</li>
             <li>Inability to showcase new services effectively</li>
             <li>Limited flexibility to adapt to the hospital's growing needs, particularly with the launch of the International Medical Center</li></ul>
-            </p>
-            <div class="text-center my-4">so ......</div>
-            <div class="text-center font-display2 text-c-chgh">How might we transition from a fragmented web presence to a cohesive digital ecosystem that effectively represents the entire hospital?</div>
+            <div class="text-center my-5">so ......</div>
+            <div class="text-center font-display2 text-c-chgh pb-4">How might we transition from a fragmented web presence to a cohesive digital ecosystem that effectively represents the entire hospital?</div>
             `,
-        "process": " ",
+        "process1": " ",
+        "process2": " ",
+        "process3": " ",
+        "process4": " ",
         "success": "<h2>Front-End Key Design Consideration &  DEMO</h2>" +
             "<ul><li><strong>User-Selectable Menu</strong>: Let users choose which features they want on their website, like events, research papers, contact info, and more.</li>" +
             "<li><strong>User-Easy Department Switching</strong>: A shortcut button lets you quickly switch between departments.</li>" +
@@ -236,7 +236,7 @@ export const contents = {
         "img": imgsf,
         "title": "SwimmingFishes",
         "subtitle": "Maya 3D Animation",
-        "overview": "The 3D animation created with Maya was designed for the two LED display columns in my apartment building. I transformed the static interior design into dynamic images.",
+        "overview": "<p>The 3D animation created with Maya was designed for the two LED display columns in my apartment building. I transformed the static interior design into dynamic images.</p>",
         "duration": "Jan 2019",
         "youtube": "WVzFDd_CXkM"
     },
@@ -272,8 +272,8 @@ export const contents = {
         //     "</ul>",
         "problemstatement": "Current LMS for incarcerated individuals lack personalization, hindering their ability to learn efficiently and achieve their goals.",
         "goal": `<p>Design an <strong>AI-powered feature</strong> within the LMS that personalizes the learning experience for incarcerated learners, maximizing their engagement and knowledge retention.</p>
-        <div class="text-center my-4">then ......</div>
-        <div class="font-display2 text-center text-P-purple">How might we leverage AI to provide personalized learning pathways that maximize engagement and knowledge retention for incarcerated learners?</div>`,
+        <div class="text-center my-5">then ......</div>
+        <div class="font-display2 text-center text-P-purple pb-4">How might we leverage AI to provide personalized learning pathways that maximize engagement and knowledge retention for incarcerated learners?</div>`,
         "addon": "",
         "designfeatures": designFeaturesFS,
         "researchFS": " ",
@@ -295,8 +295,8 @@ export const contents = {
         "role": "UX Designer, Font-end Developer",
         "problemstatement": "Healthcare providers in oncology departments often face challenges in efficient communication and information sharing between medical records staff, physicians, and nursing staff. The traditional  paper-based systems can be time-consuming, prone to errors, and inefficient. This can lead to delays in patient care, miscommunication, and suboptimal treatment outcomes.",
         "goal": `<p>The primary goal of this project was to develop a centralized platform that would streamline communication and information exchange between medical records staff, physicians, and nursing staff, specifically related to cancer patient care. The system aimed to improve efficiency, reduce errors, and ultimately enhance patient outcomes.</p>
-        <div class="text-center my-4">so ......</div>
-        <div class="font-display2 text-center text-P-blue">How might we create a seamless flow of knowledge that anticipates the needs of oncology care providers?</div>`,
+        <div class="text-center my-5">so ......</div>
+        <div class="font-display2 text-center text-P-blue pb-4">How might we create a seamless flow of knowledge that anticipates the needs of oncology care providers?</div>`,
         "addon": `<p>To ensure a quick and efficient launch of the platform, I decided to implement Bootstrap as our front-end framework and designed following the styles. This decision proved crucial for several reasons:</p>
                  <h2>01 : Responsive Design with Bootstrap Grid System</h2>
                  <p>The Bootstrap Grid System enabled seamless functionality across various devices, including 4:3 and 16:9 desktop formats, as well as tablets. 

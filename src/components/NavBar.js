@@ -49,6 +49,7 @@ export const NavBar = () => {
                 className={`bg-p-white py-4 ${scrolled && isDesktop ? 'shadow-sm' : ''}`}
                 style={{ zIndex: 1030 }}
             >
+
                 <Navbar.Toggle
                     aria-controls="offcanvasNavbar-expand-md"
                     onClick={handleShow}
@@ -68,7 +69,7 @@ export const NavBar = () => {
                     <Offcanvas.Body>
                         <Nav className="d-none d-md-block me-auto" id="main-nav">
                             <a href={Pdf}
-                                className="nav-link px-3 font-title text-p-deepnavy" 
+                                className="nav-link px-3 font-title text-p-deepnavy"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >RESUME</a>
@@ -89,13 +90,14 @@ export const NavBar = () => {
                                 WORK
                             </Link>
                             <a href={Pdf}
-                                className="nav-link px-3 font-title text-p-deepnavy d-block d-md-none" 
+                                className="nav-link px-3 font-title text-p-deepnavy d-block d-md-none"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >RESUME</a>
                         </Nav>
                     </Offcanvas.Body>
                 </Navbar.Offcanvas>
+                <Navbar.Brand href="/" className="d-md-none text-p-deepnavy"><strong>zoe-lo</strong></Navbar.Brand>
             </Navbar>
             {/* Add padding only for desktop */}
             {isDesktop && <div style={{ paddingTop: "86px" }}></div>}
