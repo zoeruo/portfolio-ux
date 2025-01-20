@@ -35,6 +35,9 @@ import eye4 from '../asset/img/eye4.png';
 import chghia from '../asset/img/CHGH_IA.png';
 import chghsketch from '../asset/img/chgh_sketch.png';
 import chghiteration from '../asset/img/chgh_iteration.png';
+import chghRWD from '../asset/img/chgh_feature_RWD.jpg';
+import chghmenu from '../asset/img/chgh_feature_selectablemenu.jpg';
+import chghlanguage from '../asset/img/chgh_feature01.jpg';
 import {
     Timeline,
     TimelineConnector,
@@ -594,24 +597,29 @@ function ProjectDetail(props) {
                         </>
                     )
                 },
-                //Success
+                //CHGH DESIGN HIGHLIGHTS
                 {
                     condition: content.success,
                     content: (
-                        <Container className="custom-container">
+                        <>
                             {content.hasOwnProperty('success') &&
                                 (
-                                    <Container className="custom-container">
-                                        <Row className="py-c">
-                                            <Col xs={12} className="pt-4">
-                                                <h1>Design Features Highlights</h1>
-                                            </Col>
-                                            <Col xs={12} className="pt-2">
+                                    <>
+                                        <Container className="custom-container">
+                                            <Row className="py-c">
+                                                <Col xs={12} className="mb-3">
+                                                    <h1>DESIGN HIGHLIGHTS & KEY CONSIDERATIONS</h1>
+                                                </Col>
+                                                <Col xs={12}>
+                                                    <p>My design prioritized intuitive navigation and efficient content management. Users could customize their website's features through a flexible menu system, while a convenient shortcut button enabled quick department switching. To distinguish the department's website while maintaining brand consistency, I implemented a sidebar menu instead of the hospital's standard top bar navigation.
+                                                        On the other hand, the administrative interface presented crucial information in clear, tabulated layouts for easy editing, complemented by a distraction-free design that paired simple icons with descriptive text. For enhanced content flexibility, users had access to a comprehensive text editor, allowing them to create and modify detailed content as needed.
+                                                        <a href="https://www.chgh.org.tw/Index.aspx" target="_blank" className="ms-2 text-decoration-none">Go to Cheng Hsin General Hospital</a></p>
+                                                </Col>
+                                                {/* <Col xs={12} className="pt-2">
                                                 <React.Fragment>{parse(content.success)}</React.Fragment>
                                                 <video className='w-100' autoPlay loop muted>
                                                     <source src={videofront} type='video/mp4' allowFullScreen />
                                                 </video>
-
                                             </Col>
                                             <Col xs={12} className="pt-4">
                                                 <h2>Back-End Key Design Consideration &  DEMO</h2>
@@ -621,11 +629,53 @@ function ProjectDetail(props) {
                                                 <video className='w-100' autoPlay loop muted>
                                                     <source src={videoback} type='video/mp4' allowFullScreen />
                                                 </video>
-                                            </Col>
-                                        </Row>
-                                    </Container>
+                                            </Col> */}
+                                            </Row>
+                                        </Container>
+                                        <Container className="py-c pt-0">
+                                            <Row className="mb-5">
+                                                <Col xs={9}>
+                                                    <img src={chghRWD} className="img-fluid"></img>
+                                                </Col>
+                                                <Col xs={3} className="my-auto">
+                                                    <div class="p-3 bg-p-white rounded-end-4 img-explanation-container">The user interface is fully responsive, seamlessly adapting between desktop and mobile views as demonstrated in the provided layouts. Bootstrap's robust grid system and pre-built components significantly streamline development while providing reliable responsive breakpoints.</div>
+                                                </Col>
+                                            </Row>
+                                            <Row className="mb-5">
+                                                <Col xs={9}>
+                                                    <img src={chghlanguage} className="img-fluid"></img>
+                                                </Col>
+                                                <Col xs={3} className="my-auto">
+                                                    <div class="p-3 bg-p-white rounded-end-4 img-explanation-container">Language selection is available in the upper right corner throughout the site. Each language version has its own dedicated page that editors can manage independently. If a user switches to a language where the current page isn't available, they'll automatically return to their previous page. This approach allows for flexible content management while maintaining a seamless user experience.</div>
+                                                </Col>
+                                            </Row>
+                                            <Row className="mb-5">
+                                                <Col xs={9}>
+                                                    <img src={chghmenu} className="img-fluid"></img>
+                                                </Col>
+                                                <Col xs={3} className="my-auto">
+                                                    <div class="p-3 bg-p-white rounded-end-4 img-explanation-container">The management system allows users to tailor their division website's menu structure according to their needs. Administrators can easily add, remove, or rearrange menu items such as events, research publications, contact information, and other content modules through an intuitive interface. This flexibility ensures each website can be customized to reflect its specific purpose and content requirements without requiring technical expertise.</div>
+                                                </Col>
+                                            </Row>
+                                        </Container>
+                                    </>
                                 )
                             }
+                        </>
+                    )
+                },
+                //BUSINESS OUTCOME
+                {
+                    condition: content.businessoutcome,
+                    content: (
+                        <Container className="custom-container">
+                            <Row className="py-c">
+                                <Col xs={12} className="">
+                                    <h1>BUSINESS OUTCOME</h1>
+                                </Col><Col xs={12} className="pt-2">
+                                    <SafeParse content={content.businessoutcome} />
+                                </Col>
+                            </Row>
                         </Container>
                     )
                 },
@@ -635,7 +685,7 @@ function ProjectDetail(props) {
                     content: (
                         <Container className="custom-container">
                             <Row className="py-c">
-                                <Col xs={12} className="pt-4">
+                                <Col xs={12} className="">
                                     <h1>What would I have done DIFFERENTLY?</h1>
                                 </Col><Col xs={12} className="pt-2">
                                     <SafeParse content={content.change} />
