@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.2eaa1997.css",
-    "main.js": "/static/js/main.2b631c3a.js",
+    "main.css": "/static/css/main.4fcdb890.css",
+    "main.js": "/static/js/main.40d8d6ba.js",
     "static/js/787.907a2fad.chunk.js": "/static/js/787.907a2fad.chunk.js",
     "static/media/CHDMS_D.mp4": "/static/media/CHDMS_D.c985de5780d9d75ad1da.mp4",
     "static/media/IMSLP_CaseStudy.pdf": "/static/media/IMSLP_CaseStudy.61d68bd708f0da04f11c.pdf",
     "static/media/CHGH_D_sketch.png": "/static/media/CHGH_D_sketch.52a84b91555828dfa844.png",
     "static/media/CHDMS_D_Backend.mp4": "/static/media/CHDMS_D_Backend.6de719ae4e7cff373f36.mp4",
+    "static/media/chgh_sketch.png": "/static/media/chgh_sketch.79a8c3c2ff719954650a.png",
     "static/media/DCMS_m.jpg": "/static/media/DCMS_m.5e390cf4ce774f193f06.jpg",
+    "static/media/chgh_feature_RWD.jpg": "/static/media/chgh_feature_RWD.36ae05472199ebd5bfaf.jpg",
     "static/media/TW_creating.MP4": "/static/media/TW_creating.8927d9f6cbd1d174458a.MP4",
     "static/media/pianoing.png": "/static/media/pianoing.76f22de3de1118af1466.png",
     "static/media/coding.png": "/static/media/coding.a681ad24be9f01451af5.png",
     "static/media/designing.png": "/static/media/designing.81a8671844a24110b0f5.png",
     "static/media/CHGH_thumbnail.jpg": "/static/media/CHGH_thumbnail.05f39c9371709ba5c9b5.jpg",
-    "static/media/chgh_sketch.png": "/static/media/chgh_sketch.4045b1e5c7f026b4418b.png",
     "static/media/TW_m0.png": "/static/media/TW_m0.8139ef6afc72b8c8229e.png",
+    "static/media/chgh_feature01.jpg": "/static/media/chgh_feature01.d7a47c347461a7228f68.jpg",
     "static/media/Resume.pdf": "/static/media/Resume.6c16c25da66a6a8e7231.pdf",
     "static/media/DD_storyboard.png": "/static/media/DD_storyboard.3d76799c918f15e4aff3.png",
     "static/media/RedFlagsOut_main.png": "/static/media/RedFlagsOut_main.79440fa03a5c33859818.png",
@@ -26,6 +28,7 @@
     "static/media/DD_m0.png": "/static/media/DD_m0.6991004eb1d5cab95a38.png",
     "static/media/CHGH_m0.png": "/static/media/CHGH_m0.7f296374c267f2842b32.png",
     "static/media/DD_p1.png": "/static/media/DD_p1.b22fd8ba28ee1142e704.png",
+    "static/media/chgh_feature_selectablemenu.jpg": "/static/media/chgh_feature_selectablemenu.cdffa9e34ed6140ca569.jpg",
     "static/media/DD_p0.png": "/static/media/DD_p0.6f6a4b23b4ef2a97e9a8.png",
     "static/media/DD_p2.png": "/static/media/DD_p2.bc9ebdee2789c3aefc03.png",
     "static/media/Lato-SemiBold.ttf": "/static/media/Lato-SemiBold.505e1361b69ab525b4e7.ttf",
@@ -91,12 +94,12 @@
     "static/media/arrow_left.svg": "/static/media/arrow_left.db613b2525469ddc47e5.svg",
     "static/media/arrow_right.svg": "/static/media/arrow_right.ef8f21cb40e7ada176de.svg",
     "static/media/logo.svg": "/static/media/logo.61b029cda18a62aa361c6f2315ac03ff.svg",
-    "main.2eaa1997.css.map": "/static/css/main.2eaa1997.css.map",
-    "main.2b631c3a.js.map": "/static/js/main.2b631c3a.js.map",
+    "main.4fcdb890.css.map": "/static/css/main.4fcdb890.css.map",
+    "main.40d8d6ba.js.map": "/static/js/main.40d8d6ba.js.map",
     "787.907a2fad.chunk.js.map": "/static/js/787.907a2fad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2eaa1997.css",
-    "static/js/main.2b631c3a.js"
+    "static/css/main.4fcdb890.css",
+    "static/js/main.40d8d6ba.js"
   ]
 }
