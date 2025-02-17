@@ -81,6 +81,13 @@ h3 {
 
 /* font */
 
+video {
+  /* override other styles to make responsive */
+  width: 100%    !important;
+  height: auto   !important;
+}
+
+
 /* Timeline */
 .MuiTimelineDot-root {
   border-color: var(--bs-p-mutedblue) !important;
@@ -261,8 +268,8 @@ section {
 
 @media (min-width: 768px) {
   .py-c {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 }
 
@@ -520,4 +527,8 @@ section {
 
 .img-explanation-container {
   border-left: solid 5px #F9FBCB;
+}
+
+.img-explanation-container.orange {
+  border-left: solid 5px #FFCFB0;
 }

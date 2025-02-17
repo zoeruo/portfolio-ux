@@ -41,6 +41,11 @@ import cancer_d1 from '../asset/img/CancerQA_designfeature2.png';
 import cancer_d2 from '../asset/img/CancerQA_designfeature3.png';
 import cancer_d3 from '../asset/img/CancerQA_designfeature4.png';
 import videofront from "../asset/videos/CHDMS_D.mp4";
+import videolms1 from '../asset/videos/LMS1.mp4';
+import videolms2 from '../asset/videos/LMS2.mp4';
+import videolms3 from '../asset/videos/LMS3.mp4';
+import videolms4 from '../asset/videos/LMS4.mp4';
+import LMSAP from '../asset/img/LMSAP_thumbnail.jpg';
 
 
 const designFeaturesFS = [
@@ -48,21 +53,26 @@ const designFeaturesFS = [
         title: "Simplified Onboarding with Templates and Examples",
         content: `Users can leverage customizable templates and pre-filled example content to simplify the initial setup process. 
                   This guided approach reduces user anxiety and promotes early engagement.`,
-        images: [flikshop_d0, flikshop_d1],
+        media: [videolms1],
         // insight: "Boost engagement and reduce user anxiety by guiding them through the initial steps effortlessly."
     },
     {
         title: "Minimizing Cognitive Load through Simplified Forms",
         content: `Recognizing that extensive text can present challenges, forms are designed with a focus on simplicity, 
                   minimizing text and maximizing clarity to facilitate focused completion`,
-        images: [flikshop_d2, flikshop_d3],
+        media: [videolms2],
         // insight: "Reduce user stress."
     },
     {
         title: "AI-Powered Resume Builder and Skill Recommendation Engine",
         content: `This feature provides users with a personalized resume building experience. By analyzing free-flowing text and course interests, 
                   the AI engine suggests relevant skills, empowering users to create impactful resumes.`,
-        images: [flikshop_d4, flikshop_d5],
+        media: [videolms3],
+    },
+    {
+        title: "AI Interview Coach",
+        content: `Dual-tone communication coaching for individuals rejoining society, offering both professional and authentic interview practice modes to build confidence and support successful workplace reintegration.`,
+        media: [videolms4],
     }
 ];
 
@@ -72,20 +82,20 @@ const designFeaturesCancerQA = [
         content: `Medical records staff can submit questions to doctors, 
                   with responses subject to further clarification or requests for additional information. 
                   The left panel allows staff to create, review, and manage their submitted question forms.`,
-        images: [cancer_d1],
+        media: [cancer_d1],
     },
     {
         title: "Multi-Question Forms",
         content: `Forms can be designed with multiple related query boxes to streamline the inquiry process. 
                   Each query box includes distinct fields for specifying a category, posing a question, and providing an answer. 
                   The answer field is fully editable, accommodating both single and multiple-choice response formats.`,
-        images: [cancer_d0],
+        media: [cancer_d0],
     },
     {
         title: "Customizable Dictionaries",
         content: `Both medical records staff and doctors can create and manage their own terminology lists, facilitating clear and accurate communication. 
                   Integrated search functionality ensures quick and easy access to these custom terms.`,
-        images: [cancer_d2, cancer_d3],
+        media: [cancer_d2, cancer_d3],
     }
 ];
 
@@ -258,13 +268,12 @@ export const contents = {
     FlikshopLMS: {
         "url": "FlikshopLMS",
         "img": imgflikshop,
-        "title": "Flikshop Learning Management System",
+        "title": "Flikshop LMS: AI Career Center",
         "subtitle": "Unlocking Potential: A Learning Platform for Incarcerated Individuals",
-        "overview": "<p>Flikshop is a company that helps people stay connected with incarcerated loved ones. Their ultimate mission is to end recidivism and build social trust among incarcerated people. They also offer in-person bootcamps for returning citizens (Flikshop School of Business).</p>" +
-            "<p>We're partnering to create an <strong>AI-powered Online Learning Management System</strong> to unlock the potential of each incarcerated individual through personalized learning experiences</p>",
+        "overview": `<p>Flikshop, a mission-driven company, empowers incarcerated individuals through technology-driven education. Building on the success of their in-person Flikshop School of Business, they developed a tablet-based Learning Management System (LMS) designed to break down educational barriers within the correctional system. This case study explores the LMS's AI Career Center, a key component in fostering skill development and career preparation.</p>`,
         "duration": "<p>3 months ( Sep 2023 - Dec 2023 )</p>",
         // "teammembers": "<div className='pb-2'><div className='d-inline pe-4'>Chao-Min Wu</div><div className='d-inline pe-4'>Shu-Ping Chang</div><span className='d-inline pe-4'>Xin Chen</span><span className='d-inline pe-4'>Ziyi Yuan</span><strong className='d-inline pe-4 text-c-purple'>Zoe Lo</strong></div>",
-        "role": `UX Designer,&nbsp;&nbsp;Client Meeting Lead & Meeting Coordinator ( Team of 5 )`,
+        "role": `UX Designer & Meeting Coordinator ( Team of 5 )`,
         // "role": "<div className='py-2 d-md-flex'><h2 className='me-3 my-auto mb-2'>Meeting Coordinator</h2><div class='d-flex'><div className='bg-purple px-2 py-1 me-3'>Organization</div><div className='bg-purple px-2 py-1 me-3'>Time Management</div></div></div>" +
         //     "<ul><li>Scheduled meetings at mutually agreeable times.</li>" +
         //     "<li>Sent invitations and reminders to participants.</li>" +
@@ -275,10 +284,30 @@ export const contents = {
         //     "<li>Lead client meetings with Flikshop, ensuring clear and concise presentations of deliverables.</li>" +
         //     "<li>Facilitated productive discussions and addressed client questions or concerns.</li>" +
         //     "</ul>",
-        "problemstatement": "Current LMS for incarcerated individuals lack personalization, hindering their ability to learn efficiently and achieve their goals.",
-        "goal": `<p>Design an <strong>AI-powered feature</strong> within the LMS that personalizes the learning experience for incarcerated learners, maximizing their engagement and knowledge retention.</p>
-        <div class="text-center my-5">then ......</div>
-        <div class="font-display2 text-center text-P-purple pb-4">How might we leverage AI to provide personalized learning pathways that maximize engagement and knowledge retention for incarcerated learners?</div>`,
+        "problemstatement":
+            `<div className="d-flex">
+                              <h2 className="me-2">1.</h2>
+                             <div>
+                              <h2>Lack of Personalized Career Guidance</h2>
+                              <div className="mb-3">
+                                    Current LMS solutions offer generic career resources, failing to provide personalized guidance based on individual skills, interests, and goals, hindering effective career planning.
+                              </div>
+                             </div>
+                            </div>
+           <div className="d-flex">
+                              <h2 className="me-2">2.</h2>
+                             <div>
+                              <h2>Difficulty Tracking Progress and Measuring Outcomes</h2>
+                              <div className="mb-3">
+                                   The lack of robust data collection and analysis hinders the ability to effectively track individual user progress in career development and measure the overall effectiveness of existing career services, making it difficult to demonstrate program impact and secure stakeholder buy-in.
+                              </div>
+                             </div> 
+                            </div>
+            <div className="text-center my-5">then ......</div>
+            <div className="text-center font-display2 text-P-purple pb-4">How might we deliver personalized career guidance and collect the necessary data to demonstrate its impact on user outcomes and program effectiveness within the Flikshop LMS?</div>`,
+        // "goal": `<p>Design an <strong>AI-powered feature</strong> within the LMS that personalizes the learning experience for incarcerated learners, maximizing their engagement and knowledge retention.</p>
+        // <div class="text-center my-5">then ......</div>
+        // <div class="font-display2 text-center text-P-purple pb-4">How might we leverage AI to provide personalized learning pathways that maximize engagement and knowledge retention for incarcerated learners?</div>`,
         "addon": "",
         "designfeatures": designFeaturesFS,
         "researchFS": " ",
@@ -290,6 +319,51 @@ export const contents = {
         "creatingprocess": ""
 
     },
+    LMSAdminPortal: {
+        "url": "LMSAdminPortal",
+        "img": LMSAP,
+        "title": "Flikshop LMS: Admin Panel",
+        "subtitle": "Unlocking Potential: A Learning Platform for Incarcerated Individuals",
+        "overview": `<p>Flikshop's tablet-based Learning Management System (LMS) requires a robust administrative interface to support its educational mission within correctional facilities. The Admin Portal serves as a critical tool for course management and impact assessment, enabling instructors and facility staff to create content, track learner progress, and measure program effectiveness.</p>`,
+        "duration": "<p>3 months ( Jan 2024 - April 2024 )</p>",
+        "role": `UX Designer,&nbsp;&nbsp;Client Meeting Lead & Meeting Coordinator ( Team of 5 )`,
+        "problemstatement": `
+                            <div className="d-flex">
+                              <h2 className="me-2">1.</h2>
+                             <div>
+                              <h2>Structured Content Flexibility</h2>
+                              <div className="mb-3">
+                                    Navigating the design challenge of creating a course creation interface that balances structured learning modules with instructor creativity, determining the optimal content architecture between rigid module-based systems and open free-text editors.
+                              </div>
+                             </div> 
+                            </div>
+        <div className="d-flex">
+                              <h2 className="me-2">2.</h2>
+                             <div>
+                              <h2>Multifaceted User Ecosystem</h2>
+                              <div className="mb-3">
+                                    In a sensitive correctional environment, the admin portal must navigate complex user roles and relationships, identifying primary users beyond course instructors—including facility administrators who verify content and the undefined Flikshop organizational role—while establishing clear use cases and permission frameworks.
+                              </div>
+                             </div> 
+                            </div>
+                            <div className="d-flex">
+                              <h2 className="me-2">3.</h2>
+                             <div>
+                              <h2>Outcome-Driven Performance Metrics</h2>
+                              <div className="mb-3">
+                                    Beyond instructor-focused student engagement metrics, the admin portal must align diverse stakeholder perspectives—facility administrators, Flikshop leadership—by developing comprehensive data visualization that connects educational interventions to meaningful reentry success indicators.
+                              </div>
+                             </div> 
+                            </div>
+                            <div className="text-center my-5">so ......</div>
+            <div className="text-center font-display2 text-P-orange pb-4">How might we design an admin portal that enables flexible course creation, ensures content verification, and provides meaningful insights into educational impact and reentry success?</div>
+        `,
+        "LMSAPdesign": " ",
+        "LMSAPresearch": " ",
+        "LMSAPdesignprocess": " ",
+        "LMSAPreflection": " "
+
+    },
     CancerQA: {
         "url": "CancerQA",
         "img": imgcancerqa,
@@ -298,11 +372,12 @@ export const contents = {
         "overview": "<p>This system was designed to facilitate efficient and effective communication between the medical records room, doctors, and nursing staff regarding cancer patients. It serves as a centralized platform for asking and answering questions about patient care</p>",
         "duration": "<p>5 months ( Jan 2020 - May 2020 )</p>",
         "role": "UX Designer, Font-end Developer",
-        "problemstatement": "Healthcare providers in oncology departments often face challenges in efficient communication and information sharing between medical records staff, physicians, and nursing staff. The traditional  paper-based systems can be time-consuming, prone to errors, and inefficient. This can lead to delays in patient care, miscommunication, and suboptimal treatment outcomes.",
-        "goal": `<p>The primary goal of this project was to develop a centralized platform that would streamline communication and information exchange between medical records staff, physicians, and nursing staff, specifically related to cancer patient care. The system aimed to improve efficiency, reduce errors, and ultimately enhance patient outcomes.</p>
+        "problemstatement": `Healthcare providers in oncology departments often face challenges in efficient communication and information sharing between medical records staff, physicians, and nursing staff. The traditional  paper-based systems can be time-consuming, prone to errors, and inefficient. This can lead to delays in patient care, miscommunication, and suboptimal treatment outcomes.
         <div class="text-center my-5">so ......</div>
         <div class="font-display2 text-center text-P-blue pb-4">How might we create a seamless flow of knowledge that anticipates the needs of oncology care providers?</div>`,
-        "addon": `<p>To ensure a quick and efficient launch of the platform, I decided to implement Bootstrap as our front-end framework and designed following the styles. This decision proved crucial for several reasons:</p>
+        // "goal": `<p>The primary goal of this project was to develop a centralized platform that would streamline communication and information exchange between medical records staff, physicians, and nursing staff, specifically related to cancer patient care. The system aimed to improve efficiency, reduce errors, and ultimately enhance patient outcomes.</p>
+
+        "addon": `<p className="pb-3">To ensure a quick and efficient launch of the platform, I decided to implement Bootstrap as our front-end framework and designed following the styles. This decision proved crucial for several reasons:</p>
                  <h2>01 : Responsive Design with Bootstrap Grid System</h2>
                  <p>The Bootstrap Grid System enabled seamless functionality across various devices, including 4:3 and 16:9 desktop formats, as well as tablets. 
                  This adaptability ensured that all healthcare provider users could access the platform easily, enhancing overall accessibility and usability.</p>

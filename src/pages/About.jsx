@@ -7,12 +7,12 @@ function About() {
   return (
     <>
       <section className="bg-p-white py-4">
-        <Container fluid>
-          <Row className="mb-5">
+        <Container>
+          <Row className="py-c">
             <Col xs={12} md={4} className="my-auto">
               <img id="Myimg" src={Myimg} className="img-fluid" alt="img AboutMe" />
             </Col>
-            <Col xs={12} md={8} className="">
+            <Col xs={12} md={8} className="my-auto">
               <Row>
                 <Col md={12}>
                   <h1 className="mb-3 mt-4 mt-md-0">My Journey into UX:</h1></Col>

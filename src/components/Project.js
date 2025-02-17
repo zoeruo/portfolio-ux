@@ -11,10 +11,12 @@ import cancerqa from '../asset/img/CancerQA_thumbnail.jpg';
 import flikshopmobile from '../asset/img/mobile_flikshopthumbnail.jpg';
 import chghmobile from '../asset/img/mobile_chghthumbnail.jpg';
 import cancermobile from '../asset/img/mobile_cancerthumbnail.jpg';
+import LMSAPmobile from '../asset/img/LMSAPmobile.jpg';
 import imslpimg from '../asset/img/IMSLP_m0.png';
 import arrowright from '../asset/img/arrow_right.png';
 import arrowleft from '../asset/img/arrow_left.png';
 import titlework from '../asset/img/title_work.svg';
+import LMSAP from '../asset/img/LMSAP_thumbnail.jpg';
 import '@splidejs/react-splide/css';
 
 export const Project = () => {
@@ -27,12 +29,41 @@ export const Project = () => {
                         <img src={titlework} className="img-fluid d-block d-md-none" alt="" />
                     </Col>
                 </Row>
+                <Link to="/ProjectDetail/LMSAdminPortal" className="text-decoration-none">
+                    <Row className="gx-0 mb-md-3">
+                        <Col md={8} xs={12}>
+                            <img src={LMSAP} className="img-fluid d-none d-md-block" alt="" />
+                            <div className="position-relative">
+                                <img src={LMSAPmobile} className="img-fluid d-block d-md-none" alt="" />
+                                <div className="position-absolute top-0 start-0 w-100 h-100 d-block d-md-none"
+                                    style={{
+                                        background: 'rgba(44, 62, 80, 0.5)', // Adjust opacity by changing the last number
+                                    }}>
+                                    <div className="d-flex flex-column justify-content-center align-items-center h-100 text-white p-4">
+                                        <h1 className="text-center text-p-white">Flikshop LMS: Admin Panel</h1>
+                                        <p className="text-center text-p-white">2024</p>
+                                        <p className="text-center text-p-white">Empowering Education: Designing Flikshop's Admin Portal for Course Creation and Impact Assessment</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </Col>
+                        <Col md={4} className="d-none d-md-flex">
+                            <div className="text-bg-p-black d-flex align-items-center justify-content-center p-5 rounded-end-4">
+                                <div className="text-start">
+                                    <h1 className="text-p-white">Flikshop LMS: Admin Panel</h1>
+                                    <p className="text-p-white">2024</p>
+                                    <p className="text-p-white">Empowering Education: Designing Flikshop's Admin Portal for Course Creation and Impact Assessment</p>
+                                </div>
+                            </div>
+                        </Col>
+                    </Row>
+                </Link>
                 <Link to="/ProjectDetail/FlikshopLMS" className="text-decoration-none ">
                     <Row className="gx-0 mb-md-3">
                         <Col md={4} className="d-none d-md-flex">
                             <div className="text-bg-p-black d-flex align-items-center justify-content-center p-5 rounded-start-4">
                                 <div className="text-start">
-                                    <h1 className="text-p-white">Flikshop Learning Management System</h1>
+                                    <h1 className="text-p-white">Flikshop LMS: AI Career Center</h1>
                                     <p className="text-p-white">2023</p>
                                     <p className="text-p-white">Unlocking Potential: A Learning Platform for Incarcerated Individuals</p>
                                 </div>

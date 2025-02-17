@@ -49,7 +49,6 @@ export const NavBar = () => {
                 className={`bg-p-white py-4 ${scrolled && isDesktop ? 'shadow-sm' : ''}`}
                 style={{ zIndex: 1030 }}
             >
-
                 <Navbar.Toggle
                     aria-controls="offcanvasNavbar-expand-md"
                     onClick={handleShow}

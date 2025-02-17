@@ -38,6 +38,21 @@ import chghiteration from '../asset/img/chgh_iteration.png';
 import chghRWD from '../asset/img/chgh_feature_RWD.jpg';
 import chghmenu from '../asset/img/chgh_feature_selectablemenu.jpg';
 import chghlanguage from '../asset/img/chgh_feature01.jpg';
+import lmsap_courses from '../asset/img/LMSAP_Courses.jpg';
+import lmsap_coursestructurecollapse from '../asset/img/LMSAP_CourseStructureCollapse.jpg';
+import lmsap_preview from '../asset/img/LMSAP_Preview.jpg';
+import lmsap_research_interview_insights from '../asset/img/LMSAP_research_interviewinsights.jpg';
+import lmsap_research_persona1 from '../asset/img/LMSAP_resrach_persona1.jpg';
+import lmsap_research_persona2 from '../asset/img/LMSAP_resrach_persona2.jpg';
+import lmsap_research_metrics from '../asset/img/LMSAP_research_metrics.jpg';
+import lmsap_video_coursestructure from '../asset/videos/LMSAP_CourseStructure.mp4';
+import lmsap_video_dashboard from '../asset/videos/LMSAP_Dashboard.mp4';
+import lmsap_video_learner from '../asset/videos/LMSAP_Learner.mp4';
+import lmsap_design_mapping from '../asset/img/LMSAP_design_mapping.jpg';
+import lmsap_design_sketch from '../asset/img/LMSAP_design_sketch.jpg';
+import lmsap_design_decide from '../asset/img/LMSAP_design_decide.jpg';
+import lmsap_design_prototype from '../asset/img/LMSAP_design_prototype.jpg';
+import lmsap_design_test from '../asset/img/LMSAP_design_testing.jpg';
 import {
     Timeline,
     TimelineConnector,
@@ -48,6 +63,7 @@ import {
     TimelineSeparator,
 } from "@mui/lab";
 import MyTimeline from "../components/Timeline";
+import ScrollContentSection from '../components/ScrollContentSection';
 
 
 function ProjectDetail(props) {
@@ -108,24 +124,24 @@ function ProjectDetail(props) {
             </div>
             {/* BASIC INFO */}
             <div className="bg-theme">
-                <Container className="custom-container">
-                    <Row className="py-c pb-0">
+                <Container className="custom-container py-c">
+                    <Row className="mb-5">
                         <Col xs={12} className="text-center">
                             <h1 className="font-display2">{content.title}</h1>
                         </Col>
                     </Row>
-                    <Row className="py-c">
-                        <Col xs={12} className="pb-3">
+                    <Row className="row-gap-4">
+                        <Col xs={12} className="">
                             <h3>OVERVIEW</h3>
                             <React.Fragment>{parse(content.overview)}</React.Fragment>
                         </Col>
-                        <Col xs={12} className="pb-3">
+                        <Col xs={12} className="">
                             <h3>DURATION</h3>
                             <React.Fragment>{parse(content.duration)}</React.Fragment>
                         </Col>
                         {content.hasOwnProperty('teammembers') &&
                             <>
-                                <Col xs={12} className="pb-3">
+                                <Col xs={12} className="">
                                     <h3>TEAM MEMBERS</h3>
                                     <React.Fragment>{parse(content.teammembers)}</React.Fragment>
                                 </Col>
@@ -150,23 +166,16 @@ function ProjectDetail(props) {
                     condition: content.problemstatement || content.part,
                     content: (
                         <Container className="custom-container">
-                            {content.part && (
-                                <Row className="py-c">
-                                    <Col xs={12} className="py-3">
-                                        <h2>Part 01: AI-powered Flikshop LMS</h2>
-                                    </Col>
-                                </Row>
-                            )}
                             <Row className="py-c">
                                 {content.problemstatement && (
                                     <>
-                                        <Col xs={12} className="pb-3">
-                                            <h1 className="mb-3">CHALLENGE</h1>
+                                        <Col xs={12} className="">
+                                            <h1 className="mb-5">CHALLENGE</h1>
                                             <SafeParse content={content.problemstatement} />
                                         </Col>
                                         {content.goal && (
-                                            <Col xs={12} className="py-3">
-                                                <h1>GOAL</h1>
+                                            <Col xs={12} className="">
+                                                <h1 className="py-5">GOAL</h1>
                                                 <SafeParse content={content.goal} />
                                             </Col>
                                         )}
@@ -191,8 +200,8 @@ function ProjectDetail(props) {
                     content: (
                         <Container className="custom-container">
                             <Row className="py-c">
-                                <Col xs={12} className="pt-4">
-                                    <h1>Leveraging Bootstrap for Rapid Development</h1>
+                                <Col xs={12} >
+                                    <h1 className="mb-5">LEVERAGING BOOTSTRAP</h1>
                                 </Col><Col xs={12} className="pt-2">
                                     <SafeParse content={content.addon} />
                                 </Col>
@@ -204,80 +213,81 @@ function ProjectDetail(props) {
                 {
                     condition: content.researchFS,
                     content: (
-                        <Container className="custom-container">
-                            <Row className="py-c">
-                                <Col xs={12} className="py-3">
-                                    <h1>RESEARCH + DISCOVERY ( What drove me to the DESIGN DECISIONS? )</h1>
-                                    <p>To inform this project, we employed a comprehensive research approach, including <strong>field research</strong>, <strong>desktop research</strong>, <strong>user interviews</strong>, and <strong>consultations with AI experts</strong>.</p>
-                                    <h2>Target Population</h2>
-                                    <p>Incarcerated individuals using tablets as a learning tool in facilities.</p>
-                                </Col>
-                                <Col xs={12} className="py-3">
-                                    <h2>Field Research: Meeting returning citizens in person</h2>
-                                    <div className="div-FS-research">
-                                        <h2>Goal</h2>
-                                        <ul>
-                                            <li>Access Flikshop School of Business's program to inform LMS development for incarcerated reintegration.</li>
-                                        </ul>
+                        <>
+                            <Container className="custom-container">
+                                <Row className="py-c">
+                                    <Col xs={12} className="">
+                                        <h1 className="mb-5">RESEARCH + DISCOVERY ( What drove me to the DESIGN DECISIONS? )</h1>
+                                        <p>To inform this project, we employed a comprehensive research approach, including <strong>field research</strong>, <strong>desktop research</strong>, <strong>user interviews</strong>, and <strong>consultations with AI experts</strong>.</p>
+                                    </Col>
+                                    <Col xs={12} className="py-3">
+                                        <h2>Target Population</h2>
+                                        <p>Incarcerated individuals using tablets as a learning tool in facilities.</p>
+                                    </Col>
+                                    <Col xs={12} className="py-3">
+                                        <div className="div-FS-research">
+                                            <h2>Field Research: Meeting returning citizens in person</h2>
+                                            <h3><strong>Goal</strong></h3>
+                                            <p>Access Flikshop School of Business's program to inform LMS development for incarcerated reintegration.</p>
+                                            <h2><strong>Insights</strong></h2>
+                                            <ul>
+                                                <li>LMS deployment: Pre-installation on tablets provided by Flikshop in collaboration with manufacturers and facilities. Challenges include government approval and facility environment constraints.</li>
+                                                <li>Scholars (Returning Citizens): Motivated by learning tech skills.</li>
+                                            </ul>
+                                            <div className="bg-theme py-1 px-2 d-flex mb-4">
+                                                <div className="me-2 my-auto"><img src={lightbulb} className='pb-2 lightbulb' alt='' /></div>
+                                                <div>See ChatGPT as a ‘personal tutor’</div>
+                                            </div>
 
-                                        <h2>Insights</h2>
-                                        <ul>
-                                            <li>LMS deployment: Pre-installation on tablets provided by Flikshop in collaboration with manufacturers and facilities. Challenges include government approval and facility environment constraints.</li>
-                                            <li>Scholars (Returning Citizens): Motivated by learning tech skills.</li>
-                                        </ul>
-                                        <div className="bg-theme py-1 px-2 d-flex mb-4">
-                                            <div className="me-2 my-auto"><img src={lightbulb} className='pb-2 lightbulb' alt='' /></div>
-                                            <div>See ChatGPT as a ‘personal tutor’</div>
+                                            <img src={FSr_0} className="img-fluid"></img>
                                         </div>
+                                    </Col>
+                                    <Col xs={12} className="py-3">
+                                        <div className="div-FS-research">
+                                            <h2>User Interview</h2>
+                                            <p>To gain a deeper understanding of the challenges  incarcerated people face, we conducted interviews with 4 formerly incarcerated people.  Since none of us had firsthand experience, these interviews were crucial in identifying important considerations for our design.</p>
+                                            <h2><strong>Goal</strong></h2>
+                                            <p>Explore learning experiences, resources, and career preparation experiences in correctional facilities.</p>
+                                            <img src={FSr_1} className="img-fluid pb-4"></img>
+                                            <h2><strong>Insights</strong></h2>
+                                            <ul>
+                                                <li>Federal prisons offer a range of in-person learning opportunities, but experiences can differ.</li>
+                                                <li>Data collection within correctional facilities raises privacy and censorship issues.</li>
+                                                <li>Frustration with digital tools in prisons can hinder learning effectiveness.</li>
+                                            </ul>
+                                            <div className="bg-theme py-1 px-2 d-flex mb-4">
+                                                <div className="me-2 my-auto"><img src={lightbulb} className='pb-2 lightbulb' alt='' /></div>
+                                                <div>How can we mitigate the frustration or anxiety?</div>
+                                            </div>
+                                            <img src={FSr_2} className="img-fluid"></img>
+                                        </div>
+                                    </Col>
+                                    <Col xs={12} className="py-3">
 
-                                        <img src={FSr_0} className="img-fluid"></img>
-                                    </div>
-                                </Col>
-                                <Col xs={12} className="py-3">
-                                    <h2>User Interview</h2>
-                                    <p>To gain a deeper understanding of the challenges  incarcerated people face, we conducted interviews with 4 formerly incarcerated people.  Since none of us had firsthand experience, these interviews were crucial in identifying important considerations for our design.</p>
-                                    <div className="div-FS-research">
-                                        <h2>Goal</h2>
-                                        <ul className="">
-                                            <li>Explore learning experiences, resources, and career preparation experiences in correctional facilities.</li>
-                                        </ul>
-                                        <img src={FSr_1} className="img-fluid pb-4"></img>
-                                        <h2>Insights</h2>
-                                        <ul>
-                                            <li>Federal prisons offer a range of in-person learning opportunities, but experiences can differ.</li>
-                                            <li>Data collection within correctional facilities raises privacy and censorship issues.</li>
-                                            <li>Frustration with digital tools in prisons can hinder learning effectiveness.</li>
-                                        </ul>
-                                        <div className="bg-theme py-1 px-2 d-flex mb-4">
-                                            <div className="me-2 my-auto"><img src={lightbulb} className='pb-2 lightbulb' alt='' /></div>
-                                            <div>How can we mitigate the frustration or anxiety?</div>
+                                        <div className="div-FS-research">
+                                            <h2>AI Expert Interview</h2>
+                                            <p>To optimize our AI integration within the LMS system, we conducted AI Expert interviews to understand the potential benefits and drawbacks of AI in the LMS system.</p>
+                                            <h2><strong>Goal</strong></h2>
+                                            <p>Identify opportunities for AI-powered LMS to address the challenges faced by learners in correctional facilities, despite the inherent difficulties of implementing such technology in this environment.</p>
+                                            <img src={FSr_3} className="img-fluid pb-4"></img>
+                                            <h2><strong>Insights</strong></h2>
+                                            <ul>
+                                                <li>High user engagement is essential for a successful LMS within correctional facilities.</li>
+                                                <li>The LMS should be accessible to all users, including those with visual impairments, by offering multiple languages, clear and concise language options, and other accessibility features.</li>
+                                                <li>The LMS can be a tool to demonstrate and celebrate personal growth and learning, potentially fostering a sense of accomplishment and rebuilding trust.</li>
+                                            </ul>
+                                            <div className="bg-theme py-1 px-2 d-flex mb-4">
+                                                <div className="me-2 my-auto"><img src={lightbulb} className='pb-2 lightbulb' alt='' /></div>
+                                                <div>How can we ensure the LMS is accessible to all learners?</div>
+                                            </div>
                                         </div>
-                                        <img src={FSr_2} className="img-fluid"></img>
-                                    </div>
-                                </Col>
-                                <Col xs={12} className="py-3">
-                                    <h2>AI Expert Interview</h2>
-                                    <p>To optimize our AI integration within the LMS system, we conducted AI Expert interviews to understand the potential benefits and drawbacks of AI in the LMS system.</p>
-                                    <div className="div-FS-research">
-                                        <h2>Goal</h2>
-                                        <ul className="">
-                                            <li>Identify opportunities for AI-powered LMS to address the challenges faced by learners in correctional facilities, despite the inherent difficulties of implementing such technology in this environment.</li>
-                                        </ul>
-                                        <img src={FSr_3} className="img-fluid pb-4"></img>
-                                        <h2>Insights</h2>
-                                        <ul>
-                                            <li>High user engagement is essential for a successful LMS within correctional facilities.</li>
-                                            <li>The LMS should be accessible to all users, including those with visual impairments, by offering multiple languages, clear and concise language options, and other accessibility features.</li>
-                                            <li>The LMS can be a tool to demonstrate and celebrate personal growth and learning, potentially fostering a sense of accomplishment and rebuilding trust.</li>
-                                        </ul>
-                                        <div className="bg-theme py-1 px-2 d-flex mb-4">
-                                            <div className="me-2 my-auto"><img src={lightbulb} className='pb-2 lightbulb' alt='' /></div>
-                                            <div>How can we ensure the LMS is accessible to all learners?</div>
-                                        </div>
-                                    </div>
-                                </Col>
-                            </Row>
-                        </Container>)
+                                    </Col>
+                                </Row>
+                            </Container>
+                            <Container fluid>
+
+                            </Container>
+                        </>)
                 },
                 //Design Process Flikshop
                 {
@@ -285,8 +295,8 @@ function ProjectDetail(props) {
                     content: (
                         <Container className="custom-container">
                             <Row className="py-c">
-                                <Col xs={12} className="py-3">
-                                    <h1>Design Sprint</h1>
+                                <Col xs={12} className="">
+                                    <h1 className="mb-5">DESIGN SPRINT</h1>
                                     <p>We used a <strong>design sprint</strong> to tackle this challenge!</p>
                                 </Col>
                                 <Col xs={12} className="py-3">
@@ -377,7 +387,7 @@ function ProjectDetail(props) {
                                 <Row className="py-c pb-0">
                                     <Col xs={12} className="">
                                         <h2 className="">PROCESS 01</h2>
-                                        <h1 className="mb-3">Stakeholder Analysis & Content Management Requirements</h1>
+                                        <h1 className="mb-5">Stakeholder Analysis & Content Management Requirements</h1>
                                         {/* <MyTimeline /> */}
 
                                         <div className="py-3">
@@ -392,7 +402,7 @@ function ProjectDetail(props) {
                                                 </ul>
                                             </p>
                                         </div>
-                                        <div className="pt-3 pb-2">
+                                        <div className="py-3">
                                             <h2 className="text-p-deepnavy">USER RESEARCH</h2>
                                             <div className="font-body"><strong>User Research Goals</strong></div>
                                             <p>
@@ -417,7 +427,7 @@ function ProjectDetail(props) {
                                 </Row>
                             </Container>
                             <Container>
-                                <Row className="gx-3 mt-0">
+                                <Row className="gx-3 py-3">
                                     <Col md={3}>
                                         <div className="bg-p-deepnavy p-4 text-center">
                                             <img src={eye1} className="img-fluid w-25 mb-2" alt="" />
@@ -445,8 +455,8 @@ function ProjectDetail(props) {
                                 </Row>
                             </Container>
                             <Container className="custom-container">
-                                <Row className="py-c pt-3">
-                                    <Col xs={12} className="py-3">
+                                <Row className="py-c pt-5">
+                                    <Col xs={12} className="">
                                         <div className="">
                                             <h2 className="text-p-deepnavy">CONSTRAINTS</h2>
                                             <p>User research was hampered by limited access to busy medical staff, making interviews and follow-ups difficult. The research scope was also limited, preventing full documentation of content update processes across all departments and missing input from some key areas due to scheduling conflicts. Crucially, there was no direct feedback from the public or patients, no usability testing on the old website, and limited data on how different user groups used it, including analytics on popular features. These limitations forced me to make assumptions based on incomplete information, adding risk to the project planning.</p>
@@ -467,13 +477,13 @@ function ProjectDetail(props) {
                                 <Row className="py-c gx-md-3">
                                     <Col xs={12} className="">
                                         <h2 className="">PROCESS 02</h2>
-                                        <h1 className="mb-3">Rebuilding the Content Foundation & Sketch</h1>
+                                        <h1 className="mb-5">Rebuilding the Content Foundation & Sketch</h1>
                                         <p>Reorganizing the website's content, decided who would be allowed to edit different sections, and established clear boundaries between those sections. And Sketched!</p>
                                     </Col>
-                                    <Col md={6}>
+                                    <Col md={6} className="py-3">
                                         <img src={chghia} className="img-fluid"></img>
                                     </Col>
-                                    <Col md={6}>
+                                    <Col md={6} className="py-3">
                                         <img src={chghsketch} className="img-fluid"></img>
                                     </Col>
                                 </Row>
@@ -490,7 +500,7 @@ function ProjectDetail(props) {
                                 <Row className="py-c pb-0">
                                     <Col xs={12} className="">
                                         <h2 className="">PROCESS 03</h2>
-                                        <h1 className="mb-3">Iterations & Cross-Division Stakeholder Meeting</h1>
+                                        <h1 className="mb-5">Iterations & Cross-Division Stakeholder Meeting</h1>
                                         <div className="py-3">
                                             <h2 className="text-p-deepnavy">SITUATION</h2>
                                             <p>My first major design review happened at the mid-fidelity prototype stage with our medical director, who was the key decision-maker. This meeting revealed significant gaps in our stakeholder engagement process and highlighted conflicting needs across departments. We needed to quickly pivot to a more inclusive feedback process while balancing various departmental priorities.
@@ -500,7 +510,7 @@ function ProjectDetail(props) {
                                 </Row>
                             </Container>
                             <Container>
-                                <Row className="gx-3 mt-0 pb-3">
+                                <Row className="gx-3 py-3">
                                     <Col md={4}>
                                         <div className="bg-p-white p-4 text-center h-100">
                                             <div className="mb-2"><strong >Initial Design Review</strong></div>
@@ -523,16 +533,16 @@ function ProjectDetail(props) {
                             </Container>
                             <Container className="custom-container">
                                 <Row className="py-3">
-                                    <Col xs={12}>
-                                        <img src={chghiteration} className="img-fluid"></img>
-                                    </Col>
-                                </Row>
-                                <Row className="py-c pt-3">
                                     <Col xs={12} className="py-3">
                                         <div className="">
                                             <h2 className="text-p-deepnavy">CONSTRAINTS</h2>
                                             <p>Late involvement from the medical director, who wasn't included in early design phases, led to significant rework after initial decisions were made without their input. Resource constraints meant the same person served as both designer and developer, limiting time for user testing and preventing thorough validation due to tight deadlines. Managing feedback from over 80 departments simultaneously proved challenging, especially with conflicting requirements between leadership and end-users, forcing the team to balance competing priorities under time pressure.</p>
                                         </div>
+                                    </Col>
+                                </Row>
+                                <Row className="py-c pt-3">
+                                    <Col xs={12}>
+                                        <img src={chghiteration} className="img-fluid"></img>
                                     </Col>
                                 </Row>
                             </Container>
@@ -548,7 +558,7 @@ function ProjectDetail(props) {
                                 <Row className="py-c pb-0">
                                     <Col xs={12} className="">
                                         <h2 className="">PROCESS 04</h2>
-                                        <h1 className="mb-3">Development & Project Crisis Management</h1>
+                                        <h1 className="mb-5">Development & Project Crisis Management</h1>
                                         <div className="py-3">
                                             <h2 className="text-p-deepnavy">SITUATION</h2>
                                             <p>As the sole front-end developer working alongside two back-end developers and a database engineer, our in-house development was suddenly threatened with outsourcing. This created an urgent need to prove our team's value while managing increasing pressure for rapid deployment.
@@ -558,7 +568,7 @@ function ProjectDetail(props) {
                                 </Row>
                             </Container>
                             <Container>
-                                <Row className="gx-3 mt-0 pb-3">
+                                <Row className="gx-3 py-3">
                                     <Col md={4}>
                                         <div className="bg-p-softcream p-4 text-center h-100">
                                             <div className="mb-2"><strong >Built Initial Development Framework</strong></div>
@@ -580,11 +590,6 @@ function ProjectDetail(props) {
                                 </Row>
                             </Container>
                             <Container className="custom-container">
-                                <Row className="py-3">
-                                    <Col xs={12}>
-                                        <img src={chghiteration} className="img-fluid"></img>
-                                    </Col>
-                                </Row>
                                 <Row className="py-c pt-3">
                                     <Col xs={12} className="py-3">
                                         <div className="">
@@ -606,8 +611,8 @@ function ProjectDetail(props) {
                                 (
                                     <>
                                         <Container className="custom-container">
-                                            <Row className="py-c">
-                                                <Col xs={12} className="mb-3">
+                                            <Row className="py-c pb-0">
+                                                <Col xs={12} className="mb-5">
                                                     <h1>DESIGN HIGHLIGHTS & KEY CONSIDERATIONS</h1>
                                                 </Col>
                                                 <Col xs={12}>
@@ -615,46 +620,31 @@ function ProjectDetail(props) {
                                                         On the other hand, the administrative interface presented crucial information in clear, tabulated layouts for easy editing, complemented by a distraction-free design that paired simple icons with descriptive text. For enhanced content flexibility, users had access to a comprehensive text editor, allowing them to create and modify detailed content as needed.
                                                         <a href="https://www.chgh.org.tw/Index.aspx" target="_blank" className="ms-2 text-decoration-none">Go to Cheng Hsin General Hospital</a></p>
                                                 </Col>
-                                                {/* <Col xs={12} className="pt-2">
-                                                <React.Fragment>{parse(content.success)}</React.Fragment>
-                                                <video className='w-100' autoPlay loop muted>
-                                                    <source src={videofront} type='video/mp4' allowFullScreen />
-                                                </video>
-                                            </Col>
-                                            <Col xs={12} className="pt-4">
-                                                <h2>Back-End Key Design Consideration &  DEMO</h2>
-                                                <ul><li><strong>Show all important info at once</strong>: Use tables with rows to make editing information clear.</li>
-                                                    <li><strong>Keep it simple</strong>: Remove distractions and use clear icons with text.</li>
-                                                    <li><strong>Give users flexibility</strong>: Provide a text editor for detailed editing.</li></ul>
-                                                <video className='w-100' autoPlay loop muted>
-                                                    <source src={videoback} type='video/mp4' allowFullScreen />
-                                                </video>
-                                            </Col> */}
                                             </Row>
                                         </Container>
-                                        <Container className="py-c pt-0">
+                                        <Container className="py-c pt-5">
                                             <Row className="mb-5">
-                                                <Col xs={9}>
+                                                <Col md={9}>
                                                     <img src={chghRWD} className="img-fluid"></img>
                                                 </Col>
-                                                <Col xs={3} className="my-auto">
-                                                    <div class="p-3 bg-p-white rounded-end-4 img-explanation-container">The user interface is fully responsive, seamlessly adapting between desktop and mobile views as demonstrated in the provided layouts. Bootstrap's robust grid system and pre-built components significantly streamline development while providing reliable responsive breakpoints.</div>
+                                                <Col md={3} className="my-auto">
+                                                    <div class="p-3 bg-p-white rounded-4 img-explanation-container">The user interface is fully responsive, seamlessly adapting between desktop and mobile views as demonstrated in the provided layouts. Bootstrap's robust grid system and pre-built components significantly streamline development while providing reliable responsive breakpoints.</div>
                                                 </Col>
                                             </Row>
                                             <Row className="mb-5">
-                                                <Col xs={9}>
+                                                <Col md={9}>
                                                     <img src={chghlanguage} className="img-fluid"></img>
                                                 </Col>
-                                                <Col xs={3} className="my-auto">
-                                                    <div class="p-3 bg-p-white rounded-end-4 img-explanation-container">Language selection is available in the upper right corner throughout the site. Each language version has its own dedicated page that editors can manage independently. If a user switches to a language where the current page isn't available, they'll automatically return to their previous page. This approach allows for flexible content management while maintaining a seamless user experience.</div>
+                                                <Col md={3} className="my-auto">
+                                                    <div class="p-3 bg-p-white rounded-4 img-explanation-container">Language selection is available in the upper right corner throughout the site. Each language version has its own dedicated page that editors can manage independently. If a user switches to a language where the current page isn't available, they'll automatically return to their previous page. This approach allows for flexible content management while maintaining a seamless user experience.</div>
                                                 </Col>
                                             </Row>
                                             <Row className="mb-5">
-                                                <Col xs={9}>
+                                                <Col md={9}>
                                                     <img src={chghmenu} className="img-fluid"></img>
                                                 </Col>
-                                                <Col xs={3} className="my-auto">
-                                                    <div class="p-3 bg-p-white rounded-end-4 img-explanation-container">The management system allows users to tailor their division website's menu structure according to their needs. Administrators can easily add, remove, or rearrange menu items such as events, research publications, contact information, and other content modules through an intuitive interface. This flexibility ensures each website can be customized to reflect its specific purpose and content requirements without requiring technical expertise.</div>
+                                                <Col md={3} className="my-auto">
+                                                    <div class="p-3 bg-p-white rounded-4 img-explanation-container">The management system allows users to tailor their division website's menu structure according to their needs. Administrators can easily add, remove, or rearrange menu items such as events, research publications, contact information, and other content modules through an intuitive interface. This flexibility ensures each website can be customized to reflect its specific purpose and content requirements without requiring technical expertise.</div>
                                                 </Col>
                                             </Row>
                                         </Container>
@@ -664,15 +654,321 @@ function ProjectDetail(props) {
                         </>
                     )
                 },
+                //LMSAP DESIGN HIGHLIGHTS
+                {
+                    condition: content.LMSAPdesign,
+                    content: (
+                        <>
+                            {content.hasOwnProperty('LMSAPdesign') &&
+                                (
+                                    <>
+                                        <Container className="custom-container">
+                                            <Row className="py-c pb-0">
+                                                <Col xs={12} className="mb-5">
+                                                    <h1>KEY FEATURES</h1>
+                                                    <p>This design focuses on two main components:<br />
+                                                        <strong>Course Creation</strong> and <strong>Performance Metrics</strong></p>
+                                                </Col>
+                                                <Col xs={12}>
+                                                    <h3>01</h3>
+                                                    <h2>Course Creation</h2>
+                                                    <p>Start by viewing the courses overview and dive into the process of creating a new course as an instructor.</p>
+                                                </Col>
+                                            </Row>
+                                        </Container>
+                                        <Container className="py-c pt-5">
+                                            <Row className="mb-5">
+                                                <Col md={9}>
+                                                    <img src={lmsap_courses} className="img-fluid"></img>
+                                                </Col>
+                                                <Col md={3} className="my-auto">
+                                                    <div class="p-3 bg-p-white rounded-end-4 img-explanation-container orange">
+                                                        Visual representation of courses displays key information at a glance.
+                                                        <hr className="text-black-50"></hr>
+                                                        Users can filter courses by status to maintain a structured and organized view.
+                                                    </div>
+                                                </Col>
+                                            </Row>
+                                            <Row className="mb-5">
+                                                <Col md={9}>
+                                                    <video width="auto" autoPlay loop muted>
+                                                        <source src={lmsap_video_coursestructure} type="video/mp4" />
+                                                    </video>
+                                                </Col>
+                                                <Col md={3} className="my-auto">
+                                                    <div class="p-3 bg-p-white rounded-end-4 img-explanation-container orange">
+                                                        <div className="mb-1"><strong>Outline Definition</strong></div>
+                                                        Users can define the outline of their classes before generating the course content, ensuring a systematic and organized approach.
+                                                        <hr className="text-black-50"></hr>
+                                                        <div className="mb-1"><strong>Module Types</strong></div>
+                                                        The platform supports three types of course modules: Video, Reading, and Quiz. Users can specify the number of lessons and the modules within each lesson.
+                                                        <hr className="text-black-50"></hr>
+                                                        <div className="mb-1"><strong>Sorting Functionality</strong></div>
+                                                        A drag-and-drop feature enables users to reorder modules effortlessly by dragging the left-aligned button, ensuring a seamless organization of content.
+                                                    </div>
+                                                </Col>
+                                            </Row>
+                                            <Row className="mb-5">
+                                                <Col md={9}>
+                                                    <img src={lmsap_coursestructurecollapse} className="img-fluid"></img>
+                                                </Col>
+                                                <Col md={3} className="my-auto">
+                                                    <div class="p-3 bg-p-white rounded-end-4 img-explanation-container orange">A collapsible sidebar maximizes the content editing area. Even when collapsed, it displays a progress bar, helping users track their work stages and maintain context.</div>
+                                                </Col>
+                                            </Row>
+                                            <Row className="mb-5">
+                                                <Col md={9}>
+                                                    <img src={lmsap_preview} className="img-fluid"></img>
+                                                </Col>
+                                                <Col md={3} className="my-auto">
+                                                    <div class="p-3 bg-p-white rounded-end-4 img-explanation-container orange">The preview page functions as a simulator, displaying the content instructors have just edited in the student view on a tablet. This allows instructors to see exactly how the course content will appear to learners.</div>
+                                                </Col>
+                                            </Row>
+                                        </Container>
+                                        <Container className="custom-container">
+                                            <Row className="pb-0">
+                                                <Col xs={12}>
+                                                    <h3>02</h3>
+                                                    <h2>Performance Metrics</h2>
+                                                    <p>The platform provides two features for performance review: a <strong>Platform-Wide Dashboard</strong> and <strong>Individual Learner Reports.</strong></p>
+                                                </Col>
+                                            </Row>
+                                        </Container>
+                                        <Container className="py-c pt-5">
+                                            <Row className="mb-5">
+                                                <Col md={9}>
+                                                    <video width="auto" autoPlay loop muted>
+                                                        <source src={lmsap_video_dashboard} type="video/mp4" />
+                                                    </video>
+                                                </Col>
+                                                <Col md={3} className="my-auto">
+                                                    <div class="p-3 bg-p-white rounded-end-4 img-explanation-container orange">
+                                                        <div className="mb-1"><strong>Comprehensive Overview</strong></div>
+                                                        A centralized dashboard provides a holistic view of learning and reentry data across the entire platform. This includes key metrics such as course completion rates, learner engagement, and reentry success indicators.
+                                                        <hr className="text-black-50"></hr>
+                                                        <div className="mb-1"><strong>Stakeholder Alignment</strong></div>
+                                                        The dashboard aligns diverse stakeholder perspectives by presenting data that connects educational interventions to meaningful outcomes under the learning and reentry tabs, allowing stakeholders to easily access the data most relevant to them.
+                                                    </div>
+                                                </Col>
+                                            </Row>
+                                            <Row className="mb-5">
+                                                <Col md={9}>
+                                                    <video width="auto" autoPlay loop muted>
+                                                        <source src={lmsap_video_learner} type="video/mp4" />
+                                                    </video>
+                                                </Col>
+                                                <Col md={3} className="my-auto">
+                                                    <div class="p-3 bg-p-white rounded-end-4 img-explanation-container orange">
+                                                        <div className="mb-1"><strong>Personalized Insights</strong></div>
+                                                        Detailed reports for each learner showcase their growth and progress over time, highlighting individual achievements and reflections. These reports track and visualize key metrics such as course completion, skill development, and engagement levels, providing a clear picture of each learner's journey.
+                                                        <hr className="text-black-50"></hr>
+                                                        <div className="mb-1"><strong>Facility Impact Assessment</strong></div>
+                                                        These reports are crucial for facility administrators to understand the effectiveness of their educational programs in supporting reentry success. By monitoring individual learner performance, facilities can demonstrate their commitment to rehabilitation and positive outcomes.
+                                                    </div>
+                                                </Col>
+                                            </Row>
+                                        </Container>
+                                    </>
+                                )
+                            }
+                        </>
+                    )
+                },
+                //LMSAP RESEARCH
+                {
+                    condition: content.LMSAPresearch,
+                    content: (
+                        <>
+                            {content.hasOwnProperty('LMSAPresearch') &&
+                                (
+                                    <>
+                                        <Container className="custom-container">
+                                            <Row className="py-c pb-0">
+                                                <Col xs={12} className="mb-5">
+                                                    <h1>RESEARCH + DISCOVERY </h1>
+                                                    <p>We conducted competitor analysis and user interviews to understand how existing solutions meet user needs and where opportunities exist for improvement. Our interviews helped us identify and organize key metrics for the dashboard through an iterative process based on user needs. Here's how we approached it:</p>
+                                                </Col>
+                                                {/* <Col xs={12}>
+                                                    <h3>01</h3>
+                                                    <h2>Course Creation</h2>
+                                                    <p>Start by viewing the courses overview and dive into the process of creating a new course as an instructor.</p>
+                                                </Col> */}
+                                            </Row>
+                                        </Container>
+                                        <Container className="py-c pt-5">
+                                            {/* <ScrollContentSection></ScrollContentSection> */}
+                                            <Row className="mb-5">
+                                                <Col md={9}>
+                                                    <img src={lmsap_research_interview_insights} className="img-fluid"></img>
+                                                </Col>
+                                                <Col md={3} className="my-auto">
+                                                    <div class="p-3 bg-p-white rounded-end-4 img-explanation-container orange">
+                                                        <div className="mb-1"><strong>01</strong></div>
+                                                        <div className="mb-1"><strong>Role Identification and Persona Creation</strong></div>
+                                                        We defined the core system roles, including educators and facility administrators. For each role, we created detailed personas with background information, goals, challenges, and needs. These personas guided our design decisions to ensure the LMS would serve each user effectively.
+                                                    </div>
+                                                </Col>
+                                            </Row>
+                                            <Row className="mb-5">
+                                                <Col md={9}>
+                                                    <img src={lmsap_research_persona1} className="img-fluid"></img>
+                                                </Col>
+                                                <Col md={3} className="my-auto">
+                                                    <div class="p-3 bg-p-white rounded-end-4 img-explanation-container orange">
+                                                        <div className="mb-1"><strong>01</strong></div>
+                                                        <div className="mb-1"><strong>Junior Class Instructor</strong></div>
+                                                        Junior class instructors want to see the impact of their teaching on learners, including both immediate outcomes and the ultimate goal of reentry success.
+                                                    </div>
+                                                </Col>
+                                            </Row>
+                                            <Row className="mb-5">
+                                                <Col md={9}>
+                                                    <img src={lmsap_research_persona2} className="img-fluid"></img>
+                                                </Col>
+                                                <Col md={3} className="my-auto">
+                                                    <div class="p-3 bg-p-white rounded-end-4 img-explanation-container orange">
+                                                        <div className="mb-1"><strong>01</strong></div>
+                                                        <div className="mb-1"><strong>Senior Correctional Facility Educator</strong></div>
+                                                        As a senior facility educator, I'm concerned about the state of data collection in our facility.  While I know education improves outcomes, we need better systems for tracking and demonstrating that progress.
+                                                    </div>
+                                                </Col>
+                                            </Row>
+                                            <Row className="mb-5">
+                                                <Col md={9}>
+                                                    <img src={lmsap_research_metrics} className="img-fluid"></img>
+                                                </Col>
+                                                <Col md={3} className="my-auto">
+                                                    <div class="p-3 bg-p-white rounded-end-4 img-explanation-container orange">
+                                                        <div className="mb-1"><strong>02</strong></div>
+                                                        <div className="mb-1"><strong>Metrics Review and Stakeholder Collaboration</strong></div>
+                                                        Using our established roles and personas, we evaluated which metrics mattered most for each role. We held in-depth discussions with stakeholders to align these metrics with their goals and priorities.
+                                                    </div>
+                                                </Col>
+                                            </Row>
+                                        </Container>
+
+                                    </>
+                                )
+                            }
+                        </>
+                    )
+                },
+                //LMSAP DESIGN PROCESS
+                {
+                    condition: content.LMSAPdesignprocess,
+                    content: (
+                        <Container className="custom-container">
+                            <Row className="py-c pb-0">
+                                <Col xs={12} className="mb-5">
+                                    <h1>DESIGN PROCESS</h1>
+                                    <p>We ran two design sprints to address the challenge</p>
+                                </Col>
+                            </Row>
+                            <Row className="gx-0 mb-md-3 pt-5">
+                                <Col md={8} xs={12}>
+                                    <img src={lmsap_design_mapping} className="img-fluid"></img>
+                                </Col>
+                                <Col md={4} className="d-none d-md-flex">
+                                    <div className="p-3 bg-p-white text-P-orange d-flex align-items-center justify-content-center">
+                                        <div className="text-start">
+                                            <h1>Mapping</h1>
+                                            We chose our target within the entire customer journey
+                                        </div>
+                                    </div>
+                                </Col>
+                            </Row>
+                            <Row className="gx-0 mb-md-3 pt-3">
+                                <Col md={8} xs={12}>
+                                    <img src={lmsap_design_sketch} className="img-fluid"></img>
+                                </Col>
+                                <Col md={4} className="d-none d-md-flex">
+                                    <div className="p-3 bg-p-white text-P-orange d-flex align-items-center justify-content-center">
+                                        <div className="text-start">
+                                            <h1>Sketch</h1>
+                                            My solution to compete in the upcoming Deicde
+                                        </div>
+                                    </div>
+                                </Col>
+                            </Row>
+                            <Row className="gx-0 mb-md-3 pt-3">
+                                <Col md={8} xs={12}>
+                                    <img src={lmsap_design_decide} className="img-fluid"></img>
+                                </Col>
+                                <Col md={4} className="d-none d-md-flex">
+                                    <div className="p-3 bg-p-white text-P-orange d-flex align-items-center justify-content-center">
+                                        <div className="text-start">
+                                            <h1>Decide</h1>
+                                            Top voted sketch and the voting platform
+                                        </div>
+                                    </div>
+                                </Col>
+                            </Row>
+                            <Row className="gx-0 mb-md-3 pt-3">
+                                <Col md={8} xs={12}>
+                                    <img src={lmsap_design_prototype} className="img-fluid"></img>
+                                </Col>
+                                <Col md={4} className="d-none d-md-flex">
+                                    <div className="p-3 bg-p-white text-P-orange d-flex align-items-center justify-content-center">
+                                        <div className="text-start">
+                                            <h1>Prototype</h1>
+                                            Prototypes of the Learning Dashboard
+                                        </div>
+                                    </div>
+                                </Col>
+                            </Row>
+                            <Row className="gx-0 mb-md-3 pt-3 py-c">
+                                <Col md={8} xs={12}>
+                                    <img src={lmsap_design_test} className="img-fluid"></img>
+                                </Col>
+                                <Col md={4} className="d-none d-md-flex">
+                                    <div className="p-3 bg-p-white text-P-orange d-flex align-items-center justify-content-center">
+                                        <div className="text-start">
+                                            <h1>Test</h1>
+                                            Testing results tracking form with anonymous participants
+                                        </div>
+                                    </div>
+                                </Col>
+                            </Row>
+                        </Container>
+                    )
+                },
+                //LMSAP Reflection
+                {
+                    condition: content.LMSAPreflection,
+                    content: (
+                        <Container className="custom-container">
+                            <Row className="py-c">
+                                <Col xs={12} className="mb-5">
+                                    <h1>REFLECTION + NEXT STEPS</h1>
+                                </Col>
+                                <Col xs={12} className="">
+                                    <div className="mb-2"><strong>Drawing on my experience as a web developer ……</strong></div>
+                                    <p>I identified several potential implementation challenges within our design.  For example, the tablet view of the preview page presents significant implementation difficulties for developers, potentially hindering our rapid development goals.  This raises the critical question of whether this specific implementation will ultimately save time, a factor we overlooked due to a lack of direct user research.  Our current approach relies on assumptions rather than user insights.
+                                    </p>
+                                    <div className="mb-2"><strong>Furthermore, our user research efforts were hampered ……</strong></div>
+                                    <p>by limited access to the facility.  Due to strict regulations, establishing contact requires significant time and personal connections. Consequently, some user input was gathered from individuals related to our core users, rather than the core users themselves.
+                                    </p>
+                                    <div className="mb-2"><strong>Here’s what we can do next ……</strong></div>
+                                    <p><ul>
+                                        <li>Prioritize user research: We need to prioritize direct engagement with our core users. We should explore strategies for overcoming access limitations, such as working with facility liaisons.</li>
+                                        <li>Re-evaluate tablet view implementation: Given the potential implementation challenges and the question of time efficiency, we should reassess the necessity of the tablet view for the preview page. This may involve exploring alternative designs, or conducting a cost-benefit analysis.</li>
+                                    </ul>
+                                    </p>
+                                </Col>
+                            </Row>
+                        </Container>
+                    )
+                },
                 //BUSINESS OUTCOME
                 {
                     condition: content.businessoutcome,
                     content: (
                         <Container className="custom-container">
                             <Row className="py-c">
-                                <Col xs={12} className="">
+                                <Col xs={12} className="mb-5">
                                     <h1>BUSINESS OUTCOME</h1>
-                                </Col><Col xs={12} className="pt-2">
+                                </Col>
+                                <Col xs={12} className="">
                                     <SafeParse content={content.businessoutcome} />
                                 </Col>
                             </Row>
@@ -685,9 +981,9 @@ function ProjectDetail(props) {
                     content: (
                         <Container className="custom-container">
                             <Row className="py-c">
-                                <Col xs={12} className="">
+                                <Col xs={12} className="mb-5">
                                     <h1>What would I have done DIFFERENTLY?</h1>
-                                </Col><Col xs={12} className="pt-2">
+                                </Col><Col xs={12} className="">
                                     <SafeParse content={content.change} />
                                 </Col>
                             </Row>
@@ -761,8 +1057,8 @@ function ProjectDetail(props) {
                     content: (
                         <Container className="custom-container">
                             <Row className="py-c">
-                                <Col xs={12} className="pt-4">
-                                    <h1>Outcome</h1>
+                                <Col xs={12} >
+                                    <h1 className="mb-5">USER FEEDBACK</h1>
                                 </Col>
                                 <Col xs={12} className="pt-2">
                                     <SafeParse content={content.outcome} />
@@ -777,8 +1073,8 @@ function ProjectDetail(props) {
                     content: (
                         <Container className="custom-container">
                             <Row className="py-c">
-                                <Col xs={12} className="pt-4">
-                                    <h1>Reflection</h1>
+                                <Col xs={12}>
+                                    <h1 className="mb-5">REFLECTION</h1>
                                 </Col>
                                 <Col xs={12} className="pt-2">
                                     <SafeParse content={content.reflection} />

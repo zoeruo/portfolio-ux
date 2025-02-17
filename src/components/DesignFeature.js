@@ -3,19 +3,35 @@ import { Row, Col } from 'react-bootstrap';
 import lightbulb from '../asset/img/lightbulb.png';
 
 // Individual feature component
-const DesignFeature = ({ title, content, images, insight }) => {
+const DesignFeature = ({ title, content, media, insight }) => {
+    const renderMedia = (item, index) => {
+        const isVideo = item.endsWith('.mp4') || item.endsWith('.webm');
+
+        return isVideo ? (
+            <video
+                key={index}
+                src={item}
+                className='img-fluid pb-3'
+                alt={`Design feature ${index + 1}`}
+                autoPlay
+                loop
+                muted
+            />
+        ) : (
+            <img
+                key={index}
+                src={item}
+                className='img-fluid pb-3'
+                alt={`Design feature ${index + 1}`}
+            />
+        );
+    };
+
     return (
-        <Col xs={12} className="py-3">
+        <Col xs={12} className="pb-5">
             <h2>{title}</h2>
             <p>{content}</p>
-            {images.map((image, index) => (
-                <img
-                    key={index}
-                    src={image}
-                    className='img-fluid pb-2'
-                    alt={`Design feature ${index + 1}`}
-                />
-            ))}
+            {media.map((item, index) => renderMedia(item, index))}
             {insight && (
                 <div className="bg-white py-1 px-2 d-flex">
                     <div className="me-2 my-auto">
@@ -36,14 +52,14 @@ const DesignFeature = ({ title, content, images, insight }) => {
 const DesignFeatures = ({ features }) => {
     return (
         <Row className="py-c">
-            <Col xs={12} className="py-3">
-                <h1>DESIGN FEATURES HIGHLIGHTS</h1>
+            <Col xs={12} className="">
+                <h1 className="mb-5">DESIGN FEATURES HIGHLIGHTS</h1>
                 {features.map((feature, index) => (
                     <DesignFeature
                         key={index}
                         title={`0${index + 1} : ${feature.title}`}
                         content={feature.content}
-                        images={feature.images}
+                        media={feature.media}
                         insight={feature.insight}
                     />
                 ))}
