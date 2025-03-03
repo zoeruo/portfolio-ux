@@ -1,21 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.02a80ad4.css",
-    "main.js": "/static/js/main.23c2a5e6.js",
+    "main.js": "/static/js/main.7b1ca625.js",
     "static/js/787.907a2fad.chunk.js": "/static/js/787.907a2fad.chunk.js",
     "static/media/CHDMS_D.mp4": "/static/media/CHDMS_D.c985de5780d9d75ad1da.mp4",
     "static/media/IMSLP_CaseStudy.pdf": "/static/media/IMSLP_CaseStudy.61d68bd708f0da04f11c.pdf",
+    "static/media/LMS1.mp4": "/static/media/LMS1.17b8f1a5356663f70982.mp4",
+    "static/media/LMS3.mp4": "/static/media/LMS3.b6471ce17f2cd2a79b55.mp4",
     "static/media/CHGH_D_sketch.png": "/static/media/CHGH_D_sketch.52a84b91555828dfa844.png",
     "static/media/CHDMS_D_Backend.mp4": "/static/media/CHDMS_D_Backend.6de719ae4e7cff373f36.mp4",
-    "static/media/LMS1.mp4": "/static/media/LMS1.b89eb2790810ae6fb764.mp4",
     "static/media/LMSAP_Dashboard.mp4": "/static/media/LMSAP_Dashboard.eacd7dc0622f6e317080.mp4",
+    "static/media/Flikshop_m.jpg": "/static/media/Flikshop_m.27390ddcdcf26f4fb77a.jpg",
     "static/media/chgh_sketch.png": "/static/media/chgh_sketch.79a8c3c2ff719954650a.png",
     "static/media/LMSAP_Learner.mp4": "/static/media/LMSAP_Learner.b25d2ed80784f1bdde43.mp4",
     "static/media/DCMS_m.jpg": "/static/media/DCMS_m.5e390cf4ce774f193f06.jpg",
+    "static/media/LMS2.mp4": "/static/media/LMS2.b5e28abcecacc41ed871.mp4",
     "static/media/LMSAP_CourseStructure.mp4": "/static/media/LMSAP_CourseStructure.02ff75d3357f9d7fcb2f.mp4",
     "static/media/chgh_feature_RWD.jpg": "/static/media/chgh_feature_RWD.36ae05472199ebd5bfaf.jpg",
-    "static/media/LMS3.mp4": "/static/media/LMS3.cade4e9f6f0172a5a938.mp4",
-    "static/media/LMS2.mp4": "/static/media/LMS2.58909e6608679e00d8d4.mp4",
     "static/media/TW_creating.MP4": "/static/media/TW_creating.8927d9f6cbd1d174458a.MP4",
     "static/media/pianoing.png": "/static/media/pianoing.76f22de3de1118af1466.png",
     "static/media/coding.png": "/static/media/coding.a681ad24be9f01451af5.png",
@@ -24,7 +25,6 @@
     "static/media/CHGH_thumbnail.jpg": "/static/media/CHGH_thumbnail.4cef083fe699100a87b2.jpg",
     "static/media/LMSAP_research_metrics.jpg": "/static/media/LMSAP_research_metrics.a820c4a366a1d4bcaf37.jpg",
     "static/media/TW_m0.png": "/static/media/TW_m0.8139ef6afc72b8c8229e.png",
-    "static/media/Flikshop_m.jpg": "/static/media/Flikshop_m.c6d95c054920d07329c9.jpg",
     "static/media/chgh_feature01.jpg": "/static/media/chgh_feature01.d7a47c347461a7228f68.jpg",
     "static/media/LMSAP_thumbnail.jpg": "/static/media/LMSAP_thumbnail.a137fcf63e9f1517813e.jpg",
     "static/media/LMSAP_resrach_persona1.jpg": "/static/media/LMSAP_resrach_persona1.9e22e16420fd72d96496.jpg",
@@ -116,11 +116,11 @@
     "static/media/arrow_right.svg": "/static/media/arrow_right.ef8f21cb40e7ada176de.svg",
     "static/media/logo.svg": "/static/media/logo.61b029cda18a62aa361c6f2315ac03ff.svg",
     "main.02a80ad4.css.map": "/static/css/main.02a80ad4.css.map",
-    "main.23c2a5e6.js.map": "/static/js/main.23c2a5e6.js.map",
+    "main.7b1ca625.js.map": "/static/js/main.7b1ca625.js.map",
     "787.907a2fad.chunk.js.map": "/static/js/787.907a2fad.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.02a80ad4.css",
-    "static/js/main.23c2a5e6.js"
+    "static/js/main.7b1ca625.js"
   ]
 }
