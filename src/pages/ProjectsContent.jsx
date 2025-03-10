@@ -215,7 +215,7 @@ export const contents = {
             "<ul><li><strong>User-Selectable Menu</strong>: Let users choose which features they want on their website, like events, research papers, contact info, and more.</li>" +
             "<li><strong>User-Easy Department Switching</strong>: A shortcut button lets you quickly switch between departments.</li>" +
             "<li><strong>Distinct Department Menu</strong>: The main hospital website uses a top bar menu. To maintain a consistent brand feel while offering easier navigation, I designed a sidebar menu for this department's website.</li></ul>",
-        "businessoutcome": `The launch of new website drove significant business impact across multiple dimensions. <strong>International patient volume increased by 24%</strong>. 
+        "chghbusinessoutcome": `The launch of new website drove significant business impact across multiple dimensions. <strong>International patient volume increased by 24%</strong>. 
         The new system's agility enabled immediate implementation of government-mandated policy changes, reducing response time <strong>from over a week to just 5 minutes</strong> for critical updates. 
         This enhanced operational efficiency was particularly valuable during rapidly changing pandemic protocols. 
         Additionally, the improved online presence contributed to increased outpatient numbers, with notable growth in previously lesser-known divisions. 

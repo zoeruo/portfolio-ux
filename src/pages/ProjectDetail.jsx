@@ -21,6 +21,8 @@ import flikshop_d3 from '../asset/img/Flikshop_d6.png';
 import flikshop_d4 from '../asset/img/Flikshop_d7.png';
 import flikshop_d5 from '../asset/img/Flikshop_d8.png';
 import lightbulb from '../asset/img/lightbulb.png';
+import personplus from '../asset/img/personplus.svg';
+import hourglass from '../asset/img/hourglasssplit.svg';
 import FSr_0 from '../asset/img/FS_r0.png';
 import FSr_1 from '../asset/img/FS_r1.png';
 import FSr_2 from '../asset/img/FS_r2.png';
@@ -53,6 +55,8 @@ import lmsap_design_sketch from '../asset/img/LMSAP_design_sketch.jpg';
 import lmsap_design_decide from '../asset/img/LMSAP_design_decide.jpg';
 import lmsap_design_prototype from '../asset/img/LMSAP_design_prototype.jpg';
 import lmsap_design_test from '../asset/img/LMSAP_design_testing.jpg';
+
+
 import {
     Timeline,
     TimelineConnector,
@@ -389,10 +393,15 @@ function ProjectDetail(props) {
                                         <h2 className="">PROCESS 01</h2>
                                         <h1 className="mb-5">Stakeholder Analysis & Content Management Requirements</h1>
                                         {/* <MyTimeline /> */}
-
+                                    </Col>
+                                    <Col xs={4} className=""></Col>
+                                    <Col xs={8} className="text-bg-P-light-purple rounded-4 p-3">
+                                        <h2 className="text-p-white">Hey, our main hospital website is 10 years old... maybe it's time for an upgrade?</h2>
+                                    </Col>
+                                    <Col xs={12} className="">
                                         <div className="py-3">
-                                            <h2 className="text-p-deepnavy">SITUATION</h2>
-                                            <p>It all started when our hospital was about to open its shiny new International Medical Center (IMC). The IMC team wanted a fresh, modern website - and honestly, this got everyone thinking "Hey, our main hospital website is 10 years old... maybe it's time for an upgrade?"</p>
+                                            {/* <h2 className="text-p-deepnavy">SITUATION</h2> */}
+                                            <p>It all started when our hospital was about to open its shiny new International Medical Center (IMC). The IMC team wanted a fresh, modern website.</p>
                                             <p>Here's where it got interesting:
                                                 <ul>
                                                     <li>The IMC team wanted to manage their own content (makes sense, they know their stuff best)</li>
@@ -402,8 +411,14 @@ function ProjectDetail(props) {
                                                 </ul>
                                             </p>
                                         </div>
+                                    </Col>
+                                    <Col xs={4} className=""></Col>
+                                    <Col xs={8} className="text-bg-P-light-purple rounded-4 p-3">
+                                        <h2 className="text-p-white">We interviewed stakeholders and studied our websites to find out who needs what.</h2>
+                                    </Col>
+                                    <Col xs={12} className="">
                                         <div className="py-3">
-                                            <h2 className="text-p-deepnavy">USER RESEARCH</h2>
+                                            {/* <h2 className="text-p-deepnavy">USER RESEARCH</h2> */}
                                             <div className="font-body"><strong>User Research Goals</strong></div>
                                             <p>
                                                 <ul>
@@ -426,39 +441,66 @@ function ProjectDetail(props) {
                                     </Col>
                                 </Row>
                             </Container>
-                            <Container>
+                            <Container className="custom-container">
                                 <Row className="gx-3 py-3">
-                                    <Col md={3}>
-                                        <div className="bg-p-deepnavy p-4 text-center">
-                                            <img src={eye1} className="img-fluid w-25 mb-2" alt="" />
-                                            <div className="text-p-white">The International Medical Center needed autonomy to manage their specialized international patient content</div>
+                                    <Col md={6}>
+                                        <div className="text-bg-p-white p-4">
+                                            <Row>
+                                                <Col md={4} className="my-auto">
+                                                    <img src={eye1} className="img-fluid" alt="" /></Col>
+                                                <Col md={8}>
+                                                    <div className="">The International Medical Center needed autonomy to manage their specialized international patient content</div>
+                                                </Col>
+                                            </Row>
                                         </div>
                                     </Col>
-                                    <Col md={3}>
-                                        <div className="bg-p-softcream p-4 text-center h-100">
-                                            <img src={eye2} className="img-fluid w-25 mb-2" alt="" />
-                                            <div className="text-p-black">IT department needed to maintain overall system control and governance</div>
+                                    <Col md={6}>
+                                        <div className="text-bg-p-white p-4 h-100">
+                                            <Row>
+                                                <Col md={4} className="my-auto">
+                                                    <img src={eye2} className="img-fluid mb-2" alt="" /></Col>
+                                                <Col md={8} className="my-auto">
+                                                    <div className="">IT department needed to maintain overall system control and governance</div>
+                                                </Col>
+                                            </Row>
                                         </div>
                                     </Col>
-                                    <Col md={3}>
-                                        <div className="bg-p-deepnavy p-4 text-center h-100">
-                                            <img src={eye3} className="img-fluid w-25 mb-2" alt="" />
-                                            <div className="text-p-white">The main hospital website required frequent updates but lacked dedicated content managers</div>
+
+                                    <Col md={6} className="mt-3">
+                                        <div className="text-bg-p-white p-4 h-100">
+                                            <Row>
+                                                <Col md={4} className="my-auto">
+                                                    <img src={eye3} className="img-fluid mb-2" alt="" />
+                                                </Col>
+                                                <Col md={8}>
+                                                    <div className="">The main hospital website required frequent updates but lacked dedicated content managers</div>
+                                                </Col>
+                                            </Row>
                                         </div>
                                     </Col>
-                                    <Col md={3}>
-                                        <div className="bg-p-softcream p-4 text-center h-100">
-                                            <img src={eye4} className="img-fluid w-25 mb-2" alt="" />
-                                            <div className="text-p-black">Individual hospital divisions requested direct control over their departmental content</div>
+                                    <Col md={6} className="mt-3">
+                                        <div className="text-bg-p-white p-4 h-100">
+                                            <Row>
+                                                <Col md={4} className="my-auto">
+                                                    <img src={eye4} className="img-fluid mb-2" alt="" />
+                                                </Col>
+                                                <Col md={8}>
+                                                    <div className="text-p-black">Individual hospital divisions requested direct control over their departmental content</div>
+                                                </Col>
+                                            </Row>
                                         </div>
                                     </Col>
                                 </Row>
                             </Container>
                             <Container className="custom-container">
                                 <Row className="py-c pt-5">
+                                    <Col xs={4} className=""></Col>
+                                    <Col xs={8} className="text-bg-P-light-purple rounded-4 p-3">
+                                        <h2 className="text-p-white">Just so you know, we hit some roadblocks while doing this research...</h2>
+                                    </Col>
                                     <Col xs={12} className="">
-                                        <div className="">
-                                            <h2 className="text-p-deepnavy">CONSTRAINTS</h2>
+                                        <div className="py-3">
+                                            {/* <h2 className="text-p-deepnavy">CONSTRAINTS</h2> */}
                                             <p>User research was hampered by limited access to busy medical staff, making interviews and follow-ups difficult. The research scope was also limited, preventing full documentation of content update processes across all departments and missing input from some key areas due to scheduling conflicts. Crucially, there was no direct feedback from the public or patients, no usability testing on the old website, and limited data on how different user groups used it, including analytics on popular features. These limitations forced me to make assumptions based on incomplete information, adding risk to the project planning.</p>
                                         </div>
 
@@ -570,19 +612,19 @@ function ProjectDetail(props) {
                             <Container>
                                 <Row className="gx-3 py-3">
                                     <Col md={4}>
-                                        <div className="bg-p-softcream p-4 text-center h-100">
+                                        <div className="text-bg-P-light p-4 text-center h-100">
                                             <div className="mb-2"><strong >Built Initial Development Framework</strong></div>
                                             <div className="text-p-deepnavy">Led the front-end development, worked with the back-end team to set development priorities, and created connections between the front-end and the database.</div>
                                         </div>
                                     </Col>
                                     <Col md={4}>
-                                        <div className="bg-p-softcream p-4 text-center h-100">
+                                        <div className="text-bg-P-light p-4 text-center h-100">
                                             <div className="mb-2"><strong>Project Defense Strategy</strong></div>
                                             <div className="text-p-deepnavy">Compared the costs and benefits of doing the work in-house versus hiring  outsourcing, calculated how much money had already been spent on the project, showed the director that out team understood the hospital's systems well, and made a case for keeping the development work in-house.</div>
                                         </div>
                                     </Col>
                                     <Col md={4}>
-                                        <div className="bg-p-softcream p-4 text-center h-100">
+                                        <div className="text-bg-P-light p-4 text-center h-100">
                                             <div className="mb-2"><strong>Accelerated Development</strong></div>
                                             <div className="text-p-deepnavy">Accelerated the development schedule to show progress quickly, focused on building features people could see right away, and sped up the release to meet the director's expectations.</div>
                                         </div>
@@ -885,7 +927,7 @@ function ProjectDetail(props) {
                                     <div className="p-3 bg-p-white text-P-orange d-flex align-items-center justify-content-center">
                                         <div className="text-start">
                                             <h1>Sketch</h1>
-                                            My solution to compete in the upcoming Deicde
+                                            My solution to compete in the upcoming Decide
                                         </div>
                                     </div>
                                 </Col>
@@ -954,6 +996,50 @@ function ProjectDetail(props) {
                                         <li>Re-evaluate tablet view implementation: Given the potential implementation challenges and the question of time efficiency, we should reassess the necessity of the tablet view for the preview page. This may involve exploring alternative designs, or conducting a cost-benefit analysis.</li>
                                     </ul>
                                     </p>
+                                </Col>
+                            </Row>
+                        </Container>
+                    )
+                },
+                //CHGH BUSINESS OUTCOME
+                {
+                    condition: content.chghbusinessoutcome,
+                    content: (
+                        <Container className="custom-container">
+                            <Row className="py-c">
+                                <Col xs={12} className="mb-5">
+                                    <h1>BUSINESS OUTCOME</h1>
+                                </Col>
+                                <Col xs={12} className="mb-5">
+                                    The launch of new website drove significant business impact across multiple dimensions. <strong>International patient volume increased by 24%</strong>.
+                                    The new system's agility enabled immediate implementation of government-mandated policy changes, reducing response time <strong>from over a week to just 5 minutes</strong> for critical updates.
+                                    This enhanced operational efficiency was particularly valuable during rapidly changing pandemic protocols.
+                                    Additionally, the improved online presence contributed to increased outpatient numbers, with notable growth in previously lesser-known divisions.
+                                    The website effectively served as a digital transformation tool, improving both healthcare accessibility and operational efficiency.
+                                </Col>
+                                <Col xs={6} className="">
+                                    <div className="p-4">
+                                        <Row>
+                                            <Col xs={3} className="">
+                                                <img src={personplus} className="img-fluid"></img></Col>
+                                            <Col xs={9} className="my-auto">
+                                                <div className="mb-1">INTERNATIONAL PATIENTS</div>
+                                                <h2>24% ↑</h2>
+                                            </Col>
+                                        </Row>
+                                    </div>
+                                </Col>
+                                <Col xs={6} className="">
+                                    <div className="p-4">
+                                        <Row>
+                                            <Col xs={3} className="">
+                                                <img src={hourglass} className="img-fluid"></img></Col>
+                                            <Col xs={9} className="my-auto">
+                                                <div className="mb-1">RESPONSE TIME</div>
+                                                <h2>1 week → 5 mins</h2>
+                                            </Col>
+                                        </Row>
+                                    </div>
                                 </Col>
                             </Row>
                         </Container>
