@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 function Contact() {
     return (
-        <>
+        <React.Fragment>
             <section id="Contact" className="bg-white">
                 <Container>
                     <Row className="py-5">
@@ -28,7 +28,7 @@ function Contact() {
                     </Row>
                 </Container>
             </section>
-        </>
+        </React.Fragment>
     );
 }
 

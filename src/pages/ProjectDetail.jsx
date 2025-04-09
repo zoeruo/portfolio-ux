@@ -14,6 +14,7 @@ import DesignFeatures from '../components/DesignFeature';
 import Youtube from "../components/Youtube";
 import videofront from "../asset/videos/CHDMS_D.mp4";
 import videoback from "../asset/videos/CHDMS_D_Backend.mp4";
+import videochgh from "../asset/videos/CHGH.mp4";
 import flikshop_d0 from '../asset/img/Flikshop_d3.png';
 import flikshop_d1 from '../asset/img/Flikshop_d4.png';
 import flikshop_d2 from '../asset/img/Flikshop_d5.png';
@@ -1074,6 +1075,33 @@ function ProjectDetail(props) {
                                 </Col>
                             </Row>
                         </Container>
+                    )
+                },
+                //Reimagine
+                {
+                    condition: content.reimagine,
+                    content: (
+                        <>
+                            <Container className="custom-container">
+                                <Row className="py-c pb-0">
+                                    <Col xs={12} className="mb-5">
+                                        <h1>Reimagine HOME after my HCI studies</h1>
+                                    </Col>
+                                    <Col xs={12} className="mb-5">
+                                        <p>I reimagined the hospital’s home page from a user journey and behavioral goal perspective, while also considering business objectives. I asked myself: what is the full journey of a patient visiting the site? For a first-time visitor, the primary goal is likely to find care — to understand what services we offer and how to get treatment. That’s why I prioritized actions like “Make an Appointment,” “Find Care,” and “Find a Doctor” at the top of the page for easy access.</p>
+                                        <p>But what happens when the user returns? Their goals might evolve — maybe to manage ongoing care, check results, or follow up on treatments.</p>
+                                        <p>On the business side, I also thought about strategic priorities. For example, if a new health exam center is opening, the homepage could highlight it to drive awareness and engagement. These are the types of decisions and logic that shaped my prototype.</p>
+                                        <p>Happy to walk you through it in more detail!</p>
+                                    </Col>
+                                    <Col xs={12} className="mb-5">
+                                        <video width="auto" autoPlay loop muted>
+                                            <source src={videochgh} type="video/mp4" />
+                                        </video>
+                                    </Col>
+                                </Row>
+                            </Container>
+
+                        </>
                     )
                 },
                 //Color Theme

@@ -229,7 +229,8 @@ export const contents = {
             "<li><strong>Create a style guide</strong>: Develop a style guide that outlines the website's visual identity, including fonts, colors, and layout. This ensures consistency across all departments.</li></ul>" +
             "<h2>Testing and Iteration</h2>" +
             "<ul><li><strong>Conduct usability testing before development</strong>: Before coding begins, test your prototypes with real users to identify any usability problems. This can save time and resources in the long run.</li>" +
-            "</ul>"
+            "</ul>",
+            "reimagine": " "
     },
     TheWindow: {
         "url": "TheWindow",

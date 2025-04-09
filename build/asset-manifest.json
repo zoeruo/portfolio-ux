@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.02a80ad4.css",
-    "main.js": "/static/js/main.f6f91a0c.js",
+    "main.js": "/static/js/main.485c43b0.js",
     "static/js/787.907a2fad.chunk.js": "/static/js/787.907a2fad.chunk.js",
+    "static/media/CHGH.mp4": "/static/media/CHGH.edaa6724e0b1a69d67de.mp4",
     "static/media/CHDMS_D.mp4": "/static/media/CHDMS_D.c985de5780d9d75ad1da.mp4",
     "static/media/IMSLP_CaseStudy.pdf": "/static/media/IMSLP_CaseStudy.61d68bd708f0da04f11c.pdf",
     "static/media/LMS1.mp4": "/static/media/LMS1.17b8f1a5356663f70982.mp4",
@@ -118,11 +119,11 @@
     "static/media/arrow_right.svg": "/static/media/arrow_right.ef8f21cb40e7ada176de.svg",
     "static/media/logo.svg": "/static/media/logo.61b029cda18a62aa361c6f2315ac03ff.svg",
     "main.02a80ad4.css.map": "/static/css/main.02a80ad4.css.map",
-    "main.f6f91a0c.js.map": "/static/js/main.f6f91a0c.js.map",
+    "main.485c43b0.js.map": "/static/js/main.485c43b0.js.map",
     "787.907a2fad.chunk.js.map": "/static/js/787.907a2fad.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.02a80ad4.css",
-    "static/js/main.f6f91a0c.js"
+    "static/js/main.485c43b0.js"
   ]
 }
