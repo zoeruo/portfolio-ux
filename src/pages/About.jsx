@@ -12,7 +12,22 @@ function About() {
             <Col xs={12} md={4} className="my-auto">
               <img id="Myimg" src={Myimg} className="img-fluid" alt="img AboutMe" />
             </Col>
-            <Col xs={12} md={8} className="my-auto">
+            <Col xs={12} md={8} className="order-1 order-md-2 d-flex">
+              <div className="d-md-flex text-bg-p-softcream w-100 d-flex align-items-center justify-content-center p-3">
+                <div className="text-start px-md-4 py-md-3">
+                  <h1 className="mb-3">My Journey into UX:</h1>
+                  <p className="">The Beginning 🎨<br />
+                    I started out with a BFA in New Media Art - when pure art meets immersive experience and audience, user experience comes into play. I realized I could no longer just focus on what I wanted to convey, but what the audience would actually get out of it.</p>
+                  <p className="">The Beginning 🎨<br />
+                    I started out with a BFA in New Media Art - when pure art meets immersive experience and audience, user experience comes into play. I realized I could no longer just focus on what I wanted to convey, but what the audience would actually get out of it.</p>
+                  <p className="">Heading to Maryland 🎓<br />
+                    So I decided to pursue an MS in Human-Computer Interaction in the United States. In Maryland, I met incredible faculty, classmates, clients, and even got to be a teaching assistant for undergrad students. My lab was a design lab too, and I was constantly tweaking my teaching approach to make sure the students got the most out of it.</p>
+                  <p className="">The Bigger Picture 🌍<br />
+                    Through all these experiences, I realized my true passion lies in designing meaningful, impactful experiences. I want to use my skillsets and creativity to truly contribute and make a difference. The journey continues, and I can't wait to see what the future holds!</p>
+                </div>
+              </div>
+            </Col>
+            {/* <Col xs={12} md={8} className="my-auto">
               <Row>
                 <Col md={12}>
                   <h1 className="mb-3 mt-4 mt-md-0">My Journey into UX:</h1></Col>
@@ -53,7 +68,7 @@ function About() {
                   </div>
                 </Col>
               </Row>
-            </Col>
+            </Col> */}
           </Row>
           {/* <Row>
             <Col xs={12} md={8} className="my-auto">

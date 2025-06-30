@@ -83,8 +83,8 @@ h3 {
 
 video {
   /* override other styles to make responsive */
-  width: 100%    !important;
-  height: auto   !important;
+  width: 100% !important;
+  height: auto !important;
 }
 
 
@@ -531,4 +531,27 @@ section {
 
 .img-explanation-container.orange {
   border-left: solid 5px #FFCFB0;
+}
+
+.next-bottom-container {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+
+
+.btn-next {
+  text-decoration: none;
+}
+
+.btn-next-title {
+  opacity: 100%;
+}
+
+.next-bottom-container:hover .btn-next {
+  text-decoration: underline;
+}
+
+.next-bottom-container:hover .btn-next-title {
+  opacity: 60%;
 }

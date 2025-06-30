@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact"
 import RedFlagsOut from "./pages/RedFlagsOut";
 import ProjectDetail from "./pages/ProjectDetail";
+import Eastland from './pages/Eastland';
 import '../src/style.css';
 import './App.css';
 import ScrollToTop from "./components/ScrollToTop";
@@ -25,6 +26,7 @@ function App() {
           <Route path="Contact" element={<Contact />} />
           {/* <Route path="RedFlagsOut" element={<RedFlagsOut />} /> */}
           <Route path="ProjectDetail/:title" element={<ProjectDetail />} />
+          <Route path="Eastland" element={<Eastland />} />
           {/* <Route path="*" element={<NoPage />} /> */}
           <Route path="asset/Resume.pdf" />
         </Route>

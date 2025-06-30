@@ -17,6 +17,7 @@ import arrowright from '../asset/img/arrow_right.png';
 import arrowleft from '../asset/img/arrow_left.png';
 import titlework from '../asset/img/title_work.svg';
 import LMSAP from '../asset/img/LMSAP_thumbnail.jpg';
+import Eastland from '../asset/img/Eastland_thumbnail.jpg';
 import '@splidejs/react-splide/css';
 
 export const Project = () => {
@@ -29,6 +30,8 @@ export const Project = () => {
                         <img src={titlework} className="img-fluid d-block d-md-none" alt="" />
                     </Col>
                 </Row>
+
+                {/* Project 1 - Image on LEFT, Text on RIGHT */}
                 <Link to="/ProjectDetail/LMSAdminPortal" className="text-decoration-none">
                     <Row className="gx-0 mb-md-3">
                         <Col md={8} xs={12}>
@@ -37,7 +40,7 @@ export const Project = () => {
                                 <img src={LMSAPmobile} className="img-fluid d-block d-md-none" alt="" />
                                 <div className="position-absolute top-0 start-0 w-100 h-100 d-block d-md-none"
                                     style={{
-                                        background: 'rgba(44, 62, 80, 0.5)', // Adjust opacity by changing the last number
+                                        background: 'rgba(44, 62, 80, 0.5)',
                                     }}>
                                     <div className="d-flex flex-column justify-content-center align-items-center h-100 text-white p-4">
                                         <h1 className="text-center text-p-white">Flikshop LMS: Admin Panel</h1>
@@ -48,7 +51,7 @@ export const Project = () => {
                             </div>
                         </Col>
                         <Col md={4} className="d-none d-md-flex">
-                            <div className="text-bg-p-black d-flex align-items-center justify-content-center p-5 rounded-end-4">
+                            <div className="text-bg-p-black d-flex align-items-center justify-content-center p-5 rounded-end-4 w-100">
                                 <div className="text-start">
                                     <h1 className="text-p-white">Flikshop LMS: Admin Panel</h1>
                                     <p className="text-p-white">2024</p>
@@ -58,10 +61,74 @@ export const Project = () => {
                         </Col>
                     </Row>
                 </Link>
-                <Link to="/ProjectDetail/FlikshopLMS" className="text-decoration-none ">
+
+                {/* Project 2 - Text on LEFT, Image on RIGHT */}
+                <Link to="/Eastland" className="text-decoration-none">
                     <Row className="gx-0 mb-md-3">
                         <Col md={4} className="d-none d-md-flex">
-                            <div className="text-bg-p-black d-flex align-items-center justify-content-center p-5 rounded-start-4">
+                            <div className="text-bg-p-black d-flex align-items-center justify-content-center p-5 rounded-start-4 w-100">
+                                <div className="text-start">
+                                    <h1 className="text-p-white">Eastland</h1>
+                                    <p className="text-p-white">2025</p>
+                                    <p className="text-p-white">A lively and dynamic Gateway with the Greens</p>
+                                </div>
+                            </div>
+                        </Col>
+                        <Col md={8} xs={12}>
+                            <img src={Eastland} className="img-fluid d-none d-md-block" alt="" />
+                            <div className="position-relative">
+                                <img src={LMSAPmobile} className="img-fluid d-block d-md-none" alt="" />
+                                <div className="position-absolute top-0 start-0 w-100 h-100 d-block d-md-none"
+                                    style={{
+                                        background: 'rgba(44, 62, 80, 0.5)',
+                                    }}>
+                                    <div className="d-flex flex-column justify-content-center align-items-center h-100 text-white p-4">
+                                        <h1 className="text-center text-p-white">Eastland</h1>
+                                        <p className="text-center text-p-white">2025</p>
+                                        <p className="text-center text-p-white">A lively and dynamic Gateway with the Greens</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </Col>
+                    </Row>
+                </Link>
+
+                {/* Project 3 - Image on LEFT, Text on RIGHT */}
+                <Link to="/ProjectDetail/DepartmentCMS" className="text-decoration-none">
+                    <Row className="gx-0 mb-md-3">
+                        <Col md={8} xs={12}>
+                            <img src={chghimg} className="img-fluid d-none d-md-block" alt="" />
+                            <div className="position-relative">
+                                <img src={chghmobile} className="img-fluid d-block d-md-none" alt="" />
+                                <div className="position-absolute top-0 start-0 w-100 h-100 d-block d-md-none"
+                                    style={{
+                                        background: 'rgba(44, 62, 80, 0.5)',
+                                    }}>
+                                    <div className="d-flex flex-column justify-content-center align-items-center h-100 text-white p-4">
+                                        <h1 className="text-center text-p-white">Custom Healthcare CMS Platform</h1>
+                                        <p className="text-center text-p-white">2020</p>
+                                        <p className="text-center text-p-white">From Static to Dynamic: Implementing a Hospital-wide CMS Platform with Multi-language Support</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </Col>
+                        <Col md={4} className="d-none d-md-flex">
+                            <div className="text-bg-p-black d-flex align-items-center justify-content-center p-5 rounded-end-4 w-100">
+                                <div className="text-start">
+                                    <h1 className="text-p-white">Custom Healthcare CMS Platform</h1>
+                                    <p className="text-p-white">2020</p>
+                                    <p className="text-p-white">From Static to Dynamic: Implementing a Hospital-wide CMS Platform with Multi-language Support</p>
+                                </div>
+                            </div>
+                        </Col>
+                    </Row>
+                </Link>
+
+                {/* Project 4 - Text on LEFT, Image on RIGHT */}
+                <Link to="/ProjectDetail/FlikshopLMS" className="text-decoration-none">
+                    <Row className="gx-0 mb-md-3">
+                        <Col md={4} className="d-none d-md-flex">
+                            <div className="text-bg-p-black d-flex align-items-center justify-content-center p-5 rounded-start-4 w-100">
                                 <div className="text-start">
                                     <h1 className="text-p-white">Flikshop LMS: AI Career Center</h1>
                                     <p className="text-p-white">2023</p>
@@ -71,12 +138,11 @@ export const Project = () => {
                         </Col>
                         <Col md={8} xs={12}>
                             <img src={flikshop} className="img-fluid d-none d-md-block" alt="" />
-                            {/* Mobile version with overlay */}
                             <div className="position-relative">
                                 <img src={flikshopmobile} className="img-fluid d-block d-md-none" alt="" />
                                 <div className="position-absolute top-0 start-0 w-100 h-100 d-block d-md-none"
                                     style={{
-                                        background: 'rgba(44, 62, 80, 0.5)', // Adjust opacity by changing the last number
+                                        background: 'rgba(44, 62, 80, 0.5)',
                                     }}>
                                     <div className="d-flex flex-column justify-content-center align-items-center h-100 text-white p-4">
                                         <h1 className="text-center text-p-white">Flikshop Learning Management System</h1>
@@ -88,36 +154,9 @@ export const Project = () => {
                         </Col>
                     </Row>
                 </Link>
-                <Link to="/ProjectDetail/DepartmentCMS" className="text-decoration-none">
-                    <Row className="gx-0 mb-md-3">
-                        <Col md={8} xs={12}>
-                            <img src={chghimg} className="img-fluid d-none d-md-block" alt="" />
-                            <div className="position-relative">
-                                <img src={chghmobile} className="img-fluid d-block d-md-none" alt="" />
-                                <div className="position-absolute top-0 start-0 w-100 h-100 d-block d-md-none"
-                                    style={{
-                                        background: 'rgba(44, 62, 80, 0.5)', // Adjust opacity by changing the last number
-                                    }}>
-                                    <div className="d-flex flex-column justify-content-center align-items-center h-100 text-white p-4">
-                                        <h1 className="text-center text-p-white">Custom Healthcare CMS Platform</h1>
-                                        <p className="text-center text-p-white">2020</p>
-                                        <p className="text-center text-p-white">From Static to Dynamic: Implementing a Hospital-wide CMS Platform with Multi-language Support</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </Col>
-                        <Col md={4} className="d-none d-md-flex">
-                            <div className="text-bg-p-black d-flex align-items-center justify-content-center p-5 rounded-end-4">
-                                <div className="text-start">
-                                    <h1 className="text-p-white">Custom Healthcare CMS Platform</h1>
-                                    <p className="text-p-white">2020</p>
-                                    <p className="text-p-white">From Static to Dynamic: Implementing a Hospital-wide CMS Platform with Multi-language Support</p>
-                                </div>
-                            </div>
-                        </Col>
-                    </Row>
-                </Link>
-                <ProtectedCaseStudy
+
+                {/* Protected Case Study - This maintains its original structure */}
+                {/* <ProtectedCaseStudy
                     imageUrl={cancerqa}
                     imageUrlMobile={cancermobile}
                     title="Cancer Patient Care Inquiry Hub"
@@ -125,9 +164,8 @@ export const Project = () => {
                     description="Bridging the Communication Gap: Improving Cancer Care Coordination with a Centralized Inquiry Platform"
                     linkTo="/ProjectDetail/CancerQA"
                     passkey="zoe2024"
-                />
+                /> */}
             </Container>
         </section>
     )
-
 }

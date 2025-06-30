@@ -8,6 +8,7 @@ import bannerimg from '../asset/img/RedFlagsOut_main.png';
 import { useState, useEffect } from 'react';
 import { Routes, Route, useParams } from 'react-router-dom';
 import parse from "html-react-parser";
+import { Link } from "react-router-dom";
 import { contents } from './ProjectsContent';
 import SwitchingPanel from '../components/SwitchingPanel';
 import DesignFeatures from '../components/DesignFeature';
@@ -1357,6 +1358,23 @@ function ProjectDetail(props) {
                     </Row></>
                 }
             </Container>
+            <Link to={content.nexturl}className="text-decoration-none">
+                <div className="bg-p-deepnavy">
+                    <Container fluid className="next-bottom-container text-p-white">
+                        <Row className="">
+                            <Col xs={1}></Col>
+                            <Col xs={3} className="">
+                                <div className="pb-3">
+                                    <span className="text-p-white btn-next"><h3>NEXT PROJECT</h3></span>
+                                </div>
+                            </Col>
+                            <Col xs={7}>
+                                <span className="text-p-white btn-next-title"><h2 className="font-display2">{content.nexttitle}</h2></span>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
+            </Link>
 
             <Modal show={show} fullscreen={true} onHide={handleClose}>
                 <Modal.Header closeButton>

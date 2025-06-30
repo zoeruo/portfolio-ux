@@ -230,7 +230,9 @@ export const contents = {
             "<h2>Testing and Iteration</h2>" +
             "<ul><li><strong>Conduct usability testing before development</strong>: Before coding begins, test your prototypes with real users to identify any usability problems. This can save time and resources in the long run.</li>" +
             "</ul>",
-            "reimagine": " "
+        "reimagine": " ",
+        "nexturl": "/ProjectDetail/FlikshopLMS",
+        "nexttitle": "Flikshop LMS: AI Career Center"
     },
     TheWindow: {
         "url": "TheWindow",
@@ -265,7 +267,6 @@ export const contents = {
         "duration": "1 month ( April 2023 - May 2023 )",
         /* "colortheme": "The color palette echoes the soul of classical music itself. Shades of ivory and charcoal, the timeless hues of a music sheet, form the foundation, exuding elegance and tradition. A whisper of spring green dances across the score, injecting vibrancy and guiding the eye like a musical phrase in motion. Deep sapphire accents then emerge, drawing attention to key navigational elements like a conductor's baton, ensuring a seamlessly intuitive experience. This harmonious blend of classicism and freshness invites immersion, transforming IMSLP into a vibrant tapestry of sound and sight." */
     },
-
     FlikshopLMS: {
         "url": "FlikshopLMS",
         "img": imgflikshop,
@@ -317,7 +318,9 @@ export const contents = {
                         <p>While some challenges emerged, we found effective solutions. One concern was <strong>potential user limitations in tech access</strong>. Since our target audience may lack laptops for virtual testing, we explored <strong>in-person testing</strong>, which yielded positive results.
                         Another initial hurdle involved <strong>participants occasionally missing scheduled meetings</strong>. To address this, we implemented <strong>reminder emails sent a day and an hour before each session</strong>. This proactive approach successfully eliminated further no-shows.</p>
                         <p>The initial meeting with Flikshop CEO, Marcus, was an eye-opener. His fast-paced communication style highlighted the importance of meticulous agenda planning. From that point forward, I prioritized <strong>including details like transcript requests and recording permissions to ensure a smooth and productive meeting flow</strong>. When I was in the role of a meeting coordinator, I realized the importance of tailoring communication strategies to individual preferences. I learned to adapt my approach to different communication styles and preferred tools to maximize responsiveness and engagement.</p>`,
-        "creatingprocess": ""
+        "creatingprocess": "",
+        "nexturl": "/ProjectDetail/LMSAdminPortal",
+        "nexttitle": "Flikshop LMS: Admin Panel"
 
     },
     LMSAdminPortal: {
@@ -362,8 +365,9 @@ export const contents = {
         "LMSAPdesign": " ",
         "LMSAPresearch": " ",
         "LMSAPdesignprocess": " ",
-        "LMSAPreflection": " "
-
+        "LMSAPreflection": " ",
+        "nexturl": "/Eastland",
+        "nexttitle": "A lively and dynamic Gateway with the Greens"
     },
     CancerQA: {
         "url": "CancerQA",
